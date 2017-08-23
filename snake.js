@@ -47,7 +47,7 @@ function start() {
   drawScore();  
   // Setup snake position
   pos = {x:g.getWidth()/2,y:g.getHeight()/2}; // centre of the screen
-  history.push([pos.x, pos.y]); // add to the 'history' list
+  history = [[pos.x, pos.y]]; // reset the 'history' list
   g.setPixel(pos.x, pos.y);
   dir = {x:1,y:0}; // the direction of the snake
   // Now add randomly positioned apples
@@ -74,7 +74,7 @@ function gameOver() {
   g.drawString(s, (g.getWidth()-g.stringWidth(s))/2, g.getHeight()/2-4);
   g.flip();
   // when the button is pressed, restart
-  if (BTN.read()) start();
+  setWatch(start, BTN, {debounce:50,edge:"rising"});
 }
 
 // called every 'frame' of the game

@@ -1,6 +1,8 @@
 # nceubadge
 NodeConf EU Badge
 
+* [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/main.js)
+
 ## Games
 
 * [Flappy Bird](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/flappybird.js)

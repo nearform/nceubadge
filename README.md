@@ -8,6 +8,7 @@ NodeConf EU Badge
 * [Simple Mario](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/mario.js)
 * [Asteroids](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/asteroids.js)
 * [Click speed counter](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/click_counter.js)
+* [T-Rex](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/trex.js)
 
 ## Misc
 

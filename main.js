@@ -221,7 +221,7 @@ Badge.trex = function() {
       // move rex
       if (BTNL.read() && rex.x>0) rex.x--;
       if (BTNR.read() && rex.x<20) rex.x++;
-      if (BTNU.read() && rex.y==0) rex.vy=4;
+      if ((BTNU.read()||BTNA.read()) && rex.y==0) rex.vy=4;
       rex.y += rex.vy;
       rex.vy -= 0.2;
       if (rex.y<=0) {rex.y=0; rex.vy=0; }

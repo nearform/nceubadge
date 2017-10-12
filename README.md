@@ -16,3 +16,4 @@ NodeConf EU Badge
 
 * [JS REPL on your badge!](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/repl.js)
 * [Display a Menu](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/menu.js)
+* [Etch-a-sketch](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/sketch.js)

@@ -56,8 +56,8 @@ Badge.menu = ()=>{
  "Delete Sketch" : ()=>{
   delete Badge.sketchedImage;
   for (var i=0;i<Badge.badgeImages.length;i++)
-    if (Badge.badgeImages.sketched)
-      delete Badge.badgeImages[i--];
+    if (Badge.badgeImages[i].sketched)
+      Badge.badgeImages.splice(i--,1);
  },
  "Back to Badging" : Badge.badge
 };

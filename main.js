@@ -1,3 +1,18 @@
+Badge.URL = "http://www.espruino.com";
+Badge.badgeImages = [{ // fonz
+  width : 128, height : 64, bpp : 1,
+  transparent : 0,
+  buffer : E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAB//AAAAAAAAAAAAAAAAAAB3v+AAAAAAAAAAAAAAAAAA+/f8AAAAAAAAAAAAAAAAA7/7/4AAAAAAAAAAAAAAAAP//X/AAAAAAAAAAAAAAAAG///f4AAAAAAAAAAAAAAAB///9/AAAAAAAAAAAAAAAA7/3/7wAAAAAAAAAAAAAAAf////fAAAAAAAAAAAAAAAH///79wAAAAAAAAAAAAAAD/v///+AAAAAAAAAAAAAAA/tV//+gAAAAAAAAAAAAAAP5Kl9voAAAAAAAAAAAAAAH5ES1K+AAAAAAAAAAAAAAB/UiCovgAAAAAAAAAAAAAAfxSUAh4AAAAAAAAAAAAAAH+lRVBOAAAAAAAAAAAAAAD+lKglHgxgAAAAAAAAAAAAf8pKlE4cYAAAAAAAAAAAAP8lJEKeGMAAAAAAAAAAAAB/qSUonhjAAAAAAAAAAAAAf6SQRS8c4AAAAAAAAAAAAH9UlSEfHOAAAAAAAAAAAAB/kqSUXRzgAAAAAAAAAAAAP0/q/x4c4AAAAAAAAAAAAD6/9V6eAAAAAAAAAAAAAAB+v/d/3AAAAAAAAAAAAAAAPr/5/14AYwAAAADAAAAAAD9daN+OAEEAAAAAwAAAAAA+lVVpXABjAAAAAMAAAAAAP0qorQ4AQR5jRsbAAAAAABylUlS4AH8zImZEwAAAAAAOpFIiHAB/MTZkbMAAAAAAHqkolJgAQT+2LGjAAAAAAA9FVEBQAEMwFDwoAAAAAAAOkqk0MABhMRw4OEAAAAAAD0tELTAAQx8YGDDAAAAAAAeqspUwAAAEGBgwQAAAAAADWr1WoAAAABgwMAAAAAAAAu1bpSAAAAAwcGAAAAAAAANVTZWAAAAAAAAAAAAAAAABf1VeAAAAAAAAAAAAAAAAAs/624AAAAAAABCAAAAAAALrBTSAAAAAAAA5wAAAAAADaMA3AAAAAAAAOcAAAAAAAXa1iQAAAAAAADnAAAAAAAG1VqUAAAAAAAA5wAAAAAABarSUAAAAAAAAGMAAAAAADX1WVAAAAAAAABjAAAAAAD1q20gAAAAAAAAxgAAAAAB8umqsAAAAAAAAIQAAAAAA+r6SSAAAAAAAAAAAAAAAAPFXSSsAAAAAAAAAAAAAAAH1fVJXgAAAAAAAAAAAAAAB6o9Vt8AAAAAAAAAAAAAAA/K3+1fwAAAAAAAAAAAAAAf5WtvX+AAAAAAAAAAAAAAP8qv+q/wAAAAAAAAAAAAAB/qtW6n2AAAAAAAAAAAAAB/5Ve1U/YAAAAAAAAAAAAB/+lU3qn7AAAAAAAAAA=="))
+},{ // nodeconf
+ width : 128, height : 64, bpp : 1,
+ transparent : 0,
+ buffer : E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgHwHj/wAAAAAAAAAAAAAP8H/H4/8AAAAAAAAAAAAADnhxw+APAAAAAAAAAAAAAAQ44ODgDgAAAAAAAAAAAAAAOODg4A4AAAAAAAAAAAAAADjA4OAcAAAAAAAAAAAAAABwwGDgHAAAAAAAAAAAAAAA4MBg4DgAAAAAAAAAAAAAAcDg4OBwAAAAAAAAAAAAAAOA4ODgcAAAAAAAAAAAAAAPAPHg4OAAAAAAAAAAAAAAH/h/wODgAAAAAAAAAAAAAB/4P4DhwAAAAAAAAAAAAAAP+A4A4cAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAeAwP8D/AP+B/AAPA4f4AAHwMH/g/8D/h/4AD4OP+AAB8DD/8P/gwA8MAA+DjgAAAfgw//j/8MAOAD4Pw44AAAHcMf/4//DAHAB/DcOOAAAB3DH/+P/4wBwAf4zjjgAAAc4x//z/+P8cAH+Mc4/4AAHHMf/8//j/HAB/jHOP+AABxzH/+P/4wBwAf4w7jgAAAcPx//j/8MAcAH8MH44AAAHD8P/4//DADgA+DB+OAAABwfD/8P/g4A8MAAwPjgAAAcDwf+D/wP+H/gAMD44AAAHA8B/A/wD/gfwADAeGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
+},{ // nearform
+  width : 128, height : 64, bpp : 1,
+  transparent : 0,
+  buffer : E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4AAAAAAAAAAAAAAAAAAH/+AAAAAAAAAAAAAAAAAAH//AAAAAAAAAAAAAAAAAAD//zwAAAAAAAAAAAAAAAAD//5+AAAAAAAAAAAAAAAAB//+fgAAAAAAAAAAAAAAAA///j5AAAAAAAAAAAAAAAAP//88YAAAAAAAAAAAAAAAHx//AOAAAAAAAAAAAAAAAD4H/4HwAAAAAAB/gAAAAAA8Q//j+AAAAAAAf4AAAAAAePH/5/gAAAAAAGAAAAAAAHn5/+f4AAAAAABgAAAAAAB5+f/n/AcAwDgCYAOAMGHA+fH/5/w/g/D+L2AP4XP74Pzz/+f8MMYYhjhgGDHDDjD8Af/n/DBECAIwfxARggwQ/gH/5/4gTAgCMH8wGQIMEP+Y/+f+IE/8PjBgMBkCDBD/nH/n/iBMAOIgYDAZAgwQ/54/5/4gTAGCIGAwGQIMEP+fH+f8IEwBgiBgMBECDBD/n4/n/CBGAYYgYBgxAgwQ/5/H5/wgRznOIGAO4QIMEH+f4+f8IEHw+iBgB8ECDBB/n/Hn/AAAAAAAAAAAAAAAf5/45/gAAAAAAAAAAAAAAD8f/AP4AAAAAAAAAAAAAAA+B/4B8AAAAAAAAAAAAAAAHAP/APAAAAAAAAAAAAAAABjz/zxgAAAAAAAAAAAAAAAJ8f4+QAAAAAAAAAAAAAAAAfn+fgAAAAAAAAAAAAAAAAH5/n4AAAAAAAAAAAAAAAAA8f88AAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAH/4AAAAAAAAAAAAAAAAAAD//AAAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
+}
+];
 // pretokenise JS to give us a bit more space
 E.setFlags({pretokenise:1});
 // Get it all back to normal-ish
@@ -14,7 +29,16 @@ Badge.reset = function() {
 Badge.menu = function() {
   function wait(cb) { m = {move:cb,select:cb}; }
   var mainmenu = {
-  "" : {"title" : "-- Menu --"},
+  "" : {"title" : "-- Choose your Adventure --"},
+  "About" : function() {
+    g.clear();
+    ["-- Espruino Badge --","Sponsored by NearForm","",
+    "Gordon Williams","@Espruino",
+    "www.espruino.com","www.nearform.com"].forEach(
+      (s,i)=>g.drawString(s,(128-g.stringWidth(s))/2,i*6));
+    g.flip();
+    wait(e=>m=menu.list(g, mainmenu));
+  },  
   "Make Connectable" : function() {
     g.clear();
     g.drawString("-- Now Connectable --");
@@ -25,18 +49,10 @@ Badge.menu = function() {
     wait(()=>{NRF.sleep();m=menu.list(g, mainmenu)});
     NRF.wake();
   },
-  "About" : function() {
-    g.clear();
-    ["-- Espruino Badge --","Sponsored by NearForm","",
-    "Gordon Williams","@Espruino",
-    "www.espruino.com","www.nearform.com"].forEach(
-      (s,i)=>g.drawString(s,(128-g.stringWidth(s))/2,i*6));
-    g.flip();
-    wait(e=>m=menu.list(g, mainmenu));
-  },
   "T-Rex" : Badge.trex,
+  "Flappy Bird" : Badge.flappy,
   "REPL" : Badge.repl,
-  "Back" : Badge.badge
+  "Back to Badging" : Badge.badge
 };
 
 Badge.reset();
@@ -150,21 +166,31 @@ Badge.repl = function() {
 Badge.badge = function() {
   Badge.reset();
   var counter = 0;
+  var timeout;
   function draw(n) {
     counter += n?n:0;
-    if (counter<0) counter=2;
-    if (counter>2) counter=0;
+    if (counter<0) counter=Badge.badgeImages.length-1;
+    if (counter>=Badge.badgeImages.length) counter=0;
     g.clear();
-    if (counter==0) g.drawString("Page 1");
-    if (counter==1) g.drawString("Page 2");
-    if (counter==2) g.drawString("Page 3");
+    g.drawImage(Badge.badgeImages[counter]);
     g.flip();
+    if (timeout) clearTimeout(timeout);
+    timeout = setTimeout(e=>{timeout=undefined;draw(1)}, 5000);
   }
-  draw(0);
-  setInterval(e=>draw(1), 5000);
-  setWatch(e=>Badge.menu(), BTNA, {repeat:1,debounce:50,edge:"rising"});
-  setWatch(e=>draw(-1), BTNU, {repeat:1,debounce:50,edge:"rising"});
-  setWatch(e=>draw(1), BTND, {repeat:1,debounce:50,edge:"rising"});
+  var codeleft="UUDDLRLRBA";
+  function k(ch) {
+    if (ch==codeleft[0]) {
+      codeleft=codeleft.substr(1);
+      if (codeleft=="") Badge.menu();
+    } else codeleft="UUDDLRLRBA"; 
+  }
+  draw(0);  
+  setWatch(e=>k("A"), BTNA, {repeat:1,debounce:50,edge:"rising"});
+  setWatch(e=>k("B"), BTNB, {repeat:1,debounce:50,edge:"rising"});
+  setWatch(e=>k("L"), BTNL, {repeat:1,debounce:50,edge:"rising"});
+  setWatch(e=>k("R"), BTNR, {repeat:1,debounce:50,edge:"rising"});
+  setWatch(e=>{draw(-1);k("U")}, BTNU, {repeat:1,debounce:50,edge:"rising"});
+  setWatch(e=>{draw(1);k("D")}, BTND, {repeat:1,debounce:50,edge:"rising"});  
 }
 Badge.trex = function() {
   Badge.reset();
@@ -266,8 +292,111 @@ Badge.trex = function() {
   gameStart();
   setWatch(x=>Badge.menu(), BTNB, {repeat:0,debounce:50,edge:"rising"});
 };
+Badge.flappy = function() {
+  Badge.reset();
+  var SPEED = 0.5;
+  var BIRDIMG = {
+    width : 8, height : 8, bpp : 1,
+    transparent : 0,
+    buffer : new Uint8Array([
+      0b00000000,
+      0b01111000,
+      0b10000100,
+      0b10111010,
+      0b10100100,
+      0b10000100,
+      0b01111000,
+      0b00000000,
+    ]).buffer
+  };
+
+
+  var birdy, birdvy;
+  var wasPressed = false;
+  var running = false;
+  var barriers;
+  var score;
+
+  function newBarrier(x) {
+    barriers.push({
+      x1 : x-5,
+      x2 : x+5,
+      y : 10+Math.random()*(g.getHeight()-20),
+      gap : 8
+    });
+  }
+
+  function gameStart() {
+    running = true;
+    birdy = g.getHeight()/2;
+    birdvy = 0;
+    barriers = [];
+    newBarrier(g.getWidth()/2);
+    newBarrier(g.getWidth());
+    score = 0;
+    wasPressed = false;
+    setInterval(onFrame, 50);    
+  }
+
+  function gameStop() {
+    running = false;
+    clearInterval();  
+    setTimeout(function() {
+      setWatch(gameStart, BTNA, {repeat:0,debounce:50,edge:"rising"});
+    }, 1000);
+    setTimeout(onFrame, 10);
+  }
+
+  function onFrame() {
+    var buttonState = BTN.read();
+    
+    g.clear();
+    if (!running) {
+      g.drawString("Game Over!",25,10);
+      g.drawString("Score",10,20);
+      g.drawString(score,10,26);
+      g.flip();
+      return;
+    }  
+    
+    if (buttonState && !wasPressed)
+      birdvy -= 2;
+    wasPressed = buttonState;
+    
+    score++;
+    birdvy += 0.2;
+    birdvy *= 0.8;
+    birdy += birdvy;
+    if (birdy > g.getHeight())
+      return gameStop();
+    // draw bird
+    g.drawImage(BIRDIMG, 0,birdy-4);
+    // draw barriers
+    barriers.forEach(function(b) {
+      b.x1-=SPEED;
+      b.x2-=SPEED;
+      var btop = b.y-b.gap;
+      var bbot = b.y+b.gap;
+      g.drawRect(b.x1+1, -1, b.x2-2, btop-5);
+      g.drawRect(b.x1, btop-5, b.x2, btop);
+      g.drawRect(b.x1, bbot, b.x2, bbot+5);
+      g.drawRect(b.x1+1, bbot+5, b.x2-1, g.getHeight());
+      if (b.x1<6 && (birdy-3<btop || birdy+3>bbot))
+        return gameStop();
+    });
+    while (barriers.length && barriers[0].x2<=0) {
+      barriers.shift();
+      newBarrier(g.getWidth());
+    }
+
+    g.flip();
+  }  
+  gameStart();
+  setWatch(x=>Badge.menu(), BTNB, {repeat:0,debounce:50,edge:"rising"});
+};
 
 function onInit() {
+  NRF.nfcURL(Badge.URL);
   NRF.sleep(); // no advertising
   Badge.badge();
 }

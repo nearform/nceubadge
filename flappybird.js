@@ -40,13 +40,20 @@ function gameStart() {
   newBarrier(g.getWidth()/2);
   newBarrier(g.getWidth());
   score = 0;
+  wasPressed = false;
+  setInterval(onFrame, 50);    
 }
 
 function gameStop() {
   running = false;
+  clearInterval();  
+  setTimeout(function() {
+    setWatch(gameStart, BTNA, {repeat:0,debounce:50,edge:"rising"});
+  }, 1000);
+  setTimeout(onFrame, 10);
 }
 
-function draw() {
+function onFrame() {
   var buttonState = BTN.read();
   
   g.clear();
@@ -55,9 +62,6 @@ function draw() {
     g.drawString("Score",10,20);
     g.drawString(score,10,26);
     g.flip();
-    if (buttonState && !wasPressed)
-      gameStart();
-    wasPressed = buttonState;
     return;
   }  
   
@@ -70,9 +74,8 @@ function draw() {
   birdvy *= 0.8;
   birdy += birdvy;
   if (birdy > g.getHeight())
-    gameStop();
+    return gameStop();
   // draw bird
-  //g.fillRect(0,birdy-3,6,birdy+3);
   g.drawImage(BIRDIMG, 0,birdy-4);
   // draw barriers
   barriers.forEach(function(b) {
@@ -85,7 +88,7 @@ function draw() {
     g.drawRect(b.x1, bbot, b.x2, bbot+5);
     g.drawRect(b.x1+1, bbot+5, b.x2-1, g.getHeight());
     if (b.x1<6 && (birdy-3<btop || birdy+3>bbot))
-      gameStop();
+      return gameStop();
   });
   while (barriers.length && barriers[0].x2<=0) {
     barriers.shift();
@@ -96,9 +99,6 @@ function draw() {
 }
 
 function onInit() {
-  clearInterval();
-
-  setInterval(draw, 50);    
   gameStart();
 }
 

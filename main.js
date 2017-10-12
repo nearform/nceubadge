@@ -177,12 +177,10 @@ Badge.badge = function() {
     if (timeout) clearTimeout(timeout);
     timeout = setTimeout(e=>{timeout=undefined;draw(1)}, 5000);
   }
-  var codeleft="UUDDLRLRBA";
+  var code="";
   function k(ch) {
-    if (ch==codeleft[0]) {
-      codeleft=codeleft.substr(1);
-      if (codeleft=="") Badge.menu();
-    } else codeleft="UUDDLRLRBA"; 
+    code = (code+ch).substr(-10);
+    if (code=="UUDDLRLRBA") Badge.menu();
   }
   draw(0);  
   setWatch(e=>k("A"), BTNA, {repeat:1,debounce:50,edge:"rising"});

@@ -1,0 +1,16 @@
+{
+  "name": "nodeconf-register",
+  "version": "1.0.0",
+  "description": "Setup NodeConf EU Badge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Conor O'Neill",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "canvas": "^1.6.7",
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0"
+  }
+}

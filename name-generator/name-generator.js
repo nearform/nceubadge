@@ -25,7 +25,7 @@ prompt.message = colors.rainbow("NCEUBadge");
 
 prompt.get(['firstname', 'lastname'], function (err, result) {
     currentFontHeight = 28;
-    ctx.font = currentFontHeight + 'px Arial';
+    ctx.font = currentFontHeight + 'px Comic Sans MS';
 
     if (ctx.measureText(result.firstname).actualBoundingBoxRight > ctx.measureText(result.lastname).actualBoundingBoxRight) {
         bigString = result.firstname;
@@ -35,7 +35,7 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
 
     maxFound = false;
     while (!maxFound) {
-        ctx.font = currentFontHeight + 'px Arial';
+        ctx.font = currentFontHeight + 'px Comic Sans MS';
         if (ctx.measureText(bigString).actualBoundingBoxRight < 128) {
             maxFound = true;
         } else {
@@ -46,8 +46,10 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, 128, 64);
     ctx.fillStyle = 'white';
-    ctx.fillText(result.firstname, 0, currentFontHeight);
-    ctx.fillText(result.lastname, 0, (2 * currentFontHeight) + 4);
+    indent = Math.floor((128 - ctx.measureText(result.firstname).actualBoundingBoxRight) / 2)
+    ctx.fillText(result.firstname, indent, currentFontHeight);
+    indent = Math.floor((128 - ctx.measureText(result.lastname).actualBoundingBoxRight) / 2)
+    ctx.fillText(result.lastname, indent, (2 * currentFontHeight) + 4);
 
     require('fs').writeFileSync('say-my-name.png', canvas.toBuffer('png'))
     console.log("Name image generated");

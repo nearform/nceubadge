@@ -14,9 +14,16 @@ Install [Node.js](https://nodejs.org/en/download/current/) and then:
 ```
 git clone https://github.com/nearform/nceubadge
 cd nceubadge/name-generator
+
+# Mac OS
 brew install openssl imagemagick pkg-config cairo libpng jpeg giflib
+# Debian/Ubuntu Linux
+sudo apt-get install imagemagick pkg-config libcairo2-dev libpng-dev libjpeg-dev libgif-dev
+
 npm install
 ```
+
+
 
 Then run the tool just with
 

@@ -9,7 +9,7 @@ Apache License Version 2.0
 
 Usage (Mac only for the moment):
 
-Install [Node.js](https://nodejs.org/en/download/current/) 
+Install [Node.js](https://nodejs.org/en/download/current/) and then:
 
 ```
 git clone https://github.com/nearform/nceubadge

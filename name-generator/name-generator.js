@@ -1,7 +1,15 @@
+// name-generator prompts for firstname/lastname and then generates base64 image data for saving on the NCEU badge
+// It autoscales each person's name to make best use of the screen
+//
 // Copyright nearForm and Conor O'Neill 2017 conor@conoroneill.com
 // Apache License Version 2.0
+//
 // Note that Mac users first must run:
 // brew install openssl imagemagick pkg-config cairo libpng jpeg giflib
+// followed by:
+// npm install
+// Then run the tool just with
+// node name-generator.js
 
 var Canvas = require('canvas')
     , Image = Canvas.Image

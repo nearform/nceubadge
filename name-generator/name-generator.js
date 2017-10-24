@@ -27,6 +27,20 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
     currentFontHeight = 28;
     ctx.font = currentFontHeight + 'px Comic Sans MS';
 
+    // Below summed must be <= 64
+
+
+    //
+    // if it is then firstname Y origin is:
+    //
+    //
+    // and lastname Y origin is:
+    //
+    //
+    //
+
+
+
     if (ctx.measureText(result.firstname).actualBoundingBoxRight > ctx.measureText(result.lastname).actualBoundingBoxRight) {
         bigString = result.firstname;
     } else {
@@ -36,20 +50,33 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
     maxFound = false;
     while (!maxFound) {
         ctx.font = currentFontHeight + 'px Comic Sans MS';
-        if (ctx.measureText(bigString).actualBoundingBoxRight < 128) {
+        totalHeight = ctx.measureText(result.firstname).actualBoundingBoxAscent + ctx.measureText(result.firstname).actualBoundingBoxDescent + 4 + ctx.measureText(result.lastname).actualBoundingBoxAscent + ctx.measureText(result.lastname).actualBoundingBoxDescent;
+        if ((ctx.measureText(bigString).actualBoundingBoxRight < 128) && (totalHeight < 64)) {
             maxFound = true;
         } else {
             currentFontHeight--;
         }
     }
 
+    totalHeight = ctx.measureText(result.firstname).actualBoundingBoxAscent + ctx.measureText(result.firstname).actualBoundingBoxDescent + 4 + ctx.measureText(result.lastname).actualBoundingBoxAscent + ctx.measureText(result.lastname).actualBoundingBoxDescent;
+
+    yIndent = Math.floor((64 - totalHeight) / 2) + ctx.measureText(result.firstname).actualBoundingBoxAscent + ctx.measureText(result.firstname).actualBoundingBoxDescent;
+
     ctx.fillStyle = 'black';
     ctx.fillRect(0, 0, 128, 64);
     ctx.fillStyle = 'white';
-    indent = Math.floor((128 - ctx.measureText(result.firstname).actualBoundingBoxRight) / 2)
-    ctx.fillText(result.firstname, indent, currentFontHeight);
-    indent = Math.floor((128 - ctx.measureText(result.lastname).actualBoundingBoxRight) / 2)
-    ctx.fillText(result.lastname, indent, (2 * currentFontHeight) + 4);
+    xIndent = Math.floor((128 - ctx.measureText(result.firstname).actualBoundingBoxRight) / 2)
+    ctx.fillText(result.firstname, xIndent, yIndent);
+    console.log("y1 = ", yIndent);
+    console.dir(ctx.measureText(result.firstname));
+    console.dir(ctx.measureText(result.lastname));
+
+    yIndent = 64 - Math.floor((64 - totalHeight) / 2) - ctx.measureText(result.lastname).actualBoundingBoxDescent;
+    console.log("y2 = ", yIndent);
+
+    xIndent = Math.floor((128 - ctx.measureText(result.lastname).actualBoundingBoxRight) / 2)
+    ctx.fillText(result.lastname, xIndent, yIndent);
+
 
     require('fs').writeFileSync('say-my-name.png', canvas.toBuffer('png'))
     console.log("Name image generated");

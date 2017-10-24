@@ -4,6 +4,9 @@
 
 ### All documentation including the Getting Started Guide is available on [nodeconfeubadge.org](http://nodeconfeubadge.org)
 
+## Hardware
+This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory
+
 ## Code
 ### Main
 * [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/main.js)

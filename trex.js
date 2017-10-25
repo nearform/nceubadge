@@ -1,5 +1,4 @@
 var IMG = {
-
   rex : [
     // running
      { width : 20, height : 22, bpp : 1, transparent:0, buffer : E.toArrayBuffer(atob("AB/gA/8AN/AD/wA/8AP/AD4AA/yAfAgfwMP/Dn/Q//wP/8B/+AP/gB/wAP4AB2AAYgAAIAADAP//")) },
@@ -12,9 +11,7 @@ var IMG = {
     { width : 8, height : 18, bpp : 1,  transparent:0, buffer : E.toArrayBuffer(atob("GBhY2dnZ2fl5Hx4YGBgYGBgY")) }
   ],
 };
-var cacti = [];
-var rex;
-var frame;
+var cacti, rex, frame;
 
 function gameStart() {
   rex = {

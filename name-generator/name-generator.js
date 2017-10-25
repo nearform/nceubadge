@@ -25,7 +25,7 @@ prompt.message = colors.rainbow("NCEUBadge");
 
 prompt.get(['firstname', 'lastname'], function (err, result) {
     currentFontHeight = 28;
-    ctx.font = currentFontHeight + 'px Comic Sans MS';
+    ctx.font = currentFontHeight + 'px Verdana';
 
     // Below summed must be <= 64
 
@@ -49,7 +49,7 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
 
     maxFound = false;
     while (!maxFound) {
-        ctx.font = currentFontHeight + 'px Comic Sans MS';
+        ctx.font = currentFontHeight + 'px Verdana';
         totalHeight = ctx.measureText(result.firstname).actualBoundingBoxAscent + ctx.measureText(result.firstname).actualBoundingBoxDescent + 4 + ctx.measureText(result.lastname).actualBoundingBoxAscent + ctx.measureText(result.lastname).actualBoundingBoxDescent;
         if ((ctx.measureText(bigString).actualBoundingBoxRight < 128) && (totalHeight < 64)) {
             maxFound = true;
@@ -67,19 +67,12 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
     ctx.fillStyle = 'white';
     xIndent = Math.floor((128 - ctx.measureText(result.firstname).actualBoundingBoxRight) / 2)
     ctx.fillText(result.firstname, xIndent, yIndent);
-    console.log("y1 = ", yIndent);
-    console.dir(ctx.measureText(result.firstname));
-    console.dir(ctx.measureText(result.lastname));
-
     yIndent = 64 - Math.floor((64 - totalHeight) / 2) - ctx.measureText(result.lastname).actualBoundingBoxDescent;
-    console.log("y2 = ", yIndent);
-
     xIndent = Math.floor((128 - ctx.measureText(result.lastname).actualBoundingBoxRight) / 2)
     ctx.fillText(result.lastname, xIndent, yIndent);
 
 
     require('fs').writeFileSync('say-my-name.png', canvas.toBuffer('png'))
-    console.log("Name image generated");
 
     const execSync = require('child_process').execSync;
 

@@ -1,24 +1,80 @@
 [
 {
+	"uri": "http://nodeconfeubadge.org/getting-started/built-in-software/",
+	"title": "Built-in Software",
+	"tags": [],
+	"description": "",
+	"content": "Out of the box, Gordon has created the following:\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/",
+	"title": "Connecting to the Badge",
+	"tags": [],
+	"description": "",
+	"content": "Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/basic-hardware-features/",
+	"title": "Hardware Features",
+	"tags": [],
+	"description": "",
+	"content": "Hardware Features include\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/hello-world-console/",
+	"title": "Hello World on the Console",
+	"tags": [],
+	"description": "",
+	"content": "Of course we start with Hello World.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/other-code-samples/",
+	"title": "Other Code Samples",
+	"tags": [],
+	"description": "",
+	"content": "There are three places you can find code to learn from and use:\n The Badge repo The main Espruino site The Puck.js area of the Espruino site  "
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/",
+	"title": "Setting up your Mac or PC",
+	"tags": [],
+	"description": "",
+	"content": "Things are slightly easier on the Mac but there are very few steps to set yourself up.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/using-prototyping-area/",
+	"title": "Using the prototyping area",
+	"tags": [],
+	"description": "",
+	"content": "You can add whatever hardware you like to the prototyoing area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The pin-out is as follows:\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/challenges/",
+	"title": "Challenges",
+	"tags": [],
+	"description": "",
+	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble on Node.js on your laptop to read the beacon data\n Turn Badge into HID buttons for your PC. Joystick or clicker for your talk Connect Badge to BLE LED Lightbulb Connect Badge to BLE LED Strip Communicate with another badge Record sound and play it back Creating and displaying your own images Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge Detect person with PIR sensor Communicate with some other Bluetooth device (Garmin, Fitbit etc) Implement DAT protocol on Espruino (kidding)  "
+},
+{
 	"uri": "http://nodeconfeubadge.org/getting-started/unlocking-your-badge/",
 	"title": "Unlocking Your Badge",
 	"tags": [],
 	"description": "",
-	"content": "There\u0026rsquo;s a lot more to your badge\u0026rsquo;s software than you realise. Try this:\nUp Up Down Down Left Right Left Right B A\n(Yup the Konami code!)\n"
+	"content": "There\u0026rsquo;s a lot more to your badge\u0026rsquo;s software than you realise. Try this:\n Up Up Down Down Left Right Left Right B A  (Yup the Konami code!)\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Unlocking and Connecting to your Badge Learn how to access the secret menus and connect to your badge over Bluetooth.\n"
+	"content": " Chapter 1 Unlocking and Connecting to your Badge Lets get you setup with accessing the secret menus, connecting to your badge over Bluetooth and getting Hello World running.\nImage of badge nighlighting the main hardware features\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/",
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about your attendee badge this year. We\u0026rsquo;ve spent the past few months speccing and preparing it for the event.\n"
+	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about your attendee badge this year. We\u0026rsquo;ve spent the past few months speccing and preparing it for the event.\nGetting Started In the Getting Started section we give you all the details of:\n Unlocking the badge The built-in software features The hardware features Setting up your Mac (some PC info too) Connecting to the badge Hello World on console Other code samples in the repo Board prototype area (including the pin-out)  Your Challenges We have a large set of challenges for you to get maximum use of the badge and learn lots in the process.\nThe Grand Challenge For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to. But it must make use of the Badge.\nAnyone who wishes to enter must demo their completed entry between 5pm and 6pm on Wednesday in the Hacking Lounge to the judges.\nThe winner will be announced at the Closing Party dinner and on @nearform Twitter on Wednesday night. They and the runners-up demo what the have to the crowd.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/categories/",

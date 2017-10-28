@@ -6,10 +6,74 @@
     <description>Recent content on NodeConf EU Badge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 24 Oct 2017 15:30:33 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 28 Oct 2017 15:30:33 +0100</lastBuildDate>
     
 	<atom:link href="http://nodeconfeubadge.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Built-in Software</title>
+      <link>http://nodeconfeubadge.org/getting-started/built-in-software/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/built-in-software/</guid>
+      <description>Out of the box, Gordon has created the following:</description>
+    </item>
+    
+    <item>
+      <title>Connecting to the Badge</title>
+      <link>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</guid>
+      <description>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:</description>
+    </item>
+    
+    <item>
+      <title>Hardware Features</title>
+      <link>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</guid>
+      <description>Hardware Features include</description>
+    </item>
+    
+    <item>
+      <title>Hello World on the Console</title>
+      <link>http://nodeconfeubadge.org/getting-started/hello-world-console/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/hello-world-console/</guid>
+      <description>Of course we start with Hello World.</description>
+    </item>
+    
+    <item>
+      <title>Other Code Samples</title>
+      <link>http://nodeconfeubadge.org/getting-started/other-code-samples/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/other-code-samples/</guid>
+      <description>There are three places you can find code to learn from and use:
+ The Badge repo The main Espruino site The Puck.js area of the Espruino site  </description>
+    </item>
+    
+    <item>
+      <title>Setting up your Mac or PC</title>
+      <link>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</guid>
+      <description>Things are slightly easier on the Mac but there are very few steps to set yourself up.</description>
+    </item>
+    
+    <item>
+      <title>Using the prototyping area</title>
+      <link>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
+      <description>You can add whatever hardware you like to the prototyoing area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The pin-out is as follows:</description>
+    </item>
     
     <item>
       <title>Unlocking Your Badge</title>
@@ -18,8 +82,7 @@
       
       <guid>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</guid>
       <description>There&amp;rsquo;s a lot more to your badge&amp;rsquo;s software than you realise. Try this:
-Up Up Down Down Left Right Left Right B A
-(Yup the Konami code!)</description>
+ Up Up Down Down Left Right Left Right B A  (Yup the Konami code!)</description>
     </item>
     
   </channel>

@@ -8,5 +8,6 @@ draft: false
 
 # Unlocking and Connecting to your Badge
 
-Learn how to access the secret menus and connect to your badge over Bluetooth.
+Lets get you setup with accessing the secret menus, connecting to your badge over Bluetooth and getting Hello World running.
 
+Image of badge nighlighting the main hardware features

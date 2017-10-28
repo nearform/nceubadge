@@ -6,7 +6,16 @@ draft: false
 
 There's a lot more to your badge's software than you realise. Try this:
 
-Up Up Down Down Left Right Left Right B A
+* Up
+* Up
+* Down
+* Down
+* Left
+* Right
+* Left
+* Right
+* B
+* A
 
 (Yup the Konami code!)
 

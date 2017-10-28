@@ -3,6 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://nodeconfeubadge.org/getting-started/built-in-software/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/hello-world-console/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/other-code-samples/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</loc>
     <lastmod>2017-10-24T15:30:33+01:00</lastmod>
   </url>
@@ -14,7 +54,7 @@
   
   <url>
     <loc>http://nodeconfeubadge.org/</loc>
-    <lastmod>2017-10-24T15:30:33+01:00</lastmod>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
   </url>
   
   <url>

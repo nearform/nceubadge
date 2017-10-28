@@ -3,42 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://nodeconfeubadge.org/getting-started/built-in-software/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/getting-started/hello-world-console/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/getting-started/other-code-samples/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/</loc>
+    <loc>http://nodeconfeubadge.org/challenges/hello-world-screen/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
   
@@ -53,8 +18,138 @@
   </url>
   
   <url>
-    <loc>http://nodeconfeubadge.org/</loc>
+    <loc>http://nodeconfeubadge.org/getting-started/built-in-software/</loc>
     <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/detect-button-press/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/detect-capacative-touch/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/flash-leds/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/play-music-with-buzzer/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/hello-world-console/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/on-screen-menu/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/other-code-samples/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/broadcast-nfc-url/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/broadcast-beacons/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/use-noble-on-laptop/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/use-badge-for-hid/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/display-an-image/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/implement-dat-protocol/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
   
   <url>

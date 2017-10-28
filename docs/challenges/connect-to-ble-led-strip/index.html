@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.29" />
+    <meta name="description" content="All about the NodeConf EU 2017 Badge">
+<meta name="author" content="nearForm">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Connect to BLE LED Strip :: NodeConf EU Badge</title>
+    
+    
+    <link href="/css/nucleus.css?1509206562" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1509206562" rel="stylesheet">
+    <link href="/css/hybrid.css?1509206562" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1509206562" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1509206562" rel="stylesheet">
+    <link href="/css/auto-complete.css?1509206562" rel="stylesheet">
+    <link href="/css/theme.css?1509206562" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1509206562" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1509206562"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/challenges/connect-to-ble-led-strip/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/"><img src="/images/logo.png" /></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1509206562"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1509206562"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/nodeconfeubadge.org";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1509206562"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/getting-started/">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/unlocking-your-badge/" title="Unlocking Your Badge" class="dd-item ">
+        <a href="/getting-started/unlocking-your-badge/">
+        Unlocking Your Badge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/built-in-software/" title="Built-in Software" class="dd-item ">
+        <a href="/getting-started/built-in-software/">
+        Built-in Software
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/basic-hardware-features/" title="Hardware Features" class="dd-item ">
+        <a href="/getting-started/basic-hardware-features/">
+        Hardware Features
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/setting-up-your-mac-or-pc/" title="Setting up your Mac or PC" class="dd-item ">
+        <a href="/getting-started/setting-up-your-mac-or-pc/">
+        Setting up your Mac or PC
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/connecting-to-the-badge/" title="Connecting to the Badge" class="dd-item ">
+        <a href="/getting-started/connecting-to-the-badge/">
+        Connecting to the Badge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/hello-world-console/" title="Hello World on the Console" class="dd-item ">
+        <a href="/getting-started/hello-world-console/">
+        Hello World on the Console
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/other-code-samples/" title="Other Code Samples" class="dd-item ">
+        <a href="/getting-started/other-code-samples/">
+        Other Code Samples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/using-prototyping-area/" title="Using the prototyping area" class="dd-item ">
+        <a href="/getting-started/using-prototyping-area/">
+        Using the prototyping area
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/challenges/" title="Challenges" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/challenges/">
+          Challenges
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/hello-world-screen/" title="Hello World on screen" class="dd-item ">
+        <a href="/challenges/hello-world-screen/">
+        Hello World on screen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/detect-button-press/" title="Detect Button Press" class="dd-item ">
+        <a href="/challenges/detect-button-press/">
+        Detect Button Press
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/detect-capacative-touch/" title="Detect Capacitive Touch" class="dd-item ">
+        <a href="/challenges/detect-capacative-touch/">
+        Detect Capacitive Touch
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/flash-leds/" title="Flash LEDs" class="dd-item ">
+        <a href="/challenges/flash-leds/">
+        Flash LEDs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/play-music-with-buzzer/" title="Play Music with Buzzer" class="dd-item ">
+        <a href="/challenges/play-music-with-buzzer/">
+        Play Music with Buzzer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/on-screen-menu/" title="On-Screen Menu" class="dd-item ">
+        <a href="/challenges/on-screen-menu/">
+        On-Screen Menu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/broadcast-nfc-url/" title="Broadcast NFC URL" class="dd-item ">
+        <a href="/challenges/broadcast-nfc-url/">
+        Broadcast NFC URL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/broadcast-beacons/" title="Broadcast Beacons" class="dd-item ">
+        <a href="/challenges/broadcast-beacons/">
+        Broadcast Beacons
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/use-noble-on-laptop/" title="Use Noble on Laptop" class="dd-item ">
+        <a href="/challenges/use-noble-on-laptop/">
+        Use Noble on Laptop
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/use-badge-for-hid/" title="Use Badge for HID" class="dd-item ">
+        <a href="/challenges/use-badge-for-hid/">
+        Use Badge for HID
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/connect-to-ble-lightbulb/" title="Connect to BLE Lightbulb" class="dd-item ">
+        <a href="/challenges/connect-to-ble-lightbulb/">
+        Connect to BLE Lightbulb
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/connect-to-ble-led-strip/" title="Connect to BLE LED Strip" class="dd-item active">
+        <a href="/challenges/connect-to-ble-led-strip/">
+        Connect to BLE LED Strip
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/communicate-with-another-badge/" title="Communicate with another Badge" class="dd-item ">
+        <a href="/challenges/communicate-with-another-badge/">
+        Communicate with another Badge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/record-and-playback-sound/" title="Record and Playback Sound" class="dd-item ">
+        <a href="/challenges/record-and-playback-sound/">
+        Record and Playback Sound
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/display-an-image/" title="Display an Image" class="dd-item ">
+        <a href="/challenges/display-an-image/">
+        Display an Image
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/create-web-bluetooth-page/" title="Create a Web Bluetooth Page" class="dd-item ">
+        <a href="/challenges/create-web-bluetooth-page/">
+        Create a Web Bluetooth Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/detect-person-with-pir-sensor/" title="Detect a Person with a PIR Sensor" class="dd-item ">
+        <a href="/challenges/detect-person-with-pir-sensor/">
+        Detect a Person with a PIR Sensor
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/communicate-with-other-ble-device/" title="Communicate with another Device" class="dd-item ">
+        <a href="/challenges/communicate-with-other-ble-device/">
+        Communicate with another Device
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/challenges/implement-dat-protocol/" title="Implement Dat Protocol" class="dd-item ">
+        <a href="/challenges/implement-dat-protocol/">
+        Implement Dat Protocol
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fa fa-heart"></i></a> from <a href="http://getgrav.org">Grav</a> and <a href="http://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/challenges/'>Challenges</a> > Connect to BLE LED Strip
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#challenge-12">Challenge 12</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Connect to BLE LED Strip</h1>
+          
+
+        
+
+
+
+
+<h3 id="challenge-12">Challenge 12</h3>
+
+<p>See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.</p>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/challenges/connect-to-ble-lightbulb/" title="Connect to BLE Lightbulb"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/challenges/communicate-with-another-badge/" title="Communicate with another Badge" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1509206562"></script>
+    <script src="/js/perfect-scrollbar.min.js?1509206562"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1509206562"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1509206562"></script>
+    <script src="/js/featherlight.min.js?1509206562"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1509206562"></script>
+    <script src="/js/highlight.pack.js?1509206562"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1509206562"></script>
+    <script src="/js/learn.js?1509206562"></script>
+    <script src="/js/hugo-learn.js?1509206562"></script>
+
+    <link href="/mermaid/mermaid.css?1509206562" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1509206562"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

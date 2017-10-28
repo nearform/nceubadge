@@ -1,5 +1,6 @@
 ---
 title: "Challenges"
+weight: 2
 chapter: true
 date: 2017-10-28T10:29:15+01:00
 draft: false
@@ -10,6 +11,10 @@ draft: false
 You'll start with Hello World and hopefully by Wednesday you'll have a giant P2P badge network running.
 
 Try combining multiple challenges into one codebase.
+
+You will find several mobile apps from Nordic Semiconductor useful in any challenges that use Bluetooth. On Android that's:
+
+And on iOS that's:
 
 1. Hello World on screen
 2. Detect Button press

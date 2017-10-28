@@ -6,10 +6,29 @@
     <description>Recent content on NodeConf EU Badge</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 28 Oct 2017 15:30:33 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 28 Oct 2017 10:29:15 +0100</lastBuildDate>
     
 	<atom:link href="http://nodeconfeubadge.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hello World on screen</title>
+      <link>http://nodeconfeubadge.org/challenges/hello-world-screen/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/hello-world-screen/</guid>
+      <description>Challenge 1 Display &amp;ldquo;Hello World&amp;rdquo; on the badge&amp;rsquo;s display</description>
+    </item>
+    
+    <item>
+      <title>Unlocking Your Badge</title>
+      <link>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</link>
+      <pubDate>Tue, 24 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</guid>
+      <description>There&amp;rsquo;s a lot more to your badge&amp;rsquo;s software than you realise. Try this:
+ Up Up Down Down Left Right Left Right B A  (Yup the Konami code!)</description>
+    </item>
     
     <item>
       <title>Built-in Software</title>
@@ -21,12 +40,12 @@
     </item>
     
     <item>
-      <title>Connecting to the Badge</title>
-      <link>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</link>
-      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      <title>Detect Button Press</title>
+      <link>http://nodeconfeubadge.org/challenges/detect-button-press/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
-      <guid>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</guid>
-      <description>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:</description>
+      <guid>http://nodeconfeubadge.org/challenges/detect-button-press/</guid>
+      <description>Challenge 2 Detect the various buttons being pressed/released on the badge.</description>
     </item>
     
     <item>
@@ -39,22 +58,12 @@
     </item>
     
     <item>
-      <title>Hello World on the Console</title>
-      <link>http://nodeconfeubadge.org/getting-started/hello-world-console/</link>
-      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      <title>Detect Capacitive Touch</title>
+      <link>http://nodeconfeubadge.org/challenges/detect-capacative-touch/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
-      <guid>http://nodeconfeubadge.org/getting-started/hello-world-console/</guid>
-      <description>Of course we start with Hello World.</description>
-    </item>
-    
-    <item>
-      <title>Other Code Samples</title>
-      <link>http://nodeconfeubadge.org/getting-started/other-code-samples/</link>
-      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/getting-started/other-code-samples/</guid>
-      <description>There are three places you can find code to learn from and use:
- The Badge repo The main Espruino site The Puck.js area of the Espruino site  </description>
+      <guid>http://nodeconfeubadge.org/challenges/detect-capacative-touch/</guid>
+      <description>Challenge 3 Detect the application and removal of your hand from the capacative sensors on the corners of the badge.</description>
     </item>
     
     <item>
@@ -67,6 +76,70 @@
     </item>
     
     <item>
+      <title>Flash LEDs</title>
+      <link>http://nodeconfeubadge.org/challenges/flash-leds/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/flash-leds/</guid>
+      <description>Challenge 4 Add some LEDs to the corners of the badge and make them flash.</description>
+    </item>
+    
+    <item>
+      <title>Connecting to the Badge</title>
+      <link>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</guid>
+      <description>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:</description>
+    </item>
+    
+    <item>
+      <title>Play Music with Buzzer</title>
+      <link>http://nodeconfeubadge.org/challenges/play-music-with-buzzer/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/play-music-with-buzzer/</guid>
+      <description>Challenge 5 Solder a buzzer to one of the pins and ground and then play some tunes out on it.</description>
+    </item>
+    
+    <item>
+      <title>Hello World on the Console</title>
+      <link>http://nodeconfeubadge.org/getting-started/hello-world-console/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/hello-world-console/</guid>
+      <description>Of course we start with Hello World.</description>
+    </item>
+    
+    <item>
+      <title>On-Screen Menu</title>
+      <link>http://nodeconfeubadge.org/challenges/on-screen-menu/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/on-screen-menu/</guid>
+      <description>Challenge 6 Implement an on-screen menu with up-down-left-right-select.</description>
+    </item>
+    
+    <item>
+      <title>Other Code Samples</title>
+      <link>http://nodeconfeubadge.org/getting-started/other-code-samples/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/other-code-samples/</guid>
+      <description> There are three places you can find code to learn from and use:
+ The Badge repo The main Espruino site The Puck.js area of the Espruino site  Code Main  Pre-installed badge code  Games  Flappy Bird Snake Simple Mario Asteroids Click speed counter T-Rex  Misc  JS REPL on your badge! Display a Menu Etch-a-sketch  </description>
+    </item>
+    
+    <item>
+      <title>Broadcast NFC URL</title>
+      <link>http://nodeconfeubadge.org/challenges/broadcast-nfc-url/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/broadcast-nfc-url/</guid>
+      <description>Challenge 7 Setup NFC and broadcast a different URL to the one built-into your badge. Prove it works using an Android phone.</description>
+    </item>
+    
+    <item>
       <title>Using the prototyping area</title>
       <link>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</link>
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
@@ -76,13 +149,112 @@
     </item>
     
     <item>
-      <title>Unlocking Your Badge</title>
-      <link>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</link>
-      <pubDate>Tue, 24 Oct 2017 15:30:33 +0100</pubDate>
+      <title>Broadcast Beacons</title>
+      <link>http://nodeconfeubadge.org/challenges/broadcast-beacons/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
-      <guid>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</guid>
-      <description>There&amp;rsquo;s a lot more to your badge&amp;rsquo;s software than you realise. Try this:
- Up Up Down Down Left Right Left Right B A  (Yup the Konami code!)</description>
+      <guid>http://nodeconfeubadge.org/challenges/broadcast-beacons/</guid>
+      <description>Challenge 8 Broadcast a URL using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).</description>
+    </item>
+    
+    <item>
+      <title>Use Noble on Laptop</title>
+      <link>http://nodeconfeubadge.org/challenges/use-noble-on-laptop/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/use-noble-on-laptop/</guid>
+      <description>Challenge 9 Use the Node.js Bluetooth library Noble on your laptop to read the beacon data that you are transmitting from the earlier challenge.</description>
+    </item>
+    
+    <item>
+      <title>Use Badge for HID</title>
+      <link>http://nodeconfeubadge.org/challenges/use-badge-for-hid/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/use-badge-for-hid/</guid>
+      <description>Challenge 10 Turn the badge into a HID button for your laptop and use it as a clicker for your talk at NodeConf!</description>
+    </item>
+    
+    <item>
+      <title>Connect to BLE Lightbulb</title>
+      <link>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</guid>
+      <description>Challenge 11 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.</description>
+    </item>
+    
+    <item>
+      <title>Connect to BLE LED Strip</title>
+      <link>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</guid>
+      <description>Challenge 12 See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.</description>
+    </item>
+    
+    <item>
+      <title>Communicate with another Badge</title>
+      <link>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</guid>
+      <description>Challenge 13 Setup some sort of two way BLE commuication with someone else&amp;rsquo;s badge. Work as a team.</description>
+    </item>
+    
+    <item>
+      <title>Record and Playback Sound</title>
+      <link>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</guid>
+      <description>Challenge 14 Record sound using the &amp;ldquo;buzzer&amp;rdquo; and play it back.</description>
+    </item>
+    
+    <item>
+      <title>Display an Image</title>
+      <link>http://nodeconfeubadge.org/challenges/display-an-image/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/display-an-image/</guid>
+      <description>Challenge 15 Take a PNG. Convert it to the correct format and display it on the badge.</description>
+    </item>
+    
+    <item>
+      <title>Create a Web Bluetooth Page</title>
+      <link>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</guid>
+      <description>Challenge 16 Implement Web Bluetooth with the Puck.js library. Make a webpage that got your last tweet from Twitter and then display it on the badge screen.</description>
+    </item>
+    
+    <item>
+      <title>Detect a Person with a PIR Sensor</title>
+      <link>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</guid>
+      <description>Challenge 17 Detect person/heat/movement with a PIR sensor.</description>
+    </item>
+    
+    <item>
+      <title>Communicate with another Device</title>
+      <link>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</guid>
+      <description>Challenge 18 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.</description>
+    </item>
+    
+    <item>
+      <title>Implement Dat Protocol</title>
+      <link>http://nodeconfeubadge.org/challenges/implement-dat-protocol/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/implement-dat-protocol/</guid>
+      <description>Challenge 19 We&amp;rsquo;re kidding.
+Or are we?</description>
     </item>
     
   </channel>

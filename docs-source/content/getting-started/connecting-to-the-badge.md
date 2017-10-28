@@ -1,5 +1,6 @@
 ---
 title: "Connecting to the Badge"
+weight: 5
 date: 2017-10-28T15:30:33+01:00
 draft: false
 ---

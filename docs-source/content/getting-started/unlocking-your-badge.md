@@ -1,5 +1,6 @@
 ---
 title: "Unlocking Your Badge"
+weight: 1
 date: 2017-10-24T15:30:33+01:00
 draft: false
 ---

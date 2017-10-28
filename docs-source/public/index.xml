@@ -145,7 +145,8 @@
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
-      <description>You can add whatever hardware you like to the prototyoing area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The pin-out is as follows:</description>
+      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.
+You write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRead(D0)</description>
     </item>
     
     <item>

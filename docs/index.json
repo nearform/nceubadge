@@ -116,7 +116,7 @@
 	"title": "Using the prototyping area",
 	"tags": [],
 	"description": "",
-	"content": "You can add whatever hardware you like to the prototyoing area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The pin-out is as follows:\n"
+	"content": "You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.\nYou write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRead(D0)\nSimilarly you can read from a button with: digitalRead(BTNA)\nThis image shows the basic setup:\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/broadcast-beacons/",

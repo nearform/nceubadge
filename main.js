@@ -32,7 +32,7 @@ Badge.menu = () => {
     "": { "title": "-- Choose your Adventure --" },
     "About": function () {
       g.clear();
-      ["-- Espruino Badge --", "Sponsored by NearForm", "",
+      ["-- NodeConf EU 2017 Badge --", "Sponsored by NearForm", "",
         "Gordon Williams", "@Espruino",
         "www.espruino.com", "www.nearform.com"].forEach(
         (s, i) => g.drawString(s, (128 - g.stringWidth(s)) / 2, i * 6));

@@ -25,7 +25,7 @@
 	"title": "Built-in Software",
 	"tags": [],
 	"description": "",
-	"content": "Out of the box, Gordon has created the following:\n"
+	"content": "Out of the box, your badge has the following:\n Image cycling Menu T-Rex On-board REPL Asteroids What else?  "
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/",
@@ -56,13 +56,6 @@
 	"content": " Challenge 3 Detect the application and removal of your hand from the capacative sensors on the corners of the badge.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/",
-	"title": "Setting up your Mac or PC",
-	"tags": [],
-	"description": "",
-	"content": "Things are slightly easier on the Mac but there are very few steps to set yourself up.\n"
-},
-{
 	"uri": "http://nodeconfeubadge.org/challenges/flash-leds/",
 	"title": "Flash LEDs",
 	"tags": [],
@@ -74,7 +67,7 @@
 	"title": "Connecting to the Badge",
 	"tags": [],
 	"description": "",
-	"content": "Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:\n"
+	"content": " Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:\nMake your badge connectable  Enter the Konami code, if you haven\u0026rsquo;t already: Up, Up, Down, Down, Left, Right, Left, Right, B, A. Select \u0026ldquo;Make badge connectable\u0026rdquo; in the menu Note the Badge ID  Mac Web Bluetooth on Chrome should just work if your Chrome is up to date. So simply go to the Web IDE here. Then:\n Click the connect icon in the top left corner Select the Web Bluetooth option If more than one badge is listed, select your badge ID Click Pair A few seconds later you\u0026rsquo;ll have a REPL running and you can run JS directly on your badge over Bluetooth!  Windows The easiest option is to install the standalone Electron-based Espruino IDE. Download it from here\n If your\u0026rsquo;re using Windows 8.1, or 10 you\u0026rsquo;ll need to pair your Badge using the Windows Bluetooth menu before it\u0026rsquo;ll appear in the Web IDE. (Any time you remove the badge battery, you\u0026rsquo;ll have to remove the Badge from the list of paired devices in Windows and re-pair) Run the IDE Click the connect icon in the top left corner Select the Web Bluetooth option If more than one badge is listed, select your badge ID Click Pair A few seconds later you\u0026rsquo;ll have a REPL running and you can run JS directly on your badge over Bluetooth!  Linux / iOS / Android  See instructions here  More setup (and general) information is available on the Puck.js site if you get stuck. Most, but not all, of the information applies to the badge.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/play-music-with-buzzer/",
@@ -88,7 +81,7 @@
 	"title": "Hello World on the Console",
 	"tags": [],
 	"description": "",
-	"content": "Of course we start with Hello World.\n"
+	"content": "Of course we start with Hello World. Follow the connection instructions, then click on the left hand side of the IDE and type:\nconsole.log(\u0026quot;Hello World\u0026quot;);  Now stop and think for a minute about what just happened there in terms of communications flow.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/on-screen-menu/",
@@ -116,7 +109,7 @@
 	"title": "Using the prototyping area",
 	"tags": [],
 	"description": "",
-	"content": "You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.\nYou write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRead(D0)\nSimilarly you can read from a button with: digitalRead(BTNA)\nThis image shows the basic setup:\n"
+	"content": "You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.\nYou write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRead(D0)\nSimilarly you can read from a button with: digitalRead(BTNA)\nAs always, the Espruino web-site has lots more info and examples.\nThis image shows the basic board setup:\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/broadcast-beacons/",
@@ -207,7 +200,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about your attendee badge this year. We\u0026rsquo;ve spent the past few months speccing and preparing it for the event.\nGetting Started In the Getting Started section we give you all the details of:\n Unlocking the badge The built-in software features The hardware features Setting up your Mac (some PC info too) Connecting to the badge Hello World on console Other code samples in the repo Board prototype area (including the pin-out)  Your Challenges We have a large set of challenges for you to get maximum use of the badge and learn lots in the process.\nThe Grand Challenge For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to. But it must make use of the Badge.\nAnyone who wishes to enter must demo their completed entry between 5pm and 6pm on Wednesday in the Hacking Lounge to the judges.\nThe winner will be announced at the Closing Party dinner and on @nearform Twitter on Wednesday night. They and the runners-up demo what the have to the crowd.\n"
+	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about your attendee badge this year. We\u0026rsquo;ve spent the past few months designing and preparing it for the event.\nGetting Started In the Getting Started section we give you all the details of:\n Unlocking the badge The built-in software features The hardware features Setting up your Mac (some PC info too) Connecting to the badge Hello World on console Other code samples in the repo Board prototype area (including the pin-out)  Your Challenges We have a large set of challenges for you to get maximum use of the badge and learn lots in the process.\nThe Grand Challenge For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do but it must make use of the Badge. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to.\nAnyone who wishes to enter must demo their completed entry between 5pm and 6pm on Wednesday in the Hacking Lounge to the judges.\nThe winner will be announced at the Closing Party dinner and on @nearform Twitter on Wednesday night. They and the runners-up will demo what they have created to the crowd.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/categories/",

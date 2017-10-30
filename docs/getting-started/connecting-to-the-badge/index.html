@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.29" />
+    <meta name="generator" content="Hugo 0.30.2" />
     <meta name="description" content="All about the NodeConf EU 2017 Badge">
 <meta name="author" content="nearForm">
 
@@ -13,17 +13,17 @@
     <title>Connecting to the Badge :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1509212925" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1509212925" rel="stylesheet">
-    <link href="/css/hybrid.css?1509212925" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1509212925" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1509212925" rel="stylesheet">
-    <link href="/css/auto-complete.css?1509212925" rel="stylesheet">
-    <link href="/css/theme.css?1509212925" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1509212925" rel="stylesheet">
+    <link href="/css/nucleus.css?1509395814" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1509395814" rel="stylesheet">
+    <link href="/css/hybrid.css?1509395814" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1509395814" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1509395814" rel="stylesheet">
+    <link href="/css/auto-complete.css?1509395814" rel="stylesheet">
+    <link href="/css/theme.css?1509395814" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1509395814" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1509212925"></script>
+    <script src="/js/jquery-2.x.min.js?1509395814"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1509212925"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1509212925"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1509395814"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1509395814"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1509212925"></script>
+<script type="text/javascript" src="/js/search.js?1509395814"></script>
 
     
   </div>
@@ -138,25 +138,6 @@
       <li data-nav-id="/getting-started/basic-hardware-features/" title="Hardware Features" class="dd-item ">
         <a href="/getting-started/basic-hardware-features/">
         Hardware Features
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/getting-started/setting-up-your-mac-or-pc/" title="Setting up your Mac or PC" class="dd-item ">
-        <a href="/getting-started/setting-up-your-mac-or-pc/">
-        Setting up your Mac or PC
         
         </a>
     </li>
@@ -702,7 +683,17 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#make-your-badge-connectable">Make your badge connectable</a></li>
+<li><a href="#mac">Mac</a></li>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#linux-ios-android">Linux / iOS / Android</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -720,7 +711,52 @@
         
 
 
+
+
 <p>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:</p>
+
+<h2 id="make-your-badge-connectable">Make your badge connectable</h2>
+
+<ul>
+<li>Enter the Konami code, if you haven&rsquo;t already: Up, Up, Down, Down, Left, Right, Left, Right, B, A.</li>
+<li>Select &ldquo;Make badge connectable&rdquo; in the menu</li>
+<li>Note the Badge ID</li>
+</ul>
+
+<h2 id="mac">Mac</h2>
+
+<p>Web Bluetooth on Chrome should just work if your Chrome is up to date. So simply go to the <a href="https://www.espruino.com/ide/">Web IDE here</a>. Then:</p>
+
+<ul>
+<li>Click the connect icon in the top left corner</li>
+<li>Select the Web Bluetooth option</li>
+<li>If more than one badge is listed, select your badge ID</li>
+<li>Click Pair</li>
+<li>A few seconds later you&rsquo;ll have a REPL running and you can run JS directly on your badge over Bluetooth!</li>
+</ul>
+
+<h2 id="windows">Windows</h2>
+
+<p>The easiest option is to install the standalone Electron-based Espruino IDE. Download it <a href="https://www.espruino.com/Web+IDE#as-a-native-application">from here</a></p>
+
+<ul>
+<li>If your&rsquo;re using Windows 8.1, or 10 you&rsquo;ll need to pair your Badge using the Windows Bluetooth menu before it&rsquo;ll appear in the Web IDE.</li>
+<li>(Any time you remove the badge battery, you&rsquo;ll have to remove the Badge from the list of paired devices in Windows and re-pair)</li>
+<li>Run the IDE</li>
+<li>Click the connect icon in the top left corner</li>
+<li>Select the Web Bluetooth option</li>
+<li>If more than one badge is listed, select your badge ID</li>
+<li>Click Pair</li>
+<li>A few seconds later you&rsquo;ll have a REPL running and you can run JS directly on your badge over Bluetooth!</li>
+</ul>
+
+<h2 id="linux-ios-android">Linux / iOS / Android</h2>
+
+<ul>
+<li>See instructions <a href="https://www.espruino.com/Puck.js+Quick+Start">here</a></li>
+</ul>
+
+<p>More setup (and general) information is available on the <a href="https://www.espruino.com/Puck.js">Puck.js site</a> if you get stuck. Most, but not all, of the information applies to the badge.</p>
 
 
 <footer class=" footline" >
@@ -822,22 +858,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -1231,7 +1251,7 @@
 
 
         
-            <a class="nav nav-prev" href="/getting-started/setting-up-your-mac-or-pc/" title="Setting up your Mac or PC"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/getting-started/basic-hardware-features/" title="Hardware Features"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="/getting-started/hello-world-console/" title="Hello World on the Console" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1243,20 +1263,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1509212925"></script>
-    <script src="/js/perfect-scrollbar.min.js?1509212925"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1509212925"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1509212925"></script>
-    <script src="/js/featherlight.min.js?1509212925"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1509212925"></script>
-    <script src="/js/highlight.pack.js?1509212925"></script>
+    <script src="/js/clipboard.min.js?1509395814"></script>
+    <script src="/js/perfect-scrollbar.min.js?1509395814"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1509395814"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1509395814"></script>
+    <script src="/js/featherlight.min.js?1509395814"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1509395814"></script>
+    <script src="/js/highlight.pack.js?1509395814"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1509212925"></script>
-    <script src="/js/learn.js?1509212925"></script>
-    <script src="/js/hugo-learn.js?1509212925"></script>
+    <script src="/js/modernizr.custom.71422.js?1509395814"></script>
+    <script src="/js/learn.js?1509395814"></script>
+    <script src="/js/hugo-learn.js?1509395814"></script>
 
-    <link href="/mermaid/mermaid.css?1509212925" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1509212925"></script>
+    <link href="/mermaid/mermaid.css?1509395814" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1509395814"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

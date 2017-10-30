@@ -36,7 +36,8 @@
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/built-in-software/</guid>
-      <description>Out of the box, Gordon has created the following:</description>
+      <description>Out of the box, your badge has the following:
+ Image cycling Menu T-Rex On-board REPL Asteroids What else?  </description>
     </item>
     
     <item>
@@ -67,15 +68,6 @@
     </item>
     
     <item>
-      <title>Setting up your Mac or PC</title>
-      <link>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</link>
-      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/getting-started/setting-up-your-mac-or-pc/</guid>
-      <description>Things are slightly easier on the Mac but there are very few steps to set yourself up.</description>
-    </item>
-    
-    <item>
       <title>Flash LEDs</title>
       <link>http://nodeconfeubadge.org/challenges/flash-leds/</link>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
@@ -90,7 +82,8 @@
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</guid>
-      <description>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:</description>
+      <description>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:
+Make your badge connectable  Enter the Konami code, if you haven&amp;rsquo;t already: Up, Up, Down, Down, Left, Right, Left, Right, B, A. Select &amp;ldquo;Make badge connectable&amp;rdquo; in the menu Note the Badge ID  Mac Web Bluetooth on Chrome should just work if your Chrome is up to date. So simply go to the Web IDE here.</description>
     </item>
     
     <item>
@@ -108,7 +101,8 @@
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/hello-world-console/</guid>
-      <description>Of course we start with Hello World.</description>
+      <description>Of course we start with Hello World. Follow the connection instructions, then click on the left hand side of the IDE and type:
+console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute about what just happened there in terms of communications flow.</description>
     </item>
     
     <item>

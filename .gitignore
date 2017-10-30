@@ -1,6 +1,9 @@
 names.csv
 name_images_and_urls.csv
 single_name_image_and_url.csv
+say-my-name.png
+say-my-name.raw
+say-my-name.b64
 
 # Created by https://www.gitignore.io/api/osx,node,linux,windows
 

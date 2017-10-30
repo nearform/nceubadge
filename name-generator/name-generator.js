@@ -19,11 +19,14 @@ var Canvas = require('canvas')
 var prompt = require('prompt');
 var colors = require("colors/safe");
 const fs = require('fs');
+var csvWriter = require('csv-write-stream')
+var writer = csvWriter({ sendHeaders: false })
+
 
 prompt.start();
 prompt.message = colors.rainbow("NCEUBadge");
 
-prompt.get(['firstname', 'lastname'], function (err, result) {
+prompt.get(['firstname', 'lastname', 'yourURL'], function (err, result) {
     currentFontHeight = 28;
     ctx.font = currentFontHeight + 'px Verdana';
 
@@ -77,8 +80,13 @@ prompt.get(['firstname', 'lastname'], function (err, result) {
     const execSync = require('child_process').execSync;
 
     cmd = execSync("convert say-my-name.png -resize 128x64\! -depth 1  gray:say-my-name.raw");
-    cmd = execSync("openssl base64 < say-my-name.raw | tr -d '\n' > say-my-name.b64");
+    b64Image = execSync("openssl base64 < say-my-name.raw | tr -d '\n'");
 
-    console.log("Base64 data saved to say-my-name.b64");
+    writer.pipe(fs.createWriteStream('single_name_image_and_url.csv'));
+
+    writer.write({ name: b64Image, url: result.yourURL })
+    writer.end();
+
+    console.log("Base64 Image and URL saved to single_name_image_and_url.csv");
 
 });

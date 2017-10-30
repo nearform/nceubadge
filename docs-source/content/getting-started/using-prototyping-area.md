@@ -12,7 +12,9 @@ And read from a pin with: digitalRead(D0)
 
 Similarly you can read from a button with: digitalRead(BTNA)
 
-This image shows the basic setup:
+As always, the [Espruino web-site](https://www.espruino.com/) has lots more info and examples.
+
+This image shows the basic board setup:
 
 
 ![Board basics](/images/badge_basics_01.png)

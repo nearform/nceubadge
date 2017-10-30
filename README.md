@@ -4,16 +4,6 @@
 
 ### All documentation including the Getting Started Guide is available on [nodeconfeubadge.org](http://nodeconfeubadge.org)
 
-## To-Dos
-- [ ] Getting Started Guide
-- [ ] Grab NFC URL from GDocs
-- [ ] RPi Beacons - stretch goal
-- [ ] RPi Photobooth - stretch goal
-
-
-## Overall flow from arrival of attendee at venue
-* [nearFormer internal guide](https://docs.google.com/a/nearform.com/document/d/14slO4s5hCYdM6X6iQhxlpB4vmZTlGf0kilZjk7BKrD8/edit?usp=sharing)
-
 ## Hardware
 This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory
 

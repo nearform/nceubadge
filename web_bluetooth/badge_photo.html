@@ -1,0 +1,116 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <title>Badge photo maker</title>
+  </head>
+  <body>
+    <p>Allow this website to use your webcam, then click the button to take a photo and load that onto your badge (make sure your badge is in 'make connectable' mode).</p>
+    <video id="v" width="128" height="64" style="display:none"></video>
+    <canvas id="c" width="128" height="64" style="display:none"></canvas>
+    <canvas id="g" width="128" height="64"></canvas><br/>
+  <script src="https://www.puck-js.com/puck.js"></script>
+  <script>
+var video, width, height, context, graphCanvas, graphContext;
+var binaryData = "";
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia;
+
+var constraints = {video: true, audio:false};
+
+function initialize() {
+navigator.mediaDevices.enumerateDevices().then(function(devices) {
+  devices.forEach(function(device) {
+    // console.log(device.kind + ": " + device.label + " id = " + device.deviceId/*, JSON.stringify(device,null,2)*/);
+    if (device.kind=="videoinput" /*&& constraints.video===true*/)
+      constraints.video = { optional: [{sourceId: device.deviceId}, { fillLightMode: "on" }] };
+  });
+  initialize2();
+}).catch(function(err) {
+  console.log(err.name + ": " + err.message);
+});
+}
+
+  function initialize2() {
+    // The source video.
+    video = document.getElementById("v");
+    width = video.width;
+    height = video.height;
+
+    // The target canvas.
+    var canvas = document.getElementById("c");
+    context = canvas.getContext("2d");
+
+    // The canvas for the graph
+    graphCanvas = document.getElementById("g");
+    graphContext = graphCanvas.getContext("2d");
+    
+    // Get the webcam's stream.
+    navigator.getUserMedia(constraints, startStream, function () {});
+  }
+
+  function startStream(stream) {
+    video.src = URL.createObjectURL(stream);
+    video.play();
+    // Ready! Let's start drawing.
+    requestAnimationFrame(draw);
+  }
+
+  function draw() {
+    try {
+      context.drawImage(video, 0, 0, 128, 64);
+    } catch (e) {
+      // The video may not be ready, yet.
+      return null;
+    }
+
+    var imagedata =  context.getImageData(0, 0, 128, 64);
+    var data = imagedata.data;
+    var len = data.length;
+    var byte = 0;
+    var byteArray = [];
+    for (var i = 0, j = 0; j < len; i++, j += 4) {
+      var thresh = 128+512*Math.random();
+      var pixel = ((data[j] + data[j+1] + data[j+2])>thresh) ? 0 : 1;      
+      var col = pixel ? 0 : 255;
+      data[j] = col;
+      data[j+1] = col;
+      data[j+2] = col;
+      byte = (byte<<1)|pixel;
+      if (i>0 && (i&7)==0) {
+        //console.log(byte);
+        byteArray.push(byte);        
+        byte = 0;
+      }
+    }    
+    byteArray.push(byte); 
+    binaryData = String.fromCharCode.apply(null,byteArray);
+    graphContext.putImageData(imagedata, 0, 0);
+
+    // Wait for the next frame.
+    requestAnimationFrame(draw);
+  }
+
+  addEventListener("DOMContentLoaded", initialize);
+  
+  function takePhoto() {
+    document.getElementById("takePhoto").innerHTML = "Sending...";
+    //console.log(binaryData.length, JSON.stringify(binaryData));
+    var b64data = btoa(binaryData);
+    //console.log(JSON.stringify(b64data));
+    var img = '{width:128,height:64,bpp:1,buffer:E.toArrayBuffer(atob("'+b64data+'")),sketched:1}'; 
+    Puck.write('Badge.badgeImages.push('+img+');\n', function() {
+      document.getElementById("takePhoto").innerHTML = "Take Photo!";
+    });
+  }
+  function deletePhoto() {
+    document.getElementById("deletePhoto").innerHTML = "Working...";
+    Puck.write("for (var i=0;i<Badge.badgeImages.length;i++)if (Badge.badgeImages[i].sketched)Badge.badgeImages.splice(i--,1);\n",  function() {
+      document.getElementById("deletePhoto").innerHTML = "Delete Photos";
+    });
+  }
+  </script>  
+  <button id="takePhoto" onclick="takePhoto();">Take Photo!</button>
+  <button id="deletePhoto" onclick="deletePhoto();">Delete Photos</button>
+  </body>
+</html>

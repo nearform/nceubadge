@@ -9,7 +9,8 @@ This is an Open Source Hardware project. Schematics and board design files are a
 
 ## Code
 ### Main
-* [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/main.js)
+* [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/flasher/main.js)
+* [Tools to flash pre-installed code](flasher)
 
 ### Games
 
@@ -25,3 +26,7 @@ This is an Open Source Hardware project. Schematics and board design files are a
 * [JS REPL on your badge!](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/repl.js)
 * [Display a Menu](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/menu.js)
 * [Etch-a-sketch](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/sketch.js)
+
+### Web Bluetooth
+* [Retrieve all images stored on a badge](web_bluetooth/badge_images.html)
+* [Take a picture with getUserMedia and put it on the badge](web_bluetooth/badge_photo.html)

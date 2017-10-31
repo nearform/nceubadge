@@ -1,0 +1,594 @@
+{
+ "info": {
+  "binary_version": "1v94.167", 
+  "variables": 2500, 
+  "link": [
+   ""
+  ], 
+  "default_console_tx": "D7", 
+  "default_console": "EV_SERIAL1", 
+  "bootloader": 1, 
+  "default_console_rx": "D8", 
+  "binary_url": "http://www.espruino.com/binaries/espruino_1v94.167_hexbadge.bin", 
+  "thumb_url": "http://www.espruino.com/img/HEXBADGE_thumb.jpg", 
+  "builtin_modules": [
+   "Flash", 
+   "net", 
+   "dgram", 
+   "http", 
+   "NetworkJS", 
+   "neopixel"
+  ], 
+  "name": "Hexagonal Espruino Badge", 
+  "default_console_baudrate": "9600", 
+  "image_url": "http://www.espruino.com/img/HEXBADGE.jpg", 
+  "build": {
+   "libraries": [
+    "BLUETOOTH", 
+    "NET", 
+    "GRAPHICS", 
+    "NFC", 
+    "NEOPIXEL", 
+    "HEXBADGE"
+   ], 
+   "makefile": [
+    "DEFINES+=-DHAL_NFC_ENGINEERING_BC_FTPAN_WORKAROUND=1", 
+    "DFU_PRIVATE_KEY=targets/nrf5x_dfu/dfu_private_key.pem", 
+    "DFU_SETTINGS=--application-version 0xff --hw-version 52 --sd-req 0x8C"
+   ], 
+   "optimizeflags": "-Os"
+  }, 
+  "binary_name": "espruino_%v_hexbadge.bin"
+ }, 
+ "pins": [
+  {
+   "functions": {
+    "3.3": 0, 
+    "XL1": 0
+   }, 
+   "name": "D0", 
+   "sortingname": "D00", 
+   "simplefunctions": {}, 
+   "num": "0", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "XL2": 0, 
+    "3.3": 0
+   }, 
+   "name": "D1", 
+   "sortingname": "D01", 
+   "simplefunctions": {}, 
+   "num": "1", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN0": 0, 
+    "3.3": 0
+   }, 
+   "name": "D2", 
+   "sortingname": "D02", 
+   "simplefunctions": {
+    "ADC": [
+     "ADC1_IN0"
+    ]
+   }, 
+   "num": "2", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN1": 0, 
+    "3.3": 0
+   }, 
+   "name": "D3", 
+   "sortingname": "D03", 
+   "simplefunctions": {
+    "ADC": [
+     "ADC1_IN1"
+    ]
+   }, 
+   "num": "3", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0, 
+    "ADC1_IN2": 0
+   }, 
+   "name": "D4", 
+   "sortingname": "D04", 
+   "simplefunctions": {
+    "ADC": [
+     "ADC1_IN2"
+    ]
+   }, 
+   "num": "4", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN3": 0, 
+    "RTS": 0, 
+    "3.3": 0
+   }, 
+   "name": "D5", 
+   "sortingname": "D05", 
+   "simplefunctions": {
+    "ADC": [
+     "ADC1_IN3"
+    ]
+   }, 
+   "num": "5", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "TXD": 0, 
+    "3.3": 0
+   }, 
+   "name": "D6", 
+   "sortingname": "D06", 
+   "simplefunctions": {}, 
+   "num": "6", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0, 
+    "CTS": 0
+   }, 
+   "name": "D7", 
+   "sortingname": "D07", 
+   "simplefunctions": {}, 
+   "num": "7", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "RXD": 0, 
+    "3.3": 0
+   }, 
+   "name": "D8", 
+   "sortingname": "D08", 
+   "simplefunctions": {}, 
+   "num": "8", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "NFC1": 0, 
+    "3.3": 0
+   }, 
+   "name": "D9", 
+   "sortingname": "D09", 
+   "simplefunctions": {}, 
+   "num": "9", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "NFC2": 0, 
+    "3.3": 0
+   }, 
+   "name": "D10", 
+   "sortingname": "D10", 
+   "simplefunctions": {}, 
+   "num": "10", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D11", 
+   "sortingname": "D11", 
+   "simplefunctions": {}, 
+   "num": "11", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D12", 
+   "sortingname": "D12", 
+   "simplefunctions": {}, 
+   "num": "12", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D13", 
+   "sortingname": "D13", 
+   "simplefunctions": {}, 
+   "num": "13", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D14", 
+   "sortingname": "D14", 
+   "simplefunctions": {}, 
+   "num": "14", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D15", 
+   "sortingname": "D15", 
+   "simplefunctions": {}, 
+   "num": "15", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "BTN4": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D16", 
+   "sortingname": "D16", 
+   "simplefunctions": {
+    "DEVICE": [
+     "BTN4"
+    ]
+   }, 
+   "num": "16", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "BTN5": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D17", 
+   "sortingname": "D17", 
+   "simplefunctions": {
+    "DEVICE": [
+     "BTN5"
+    ]
+   }, 
+   "num": "17", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "BTN6": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D18", 
+   "sortingname": "D18", 
+   "simplefunctions": {
+    "DEVICE": [
+     "BTN6"
+    ]
+   }, 
+   "num": "18", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0, 
+    "BTN1": "pin"
+   }, 
+   "name": "D19", 
+   "sortingname": "D19", 
+   "simplefunctions": {
+    "DEVICE": [
+     "BTN1"
+    ]
+   }, 
+   "num": "19", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0, 
+    "BTN2": "pin"
+   }, 
+   "name": "D20", 
+   "sortingname": "D20", 
+   "simplefunctions": {
+    "DEVICE": [
+     "BTN2"
+    ]
+   }, 
+   "num": "20", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D21", 
+   "sortingname": "D21", 
+   "simplefunctions": {}, 
+   "num": "21", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D22", 
+   "sortingname": "D22", 
+   "simplefunctions": {}, 
+   "num": "22", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D23", 
+   "sortingname": "D23", 
+   "simplefunctions": {}, 
+   "num": "23", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "3.3": 0
+   }, 
+   "name": "D24", 
+   "sortingname": "D24", 
+   "simplefunctions": {}, 
+   "num": "24", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "LED1": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D25", 
+   "sortingname": "D25", 
+   "simplefunctions": {
+    "DEVICE": [
+     "LED1"
+    ]
+   }, 
+   "num": "25", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "LED2": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D26", 
+   "sortingname": "D26", 
+   "simplefunctions": {
+    "DEVICE": [
+     "LED2"
+    ]
+   }, 
+   "num": "26", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "LED3": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D27", 
+   "sortingname": "D27", 
+   "simplefunctions": {
+    "DEVICE": [
+     "LED3"
+    ]
+   }, 
+   "num": "27", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN4": 0, 
+    "3.3": 0, 
+    "LED4": "pin"
+   }, 
+   "name": "D28", 
+   "sortingname": "D28", 
+   "simplefunctions": {
+    "DEVICE": [
+     "LED4"
+    ], 
+    "ADC": [
+     "ADC1_IN4"
+    ]
+   }, 
+   "num": "28", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN5": 0, 
+    "LED5": "pin", 
+    "3.3": 0
+   }, 
+   "name": "D29", 
+   "sortingname": "D29", 
+   "simplefunctions": {
+    "DEVICE": [
+     "LED5"
+    ], 
+    "ADC": [
+     "ADC1_IN5"
+    ]
+   }, 
+   "num": "29", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN6": 0, 
+    "3.3": 0, 
+    "LED6": "pin"
+   }, 
+   "name": "D30", 
+   "sortingname": "D30", 
+   "simplefunctions": {
+    "DEVICE": [
+     "LED6"
+    ], 
+    "ADC": [
+     "ADC1_IN6"
+    ]
+   }, 
+   "num": "30", 
+   "csv": {}, 
+   "port": "D"
+  }, 
+  {
+   "functions": {
+    "ADC1_IN7": 0, 
+    "3.3": 0, 
+    "BTN3": "pin"
+   }, 
+   "name": "D31", 
+   "sortingname": "D31", 
+   "simplefunctions": {
+    "DEVICE": [
+     "BTN3"
+    ], 
+    "ADC": [
+     "ADC1_IN7"
+    ]
+   }, 
+   "num": "31", 
+   "csv": {}, 
+   "port": "D"
+  }
+ ], 
+ "chip": {
+  "family": "NRF52", 
+  "dac": 0, 
+  "ram": 64, 
+  "spi": 3, 
+  "part": "NRF52832", 
+  "speed": 64, 
+  "usart": 1, 
+  "package": "QFN48", 
+  "flash": 512, 
+  "adc": 1, 
+  "saved_code": {
+   "flash_available": 332, 
+   "pages": 5, 
+   "page_size": 4096, 
+   "address": 462848
+  }, 
+  "i2c": 2
+ }, 
+ "peripherals": {
+  "DEVICE": {
+   "": [
+    "D16", 
+    "D17", 
+    "D18", 
+    "D19", 
+    "D20", 
+    "D25", 
+    "D26", 
+    "D27", 
+    "D28", 
+    "D29", 
+    "D30", 
+    "D31"
+   ]
+  }, 
+  "ADC": {
+   "": [
+    "D2", 
+    "D3", 
+    "D4", 
+    "D5", 
+    "D28", 
+    "D29", 
+    "D30", 
+    "D31"
+   ]
+  }
+ }, 
+ "devices": {
+  "LED1": {
+   "pin": "D25"
+  }, 
+  "LED3": {
+   "pin": "D27"
+  }, 
+  "LED2": {
+   "pin": "D26"
+  }, 
+  "LED5": {
+   "pin": "D29"
+  }, 
+  "LED4": {
+   "pin": "D28"
+  }, 
+  "LED6": {
+   "pin": "D30"
+  }, 
+  "BTN4": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "D16"
+  }, 
+  "BTN5": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "D17"
+  }, 
+  "BTN6": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "D18"
+  }, 
+  "BTN1": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "D19"
+  }, 
+  "BTN2": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "D20"
+  }, 
+  "BTN3": {
+   "pinstate": "IN_PULLDOWN", 
+   "pin": "D31"
+  }
+ }
+}

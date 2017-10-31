@@ -83,10 +83,9 @@ prompt.get(['firstname', 'lastname', 'yourURL'], function (err, result) {
     b64Image = execSync("openssl base64 < say-my-name.raw | tr -d '\n'");
 
     writer.pipe(fs.createWriteStream('single_name_image_and_url.csv'));
-
-    writer.write({ name: b64Image, url: result.yourURL })
+    writer.write({ nameimage: b64Image, name: result.firstname + " " + result.lastname, url: result.yourURL })
     writer.end();
 
-    console.log("Base64 Image and URL saved to single_name_image_and_url.csv");
+    console.log("Base64 Image, Name and URL saved to single_name_image_and_url.csv");
 
 });

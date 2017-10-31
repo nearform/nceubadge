@@ -72,10 +72,10 @@ writer.pipe(fs.createWriteStream('name_images_and_urls.csv'));
 var parser = csv.parse({ delimiter: ',' }, function (err, data) {
 
     for (var i = 0; i < data.length; i++) {
-        writer.write({ name: nameToImage(data[i][0], data[i][1]), url: data[i][2] })
+        writer.write({ nameimage: nameToImage(data[i][0], data[i][1]), name: data[i][0] + " " + data[i][1], url: data[i][2] })
     }
     writer.end();
-    console.log("Name-images and URLs in name_images_and_urls.csv");
+    console.log("Name-images, Names and URLs saved to name_images_and_urls.csv");
 });
 
 fs.createReadStream(__dirname + '/names.csv').pipe(parser);

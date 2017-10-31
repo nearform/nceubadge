@@ -20,28 +20,37 @@ Badge.reset = () => {
  g.clear();
  g.flip();
 };
+Badge.drawCenter = s => {
+  g.clear();
+  s.split("\n").forEach((s, i) => g.drawString(s, (128-g.stringWidth(s))/2, i*6));
+  g.flip();
+};
 // Main menu
 Badge.menu = () => {
  function wait(cb) { m = { move: cb, select: cb }; }
  var mainmenu = {
   "": { "title": "-- Choose your Adventure --" },
   "About": function () {
-   g.clear();
-   ["-- NodeConf EU 2017 Badge --", "Sponsored by NearForm", "",
-    "Gordon Williams", "@Espruino",
-    "www.espruino.com", "www.nearform.com"].forEach(
-    (s, i) => g.drawString(s, (128 - g.stringWidth(s)) / 2, i * 6));
-   g.flip();
-   Badge.wait(e => m = menu.list(g, mainmenu));
+   Badge.drawCenter(`-- NodeConf EU 2017 Badge --
+Sponsored by NearForm
+
+Gordon Williams
+@Espruino
+www.espruino.com
+www.nearform.com`);
+   wait(e => m = menu.list(g, mainmenu));
   },
   "Make Connectable": () => {
-   g.clear();
-   g.drawString("  -- Now Connectable --");
-   "You can connect to this badge\nwith a BLE capable device. Go to\nespruino.com/ide on a Web BT\ncapable browser to start coding!".split("\n").forEach((t,y)=>g.drawString(t,0,10+6*i));
+   Badge.drawCenter(`-- Now Connectable --
+
+You can connect to this badge
+with a BLE capable device. Go to
+espruino.com/ide on a Web BLE
+capable browser to start coding!`);
    g.drawString("Name: Badge " + NRF.getAddress().substr(-5).replace(":", ""), 0, 44);
    g.drawString("MAC: " + NRF.getAddress(), 0, 50);
    g.flip();
-   Badge.wait(() => { NRF.sleep(); m = menu.list(g, mainmenu) });
+   wait(() => { NRF.sleep(); m = menu.list(g, mainmenu) });
    NRF.wake();
   },
   "T-Rex": Badge.trex,
@@ -400,12 +409,10 @@ Badge.sketch = () => {
   cursor();
   g.flip();
  }
- g.clear();
- g.drawString("Sketch!");
- g.drawLine(0, 7, 40, 7);
- g.drawString("Press A & B to return", 0, 10);
- g.drawString("to the menu", 0, 16);
- g.flip();
+ Badge.drawCenter(`-- Sketch! --
+ 
+ Press A & B to return
+ to the menu`);
  g.clear();
  var gr = Graphics.createArrayBuffer(128, 64, 1, { msb: true });
  if (Badge.sketchedImage) {

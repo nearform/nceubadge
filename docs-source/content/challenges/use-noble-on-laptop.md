@@ -6,4 +6,4 @@ draft: false
 ---
 ### Challenge 9
 
-Use the Node.js Bluetooth library Noble on your laptop to read the beacon data that you are transmitting from the earlier challenge.
+Use the Node.js Bluetooth library [Noble](https://github.com/sandeepmistry/noble) on your laptop to read the beacon data that you are transmitting from the earlier challenge.

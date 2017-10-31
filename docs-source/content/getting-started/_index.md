@@ -7,8 +7,7 @@ draft: false
 ---
 ### Chapter 1
 
-# Unlocking and Connecting to your Badge
+# Getting Started
 
 Lets get you setup with accessing the secret menus, connecting to your badge over Bluetooth and getting Hello World running.
 
-Image of badge nighlighting the main hardware features

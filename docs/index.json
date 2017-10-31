@@ -18,21 +18,21 @@
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Unlocking and Connecting to your Badge Lets get you setup with accessing the secret menus, connecting to your badge over Bluetooth and getting Hello World running.\nImage of badge nighlighting the main hardware features\n"
+	"content": " Chapter 1 Getting Started Lets get you setup with accessing the secret menus, connecting to your badge over Bluetooth and getting Hello World running.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/getting-started/built-in-software/",
 	"title": "Built-in Software",
 	"tags": [],
 	"description": "",
-	"content": "Out of the box, your badge has the following:\n Image cycling Menu T-Rex On-board REPL Asteroids What else?  "
+	"content": "Now that you\u0026rsquo;ve unlocked the badge (you\u0026rsquo;ll have to do this any time you remove the battery), you can explore the built in sample apps. Out of the box, your badge has the following:\n Image display cycling Selectable menus T-Rex who has escaped the Chrome browser The world\u0026rsquo;s most awkward on-board REPL The greatest game ever written, Asteroids  "
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/",
 	"title": "Challenges",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\nYou will find several mobile apps from Nordic Semiconductor useful in any challenges that use Bluetooth. On Android that\u0026rsquo;s:\nAnd on iOS that\u0026rsquo;s:\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble on Node.js on your laptop to read the beacon data\n Turn Badge into HID buttons for your PC. Joystick or clicker for your talk Connect Badge to BLE LED Lightbulb Connect Badge to BLE LED Strip Communicate with another badge Record sound and play it back Creating and displaying your own images Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge Detect person with PIR sensor Communicate with some other Bluetooth device (Garmin, Fitbit etc) Implement DAT protocol on Espruino (kidding)  "
+	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble on Node.js on your laptop to read the beacon data\n Turn Badge into HID buttons for your PC. Joystick or clicker for your talk Connect Badge to BLE LED Lightbulb Connect Badge to BLE LED Strip Communicate with another badge Record sound and play it back Creating and displaying your own images Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge Detect person with PIR sensor Communicate with some other Bluetooth device (Garmin, Fitbit etc) Implement DAT protocol on Espruino  Advanced tools There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.\nAndroid  nRF Connect nRF Toolbox  iOS  nRF Connect nRF Toolbox  "
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/detect-button-press/",
@@ -40,13 +40,6 @@
 	"tags": [],
 	"description": "",
 	"content": " Challenge 2 Detect the various buttons being pressed/released on the badge.\n"
-},
-{
-	"uri": "http://nodeconfeubadge.org/getting-started/basic-hardware-features/",
-	"title": "Hardware Features",
-	"tags": [],
-	"description": "",
-	"content": "Hardware Features include\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/detect-capacative-touch/",
@@ -95,7 +88,7 @@
 	"title": "Other Code Samples",
 	"tags": [],
 	"description": "",
-	"content": " There are three places you can find code to learn from and use:\n The Badge repo The main Espruino site The Puck.js area of the Espruino site  Code Main  Pre-installed badge code  Games  Flappy Bird Snake Simple Mario Asteroids Click speed counter T-Rex  Misc  JS REPL on your badge! Display a Menu Etch-a-sketch  "
+	"content": " There are three places you can find code to learn from and use:\n The Badge repo The main Espruino site The Puck.js area of the Espruino site  Badge Repo Code The pre-installed main.js code is a treasure trove of useful snippets. Note however that it\u0026rsquo;s too big to be uploaded in its entirety via the Web IDE.\n Pre-installed badge code  Games Relive your original Gameboy, Nokia and video arcade days with the following games :-)\n Flappy Bird Snake Simple Mario Asteroids Click speed counter T-Rex  Web Bluetooth  Retrieve all images stored on a badge Take a picture with getUserMedia and put it on the badge  Misc  Check out the world\u0026rsquo;s most awkward REPL\n Learn how to display a Menu\n Dazzle everyone with your artistic skills on an Etch-a-sketch\n  "
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/broadcast-nfc-url/",
@@ -105,11 +98,11 @@
 	"content": " Challenge 7 Setup NFC and broadcast a different URL to the one built-into your badge. Prove it works using an Android phone.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/using-prototyping-area/",
-	"title": "Using the prototyping area",
+	"uri": "http://nodeconfeubadge.org/getting-started/basic-hardware-features/",
+	"title": "Hardware Features",
 	"tags": [],
 	"description": "",
-	"content": "You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.\nYou write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRead(D0)\nSimilarly you can read from a button with: digitalRead(BTNA)\nAs always, the Espruino web-site has lots more info and examples.\nThis image shows the basic board setup:\n"
+	"content": " This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.\nThe badge uses the same core module as the Puck.js and can run most of the same software.\nHardware Features include:\n nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacative touch sensors on all 6 corners Prototyping area with 8 CPU pins accessible Holes for LEDs on all 6 corners NFC antenna SWD programming pins  CPU Pins (Vertical line of holes along left hand edge of badge) You write to or read from a pin with:\ndigitalWrite(pin, value); digitalRead(pin);  where pin is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top) and value is 0 or 1.\nThe firmware has some extra API calls and variables for some of the badge features. You can use them as follows:\nButtons You can use\ndigitalWrite(button, value); digitalRead(button);  where value is 1 or 0 and button is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR\nLEDs If you add LEDs to the corner holes, you can turn them on/off with\ndigitalWrite(led);  where led is one of LED1, LED2, LED3, LED4, LED5, LED6.\nGraphics In many Espruino examples on the main site, you\u0026rsquo;ll find setup code for different types of screens. That has already been taken care of for you on the badge and you can just access the graphics functions directly. e.g.\ng.clear(); g.drawString(\u0026quot;Hello World\u0026quot;,0,0); g.flip();  Capacative Sense You can read the capacitance (and hence touch) from the 6 corners using\nBadge.capSense(corner);  where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6.\nBattery Percentage You can get an estimate of the battery level by calling\nBadge.getBatteryPercentage();  It returns an approximate battery percentage remaining based on a normal CR2032 battery (2.8 - 2.2v).\nSet Screen Contrast You can set the screen contrast with\nBadge.setContrast(c)  where c is a float from 0 to 1\nNFC You can set the URL that the NFC antenna broadcasts to NFC-capable phones by calling\nNRF.nfcURL(\u0026quot;url\u0026quot;)  where URL is something like https://www.nearform.com\nAdvanced: Flashing updated firmware If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phobe and use nRF Toolbox on either Android or iOS to send it to the badge.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/broadcast-beacons/",
@@ -117,6 +110,13 @@
 	"tags": [],
 	"description": "",
 	"content": " Challenge 8 Broadcast a URL using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/getting-started/using-prototyping-area/",
+	"title": "Using the prototyping area",
+	"tags": [],
+	"description": "",
+	"content": "You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.\nAs always, the Espruino web-site has lots more info and examples.\nThis image shows the basic board setup:\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/use-noble-on-laptop/",
@@ -200,7 +200,7 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about your attendee badge this year. We\u0026rsquo;ve spent the past few months designing and preparing it for the event.\nGetting Started In the Getting Started section we give you all the details of:\n Unlocking the badge The built-in software features The hardware features Setting up your Mac (some PC info too) Connecting to the badge Hello World on console Other code samples in the repo Board prototype area (including the pin-out)  Your Challenges We have a large set of challenges for you to get maximum use of the badge and learn lots in the process.\nThe Grand Challenge For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do but it must make use of the Badge. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to.\nAnyone who wishes to enter must demo their completed entry between 5pm and 6pm on Wednesday in the Hacking Lounge to the judges.\nThe winner will be announced at the Closing Party dinner and on @nearform Twitter on Wednesday night. They and the runners-up will demo what they have created to the crowd.\n"
+	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about your attendee badge this year. We\u0026rsquo;ve spent the past few months designing and preparing it for the event.\nThe Badge The open source hardware badge contains a small but powerful Bluetooth LE module running Espruino software, which is a JavaScript interpreter optimised for low-power devices. On this site, we\u0026rsquo;ll explain the basics of using and programming the badge and even how to add hardware to it.\nGetting Started In the Getting Started section we give you all the details of:\n Unlocking the badge The built-in software features Connecting to the badge Hello World on the console Other code samples to learn from The hardware features Board prototype area (including the pin-out)  Your Challenges We have a large set of challenges for you to get maximum use of the badge and learn lots in the process.\nThe Grand Challenge For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do but it must make use of the Badge. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to.\nAnyone who wishes to enter must demo their completed entry between 5pm and 6pm on Wednesday in the Hacking Lounge to the judges.\nThe winner will be announced at the Closing Party dinner and on @nearform Twitter on Wednesday night. They and the runners-up will demo what they have created to the crowd.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/categories/",

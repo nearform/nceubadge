@@ -36,8 +36,8 @@
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/built-in-software/</guid>
-      <description>Out of the box, your badge has the following:
- Image cycling Menu T-Rex On-board REPL Asteroids What else?  </description>
+      <description>Now that you&amp;rsquo;ve unlocked the badge (you&amp;rsquo;ll have to do this any time you remove the battery), you can explore the built in sample apps. Out of the box, your badge has the following:
+ Image display cycling Selectable menus T-Rex who has escaped the Chrome browser The world&amp;rsquo;s most awkward on-board REPL The greatest game ever written, Asteroids  </description>
     </item>
     
     <item>
@@ -47,15 +47,6 @@
       
       <guid>http://nodeconfeubadge.org/challenges/detect-button-press/</guid>
       <description>Challenge 2 Detect the various buttons being pressed/released on the badge.</description>
-    </item>
-    
-    <item>
-      <title>Hardware Features</title>
-      <link>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</link>
-      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</guid>
-      <description>Hardware Features include</description>
     </item>
     
     <item>
@@ -120,8 +111,9 @@ console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute a
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/other-code-samples/</guid>
-      <description> There are three places you can find code to learn from and use:
- The Badge repo The main Espruino site The Puck.js area of the Espruino site  Code Main  Pre-installed badge code  Games  Flappy Bird Snake Simple Mario Asteroids Click speed counter T-Rex  Misc  JS REPL on your badge! Display a Menu Etch-a-sketch  </description>
+      <description>There are three places you can find code to learn from and use:
+ The Badge repo The main Espruino site The Puck.js area of the Espruino site  Badge Repo Code The pre-installed main.js code is a treasure trove of useful snippets. Note however that it&amp;rsquo;s too big to be uploaded in its entirety via the Web IDE.
+ Pre-installed badge code  Games Relive your original Gameboy, Nokia and video arcade days with the following games :-)</description>
     </item>
     
     <item>
@@ -134,13 +126,15 @@ console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute a
     </item>
     
     <item>
-      <title>Using the prototyping area</title>
-      <link>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</link>
+      <title>Hardware Features</title>
+      <link>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</link>
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
-      <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
-      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.
-You write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRead(D0)</description>
+      <guid>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</guid>
+      <description>This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.
+The badge uses the same core module as the Puck.js and can run most of the same software.
+Hardware Features include:
+ nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacative touch sensors on all 6 corners Prototyping area with 8 CPU pins accessible Holes for LEDs on all 6 corners NFC antenna SWD programming pins  CPU Pins (Vertical line of holes along left hand edge of badge) You write to or read from a pin with:</description>
     </item>
     
     <item>
@@ -150,6 +144,17 @@ You write to a pin with: digitalWrite(D1, 1) And read from a pin with: digitalRe
       
       <guid>http://nodeconfeubadge.org/challenges/broadcast-beacons/</guid>
       <description>Challenge 8 Broadcast a URL using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).</description>
+    </item>
+    
+    <item>
+      <title>Using the prototyping area</title>
+      <link>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
+      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.
+As always, the Espruino web-site has lots more info and examples.
+This image shows the basic board setup:</description>
     </item>
     
     <item>

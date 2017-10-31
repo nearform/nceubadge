@@ -33,11 +33,6 @@
   </url>
   
   <url>
-    <loc>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</loc>
-    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://nodeconfeubadge.org/challenges/detect-capacative-touch/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
@@ -78,13 +73,18 @@
   </url>
   
   <url>
-    <loc>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</loc>
+    <loc>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</loc>
     <lastmod>2017-10-28T15:30:33+01:00</lastmod>
   </url>
   
   <url>
     <loc>http://nodeconfeubadge.org/challenges/broadcast-beacons/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</loc>
+    <lastmod>2017-10-28T15:30:33+01:00</lastmod>
   </url>
   
   <url>

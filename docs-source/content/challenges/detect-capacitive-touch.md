@@ -6,4 +6,4 @@ draft: false
 ---
 ### Challenge 3
 
-Detect the application and removal of your hand from the capacative sensors on the corners of the badge.
+Detect the application and removal of your hand from the capacitive sensors on the corners of the badge.

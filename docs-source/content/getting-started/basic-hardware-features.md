@@ -1,5 +1,5 @@
 ---
-title: "Hardware Features"
+title: "Accessing Hardware Features"
 weight: 8
 date: 2017-10-28T15:30:33+01:00
 draft: false
@@ -16,7 +16,7 @@ Hardware Features include:
 * Powered by a CR2032 battery which can last up to a week depending on what code you are running
 * Daylight-readable LCD screen
 * 6 input buttons
-* Capacative touch sensors on all 6 corners
+* Capacitive touch sensors on all 6 corners
 * Prototyping area with 8 CPU pins accessible
 * Holes for LEDs on all 6 corners
 * NFC antenna
@@ -63,7 +63,7 @@ g.drawString("Hello World",0,0);
 g.flip();
 ``` 
 
-### Capacative Sense
+### Capacitive Sense
 You can read the capacitance (and hence touch) from the 6 corners using 
 
 ```javascript
@@ -100,6 +100,8 @@ NRF.nfcURL("url")
 ```
 
 where URL is something like https://www.nearform.com
+
+*NOTE: If your phone is having difficulty picking up the NFC URL, it is likely that the tuning capacitors on your badge need to be changed to different values. Head on over to the Hacking Lounge to get them replaced or be shown how to do it yourself.*
 
 ## Advanced: Flashing updated firmware
 If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phobe and use nRF Toolbox on either [Android](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&hl=en) or [iOS](https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8) to send it to the badge.

@@ -26,6 +26,6 @@ We have a large set of challenges for you to get maximum use of the badge and le
 ### The Grand Challenge
 For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do but it must make use of the Badge. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to. 
 
-Anyone who wishes to enter must demo their completed entry between 5pm and 6pm on Wednesday in the Hacking Lounge to the judges.
+Anyone who wishes to enter must demo their completed entry between 4.30pm and 5pm on Wednesday in the Hacking Lounge to the judges.
 
 The winner will be announced at the Closing Party dinner and on @nearform Twitter on Wednesday night. They and the runners-up will demo what they have created to the crowd. 

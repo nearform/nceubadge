@@ -22,13 +22,13 @@ Try combining multiple challenges into one codebase.
 8. Broadcast an Eddystone and iBeacon message
 9. Use Noble on Node.js on your laptop to read the beacon data  
 10. Turn Badge into HID buttons for your PC. Joystick or clicker for your talk
-11. Connect Badge to BLE LED Lightbulb
-12. Connect Badge to BLE LED Strip
-13. Communicate with another badge
-14. Record sound and play it back
-15. Creating and displaying your own images
-16. Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge
-17. Detect person with PIR sensor
+11. Creating and displaying your own images
+12. Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge
+13. Detect movement with PIR sensor
+14. Connect Badge to BLE LED Lightbulb
+15. Connect Badge to BLE LED Strip
+16. Communicate with another badge
+17. Record sound and play it back
 18. Communicate with some other Bluetooth device (Garmin, Fitbit etc)
 19. Implement DAT protocol on Espruino
 

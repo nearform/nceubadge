@@ -1,10 +1,10 @@
 ---
 title: "Create a Web Bluetooth Page"
-weight: 16
+weight: 12
 date: 2017-10-28T10:29:15+01:00
 draft: false
 ---
-### Challenge 16
+### Challenge 12
 
 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.
 

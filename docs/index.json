@@ -32,7 +32,7 @@
 	"title": "Challenges",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble on Node.js on your laptop to read the beacon data\n Turn Badge into HID buttons for your PC. Joystick or clicker for your talk Connect Badge to BLE LED Lightbulb Connect Badge to BLE LED Strip Communicate with another badge Record sound and play it back Creating and displaying your own images Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge Detect person with PIR sensor Communicate with some other Bluetooth device (Garmin, Fitbit etc) Implement DAT protocol on Espruino  Advanced tools There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.\nAndroid  nRF Connect nRF Toolbox  iOS  nRF Connect nRF Toolbox  "
+	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble on Node.js on your laptop to read the beacon data\n Turn Badge into HID buttons for your PC. Joystick or clicker for your talk Creating and displaying your own images Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge Detect movement with PIR sensor Connect Badge to BLE LED Lightbulb Connect Badge to BLE LED Strip Communicate with another badge Record sound and play it back Communicate with some other Bluetooth device (Garmin, Fitbit etc) Implement DAT protocol on Espruino  Advanced tools There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.\nAndroid  nRF Connect nRF Toolbox  iOS  nRF Connect nRF Toolbox  "
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/detect-button-press/",
@@ -133,53 +133,53 @@
 	"content": " Challenge 10 HID means Human Interface Device and it\u0026rsquo;s a standard for connecting Bluetooth input devices like keyboards and mice to computers. Your badge can act as a HID button for your laptop including multimedia keys. You could even use it as a clicker for your talk at NodeConf!\nCheck out the instructions here and try it out for yourself.\nNote: Bluetooth HID can\u0026rsquo;t be enabled on an active connection. To make it work you need to upload the code, disconnect, and then reconnect with your Operating System\u0026rsquo;s Bluetooth pairing functionality.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/",
-	"title": "Connect to BLE Lightbulb",
-	"tags": [],
-	"description": "",
-	"content": " Challenge 11 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.\nThis is an advanced task and may involve installing the LED light\u0026rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the light.\nYou can get guidance here and here but they may not contain a solution specific to this lightbulb.\n"
-},
-{
-	"uri": "http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/",
-	"title": "Connect to BLE LED Strip",
-	"tags": [],
-	"description": "",
-	"content": " Challenge 12 See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.\nThis is a very advanced task and may involve installing the LED strip\u0026rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the strip.\nYou can get guidance here and here but they do not contain a solution specific to this strip.\n"
-},
-{
-	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-another-badge/",
-	"title": "Communicate with another Badge",
-	"tags": [],
-	"description": "",
-	"content": " Challenge 13 This is another advanced challenge. We recommend starting with the instructions here and then decide if you want to continue.\nAlso consider the new BLE mesh networking standard which is currently not supported on Espruino but would make for an impressive community contribution.\n"
-},
-{
-	"uri": "http://nodeconfeubadge.org/challenges/record-and-playback-sound/",
-	"title": "Record and Playback Sound",
-	"tags": [],
-	"description": "",
-	"content": " Challenge 14 Record some sound using the \u0026ldquo;buzzer\u0026rdquo; and play it back.\nInformation on recording using the Waveform class can be found here.\n"
-},
-{
 	"uri": "http://nodeconfeubadge.org/challenges/display-an-image/",
 	"title": "Display an Image",
 	"tags": [],
 	"description": "",
-	"content": " Challenge 15 You can see hat we took all of your names and turned them into images that were included as part of the software of each badge. A different image for every badge. Your challenge is to do something similar. Find an image somewhere, convert it into the correct format and display it on the badge. You\u0026rsquo;ll have lots of fun with Imagemagick outputting blank images or inverted ones :-)\nTo get started, have a look at the end of this page or at the nasty hacky code we created to generate all the badge images.\nRemember the badge is 128x64 monochrome.\n"
+	"content": " Challenge 11 You can see that we took all of your names and turned them into images that were included as part of the software of each badge. A different image for every badge. Your challenge is to do something similar. Find an image somewhere, convert it into the correct format and display it on the badge. You\u0026rsquo;ll have lots of fun with Imagemagick outputting blank images or inverted ones :-)\nTo get started, have a look at the end of this page or at the nasty hacky code we created to generate all the badge images.\nRemember the badge is 128x64 monochrome.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/",
 	"title": "Create a Web Bluetooth Page",
 	"tags": [],
 	"description": "",
-	"content": " Challenge 16 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.\nEventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.\nLots of information about web Bluetooth and Espruino here.\n"
+	"content": " Challenge 12 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.\nEventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.\nLots of information about web Bluetooth and Espruino here.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/",
-	"title": "Detect a Person with a PIR Sensor",
+	"title": "Detect movement with a PIR Sensor",
 	"tags": [],
 	"description": "",
-	"content": " Challenge 17 We have a small number of PIR sensors at the Hacking Table. You can easily wire one of them up to your badge so it can detect motion. Now think of ways you could use that at an event.\nYou can get started with the code here.\n"
+	"content": " Challenge 13 We have a small number of PIR sensors at the Hacking Table. You can easily wire one of them up to your badge so it can detect motion. Now think of ways you could use that at an event.\nYou can get started with the code here.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/",
+	"title": "Connect to BLE Lightbulb",
+	"tags": [],
+	"description": "",
+	"content": " Challenge 14 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.\nThis is an advanced task and may involve installing the LED light\u0026rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the light.\nYou can get guidance here and here but they may not contain a solution specific to this lightbulb.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/",
+	"title": "Connect to BLE LED Strip",
+	"tags": [],
+	"description": "",
+	"content": " Challenge 15 See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.\nThis is a very advanced task and may involve installing the LED strip\u0026rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the strip.\nYou can get guidance here and here but they do not contain a solution specific to this strip.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-another-badge/",
+	"title": "Communicate with another Badge",
+	"tags": [],
+	"description": "",
+	"content": " Challenge 16 This is another advanced challenge. We recommend starting with the instructions here and then decide if you want to continue.\nAlso consider the new BLE mesh networking standard which is currently not supported on Espruino but would make for an impressive community contribution.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/challenges/record-and-playback-sound/",
+	"title": "Record and Playback Sound",
+	"tags": [],
+	"description": "",
+	"content": " Challenge 17 Record some sound using the \u0026ldquo;buzzer\u0026rdquo; and play it back.\nInformation on recording using the Waveform class can be found here.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/",

@@ -98,6 +98,21 @@
   </url>
   
   <url>
+    <loc>http://nodeconfeubadge.org/challenges/display-an-image/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
@@ -114,21 +129,6 @@
   
   <url>
     <loc>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/display-an-image/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
   

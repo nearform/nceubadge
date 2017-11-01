@@ -4,17 +4,19 @@ Welcome!
 
 We hope you are as excited as we are about your attendee badge this year. We've spent the past few months designing and preparing it for the event.
 
+## The Badge
+The open source hardware badge contains a small but powerful Bluetooth LE module running [Espruino](https://www.espruino.com) software, which is a JavaScript interpreter optimised for low-power devices. On this site, we'll explain the basics of using and programming the badge and even how to add hardware to it.
+
 ## Getting Started
 
 In the Getting Started section we give you all the details of:
 
 * Unlocking the badge
 * The built-in software features
-* The hardware features
-* Setting up your Mac (some PC info too)
 * Connecting to the badge
-* Hello World on console
-* Other code samples in the repo
+* Hello World on the console
+* Other code samples to learn from
+* The hardware features
 * Board prototype area (including the pin-out)
 
 ### Your Challenges

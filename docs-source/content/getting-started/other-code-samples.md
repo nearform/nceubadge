@@ -7,15 +7,17 @@ draft: false
 
 There are three places you can find code to learn from and use:
 
-* The Badge repo
-* The main Espruino site
-* The Puck.js area of the Espruino site
+* The [Badge repo](https://github.com/nearform/nceubadge)
+* The [main Espruino site](https://www.espruino.com/)
+* The [Puck.js area](https://www.espruino.com/Puck.js) of the Espruino site
 
-## Code
-### Main
+## Badge Repo Code
+The pre-installed main.js code is a treasure trove of useful snippets. Note however that it's too big to be uploaded in its entirety via the Web IDE.
+
 * [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/main.js)
 
 ### Games
+Relive your original Gameboy, Nokia and video arcade days with the following games :-)
 
 * [Flappy Bird](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/flappybird.js)
 * [Snake](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/snake.js)
@@ -24,8 +26,13 @@ There are three places you can find code to learn from and use:
 * [Click speed counter](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/click_counter.js)
 * [T-Rex](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/trex.js)
 
-### Misc
+### Web Bluetooth
+* [Retrieve all images stored on a badge](https://github.com/nearform/nceubadge/blob/master/web_bluetooth/badge_images.html)
+* [Take a picture with getUserMedia and put it on the badge](https://github.com/nearform/nceubadge/blob/master/web_bluetooth/badge_photo.html)
 
-* [JS REPL on your badge!](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/repl.js)
-* [Display a Menu](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/menu.js)
-* [Etch-a-sketch](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/sketch.js)
+### Misc
+* Check out the [world's most awkward REPL](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/repl.js)
+
+* Learn how to [display a Menu](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/menu.js)
+
+* Dazzle everyone with your artistic skills on an [Etch-a-sketch](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/sketch.js)

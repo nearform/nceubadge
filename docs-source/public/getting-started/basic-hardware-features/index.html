@@ -13,17 +13,17 @@
     <title>Hardware Features :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1509395814" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1509395814" rel="stylesheet">
-    <link href="/css/hybrid.css?1509395814" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1509395814" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1509395814" rel="stylesheet">
-    <link href="/css/auto-complete.css?1509395814" rel="stylesheet">
-    <link href="/css/theme.css?1509395814" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1509395814" rel="stylesheet">
+    <link href="/css/nucleus.css?1509480255" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1509480255" rel="stylesheet">
+    <link href="/css/hybrid.css?1509480255" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1509480255" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1509480255" rel="stylesheet">
+    <link href="/css/auto-complete.css?1509480255" rel="stylesheet">
+    <link href="/css/theme.css?1509480255" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1509480255" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1509395814"></script>
+    <script src="/js/jquery-2.x.min.js?1509480255"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1509395814"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1509395814"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1509480255"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1509480255"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1509395814"></script>
+<script type="text/javascript" src="/js/search.js?1509480255"></script>
 
     
   </div>
@@ -135,25 +135,6 @@
  
   
     
-      <li data-nav-id="/getting-started/basic-hardware-features/" title="Hardware Features" class="dd-item active">
-        <a href="/getting-started/basic-hardware-features/">
-        Hardware Features
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/getting-started/connecting-to-the-badge/" title="Connecting to the Badge" class="dd-item ">
         <a href="/getting-started/connecting-to-the-badge/">
         Connecting to the Badge
@@ -195,6 +176,25 @@
       <li data-nav-id="/getting-started/other-code-samples/" title="Other Code Samples" class="dd-item ">
         <a href="/getting-started/other-code-samples/">
         Other Code Samples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/getting-started/basic-hardware-features/" title="Hardware Features" class="dd-item active">
+        <a href="/getting-started/basic-hardware-features/">
+        Hardware Features
         
         </a>
     </li>
@@ -683,7 +683,25 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#cpu-pins-vertical-line-of-holes-along-left-hand-edge-of-badge">CPU Pins (Vertical line of holes along left hand edge of badge)</a></li>
+<li><a href="#buttons">Buttons</a></li>
+<li><a href="#leds">LEDs</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#capacative-sense">Capacative Sense</a></li>
+<li><a href="#battery-percentage">Battery Percentage</a></li>
+<li><a href="#set-screen-contrast">Set Screen Contrast</a></li>
+<li><a href="#nfc">NFC</a></li>
+</ul></li>
+<li><a href="#advanced-flashing-updated-firmware">Advanced: Flashing updated firmware</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -701,7 +719,106 @@
         
 
 
-<p>Hardware Features include</p>
+
+
+<p>This is an Open Source Hardware project. Schematics and board design files are available in the <a href="https://github.com/nearform/nceubadge/tree/master/hardware">/hardware directory of the repo</a>.</p>
+
+<p>The badge uses the same core module as the <a href="https://www.espruino.com/Puck.js">Puck.js</a> and can run most of the same software.</p>
+
+<p>Hardware Features include:</p>
+
+<ul>
+<li>nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack</li>
+<li>Bluetooth Low Energy</li>
+<li>Powered by a CR2032 battery which can last up to a week depending on what code you are running</li>
+<li>Daylight-readable LCD screen</li>
+<li>6 input buttons</li>
+<li>Capacative touch sensors on all 6 corners</li>
+<li>Prototyping area with 8 CPU pins accessible</li>
+<li>Holes for LEDs on all 6 corners</li>
+<li>NFC antenna</li>
+<li>SWD programming pins</li>
+</ul>
+
+<h3 id="cpu-pins-vertical-line-of-holes-along-left-hand-edge-of-badge">CPU Pins (Vertical line of holes along left hand edge of badge)</h3>
+
+<p>You write to or read from a pin with:</p>
+
+<pre><code class="language-javascript">digitalWrite(pin, value);
+digitalRead(pin);
+</code></pre>
+
+<p>where pin is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top) and value is 0 or 1.</p>
+
+<p>The firmware has some extra API calls and variables for some of the badge features. You can use them as follows:</p>
+
+<h3 id="buttons">Buttons</h3>
+
+<p>You can use</p>
+
+<pre><code class="language-javascript">digitalWrite(button, value);
+digitalRead(button);
+</code></pre>
+
+<p>where value is 1 or 0 and button is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR</p>
+
+<h3 id="leds">LEDs</h3>
+
+<p>If you add LEDs to the corner holes, you can turn them on/off with</p>
+
+<pre><code class="language-javascript">digitalWrite(led);
+</code></pre>
+
+<p>where led is one of LED1, LED2, LED3, LED4, LED5, LED6.</p>
+
+<h3 id="graphics">Graphics</h3>
+
+<p>In many Espruino examples on the main site, you&rsquo;ll find setup code for different types of screens. That has already been taken care of for you on the badge and you can just access the graphics functions directly. e.g.</p>
+
+<pre><code class="language-javascript">g.clear();
+g.drawString(&quot;Hello World&quot;,0,0);
+g.flip();
+</code></pre>
+
+<h3 id="capacative-sense">Capacative Sense</h3>
+
+<p>You can read the capacitance (and hence touch) from the 6 corners using</p>
+
+<pre><code class="language-javascript">Badge.capSense(corner);
+</code></pre>
+
+<p>where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6.</p>
+
+<h3 id="battery-percentage">Battery Percentage</h3>
+
+<p>You can get an estimate of the battery level by calling</p>
+
+<pre><code class="language-javascript">Badge.getBatteryPercentage();
+</code></pre>
+
+<p>It returns an approximate battery percentage remaining based on a normal CR2032 battery (2.8 - 2.2v).</p>
+
+<h3 id="set-screen-contrast">Set Screen Contrast</h3>
+
+<p>You can set the screen contrast with</p>
+
+<pre><code class="language-javascript">Badge.setContrast(c)
+</code></pre>
+
+<p>where c is a float from 0 to 1</p>
+
+<h3 id="nfc">NFC</h3>
+
+<p>You can set the URL that the NFC antenna broadcasts to NFC-capable phones by calling</p>
+
+<pre><code class="language-javascript">NRF.nfcURL(&quot;url&quot;)
+</code></pre>
+
+<p>where URL is something like <a href="https://www.nearform.com">https://www.nearform.com</a></p>
+
+<h2 id="advanced-flashing-updated-firmware">Advanced: Flashing updated firmware</h2>
+
+<p>If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phobe and use nRF Toolbox on either <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&amp;hl=en">Android</a> or <a href="https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8">iOS</a> to send it to the badge.</p>
 
 
 <footer class=" footline" >
@@ -787,26 +904,6 @@
             
                 
                     
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                        
-                        
-                    
                 
                 
 
@@ -855,6 +952,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -881,22 +998,6 @@
                     
                     
 
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
                     
                         
             
@@ -1186,6 +1287,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1196,10 +1313,10 @@
 
 
         
-            <a class="nav nav-prev" href="/getting-started/built-in-software/" title="Built-in Software"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/getting-started/other-code-samples/" title="Other Code Samples"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/getting-started/connecting-to-the-badge/" title="Connecting to the Badge" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/getting-started/using-prototyping-area/" title="Using the prototyping area" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1208,20 +1325,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1509395814"></script>
-    <script src="/js/perfect-scrollbar.min.js?1509395814"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1509395814"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1509395814"></script>
-    <script src="/js/featherlight.min.js?1509395814"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1509395814"></script>
-    <script src="/js/highlight.pack.js?1509395814"></script>
+    <script src="/js/clipboard.min.js?1509480255"></script>
+    <script src="/js/perfect-scrollbar.min.js?1509480255"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1509480255"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1509480255"></script>
+    <script src="/js/featherlight.min.js?1509480255"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1509480255"></script>
+    <script src="/js/highlight.pack.js?1509480255"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1509395814"></script>
-    <script src="/js/learn.js?1509395814"></script>
-    <script src="/js/hugo-learn.js?1509395814"></script>
+    <script src="/js/modernizr.custom.71422.js?1509480255"></script>
+    <script src="/js/learn.js?1509480255"></script>
+    <script src="/js/hugo-learn.js?1509480255"></script>
 
-    <link href="/mermaid/mermaid.css?1509395814" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1509395814"></script>
+    <link href="/mermaid/mermaid.css?1509480255" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1509480255"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

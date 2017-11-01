@@ -37,7 +37,7 @@
       
       <guid>http://nodeconfeubadge.org/getting-started/built-in-software/</guid>
       <description>Now that you&amp;rsquo;ve unlocked the badge (you&amp;rsquo;ll have to do this any time you remove the battery), you can explore the built in sample apps. Out of the box, your badge has the following:
- Image display cycling Selectable menus T-Rex who has escaped the Chrome browser The world&amp;rsquo;s most awkward on-board REPL The greatest game ever written, Asteroids  </description>
+ Your name pre-flashed into the firmware Image display cycling Selectable menus T-Rex who has escaped the Chrome browser Flappy Bird The world&amp;rsquo;s most awkward on-board REPL Etch-a-sketch  Source code for all of these is of course in the Github Repo.</description>
     </item>
     
     <item>
@@ -126,7 +126,7 @@ console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute a
     </item>
     
     <item>
-      <title>Hardware Features</title>
+      <title>Accessing Hardware Features</title>
       <link>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</link>
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       

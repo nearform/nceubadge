@@ -6,4 +6,6 @@ draft: false
 ---
 ### Challenge 14
 
-Record sound using the "buzzer" and play it back.
+Record some sound using the "buzzer" and play it back. 
+
+Information on recording using the Waveform class can be found [here](https://www.espruino.com/Waveform).

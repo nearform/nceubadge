@@ -10,3 +10,5 @@ We're kidding.
 
 Or are we?
 
+What sort of P2P messaging system could be created by all the badges at the event? Without burning through the battery in 5 minutes.
+

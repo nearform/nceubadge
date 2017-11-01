@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Hello World on screen :: NodeConf EU Badge</title>
+    <title>Accessing Hardware Features :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509562716" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/challenges/hello-world-screen/">
+  <body class="" data-url="/getting-started/accessing-hardware-features/">
     <nav id="sidebar" class="">
 
 
@@ -73,7 +73,7 @@
   
     
     <li data-nav-id="/getting-started/" title="Getting Started" class="dd-item 
-        
+        parent
         
         
         ">
@@ -192,7 +192,7 @@
  
   
     
-      <li data-nav-id="/getting-started/accessing-hardware-features/" title="Accessing Hardware Features" class="dd-item ">
+      <li data-nav-id="/getting-started/accessing-hardware-features/" title="Accessing Hardware Features" class="dd-item active">
         <a href="/getting-started/accessing-hardware-features/">
         Accessing Hardware Features
         
@@ -238,7 +238,7 @@
   
     
     <li data-nav-id="/challenges/" title="Challenges" class="dd-item 
-        parent
+        
         
         
         ">
@@ -262,7 +262,7 @@
  
   
     
-      <li data-nav-id="/challenges/hello-world-screen/" title="Hello World on screen" class="dd-item active">
+      <li data-nav-id="/challenges/hello-world-screen/" title="Hello World on screen" class="dd-item ">
         <a href="/challenges/hello-world-screen/">
         Hello World on screen
         
@@ -671,7 +671,7 @@
             
           
           
-            <a href='/'></a> > <a href='/challenges/'>Challenges</a> > Hello World on screen
+            <a href='/'></a> > <a href='/getting-started/'>Getting Started</a> > Accessing Hardware Features
           
          
           
@@ -689,8 +689,16 @@
 <ul>
 <li>
 <ul>
-<li><a href="#challenge-1">Challenge 1</a></li>
+<li><a href="#cpu-pins-vertical-line-of-holes-along-left-hand-edge-of-badge">CPU Pins (Vertical line of holes along left hand edge of badge)</a></li>
+<li><a href="#buttons">Buttons</a></li>
+<li><a href="#leds">LEDs</a></li>
+<li><a href="#graphics">Graphics</a></li>
+<li><a href="#capacitive-sense">Capacitive Sense</a></li>
+<li><a href="#battery-percentage">Battery Percentage</a></li>
+<li><a href="#set-screen-contrast">Set Screen Contrast</a></li>
+<li><a href="#nfc">NFC</a></li>
 </ul></li>
+<li><a href="#advanced-only-flashing-updated-firmware">Advanced Only: Flashing updated firmware</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -705,7 +713,7 @@
         
         <div id="body-inner">
           
-            <h1>Hello World on screen</h1>
+            <h1>Accessing Hardware Features</h1>
           
 
         
@@ -713,11 +721,121 @@
 
 
 
-<h3 id="challenge-1">Challenge 1</h3>
+<p>This is an Open Source Hardware project. Schematics and board design files are available in the <a href="https://github.com/nearform/nceubadge/tree/master/hardware">/hardware directory of the repo</a>.</p>
 
-<p>This challenge is just to get you warmed up and comfortable using the Web IDE. See if you can display &ldquo;Hello World&rdquo; on the badge&rsquo;s screen.</p>
+<p>The badge uses the same core module as the <a href="https://www.espruino.com/Puck.js">Puck.js</a> and can run most of the same software.</p>
 
-<p>Check out the Espruino site to see what you can do with <a href="https://www.espruino.com/Graphics">Graphics</a> and <a href="https://www.espruino.com/Fonts">Fonts</a>.</p>
+<p>Hardware Features include:</p>
+
+<ul>
+<li>nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack</li>
+<li>Bluetooth Low Energy</li>
+<li>Powered by a CR2032 battery which can last up to a week depending on what code you are running</li>
+<li>Daylight-readable LCD screen</li>
+<li>6 input buttons</li>
+<li>Capacitive touch sensors on all 6 corners</li>
+<li>Prototyping area with 8 CPU pins accessible</li>
+<li>Holes for LEDs on all 6 corners</li>
+<li>NFC antenna</li>
+<li>SWD programming pins</li>
+</ul>
+
+<h3 id="cpu-pins-vertical-line-of-holes-along-left-hand-edge-of-badge">CPU Pins (Vertical line of holes along left hand edge of badge)</h3>
+
+<p>You write to or read from a pin with:</p>
+
+<pre><code class="language-javascript">digitalWrite(pin, value);
+digitalRead(pin);
+</code></pre>
+
+<p>where pin is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top) and value is 0 or 1.</p>
+
+<p>The firmware has some extra API calls and variables for some of the badge features. You can use them as follows:</p>
+
+<h3 id="buttons">Buttons</h3>
+
+<p>You can use a generic call like</p>
+
+<pre><code class="language-javascript">digitalRead(button);
+</code></pre>
+
+<p>where button is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR</p>
+
+<p>or with a Button-specific call</p>
+
+<pre><code class="language-javascript">BTNx.read();
+</code></pre>
+
+<p>where BTNx is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR</p>
+
+<h3 id="leds">LEDs</h3>
+
+<p>If you add LEDs to the corner holes, you can turn them on/off with a generic call</p>
+
+<pre><code class="language-javascript">digitalWrite(led, value);
+</code></pre>
+
+<p>where led is one of LED1, LED2, LED3, LED4, LED5, LED6.</p>
+
+<p>or with an LED-specific call</p>
+
+<pre><code class="language-javascript">LEDx.write(value);
+</code></pre>
+
+<p>where LEDx is one of LED1, LED2, LED3, LED4, LED5, LED6 and value is 0 or 1.</p>
+
+<h3 id="graphics">Graphics</h3>
+
+<p>In many Espruino examples on the main site, you&rsquo;ll find setup code for different types of screens. That has already been taken care of for you on the badge and you can just access the graphics functions directly. e.g.</p>
+
+<pre><code class="language-javascript">g.clear();
+g.drawString(&quot;Hello World&quot;,0,0);
+g.flip();
+</code></pre>
+
+<h3 id="capacitive-sense">Capacitive Sense</h3>
+
+<p>You can read the capacitance (and hence touch) from the 6 corners using</p>
+
+<pre><code class="language-javascript">Badge.capSense(corner);
+</code></pre>
+
+<p>where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6.</p>
+
+<h3 id="battery-percentage">Battery Percentage</h3>
+
+<p>You can get an estimate of the battery level by calling</p>
+
+<pre><code class="language-javascript">Badge.getBatteryPercentage();
+</code></pre>
+
+<p>It returns an approximate battery percentage remaining based on a normal CR2032 battery (2.8 - 2.2v).</p>
+
+<h3 id="set-screen-contrast">Set Screen Contrast</h3>
+
+<p>You can set the screen contrast with</p>
+
+<pre><code class="language-javascript">Badge.setContrast(c)
+</code></pre>
+
+<p>where c is a float from 0 to 1</p>
+
+<h3 id="nfc">NFC</h3>
+
+<p>You can set the URL that the NFC antenna broadcasts to NFC-capable phones by calling</p>
+
+<pre><code class="language-javascript">NRF.nfcURL(&quot;url&quot;)
+</code></pre>
+
+<p>where URL is something like <a href="https://www.nearform.com">https://www.nearform.com</a></p>
+
+<p><em>NOTE: If your phone is having difficulty picking up the NFC URL, it is likely that the tuning capacitors on your badge need to be changed to different values. Head on over to the Hacking Lounge to get them replaced or be shown how to do it yourself.</em></p>
+
+<h2 id="advanced-only-flashing-updated-firmware">Advanced Only: Flashing updated firmware</h2>
+
+<p>If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phone and use nRF Toolbox on either <a href="https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&amp;hl=en">Android</a> or <a href="https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8">iOS</a> to send it to the badge.</p>
+
+<p>Please only do this if you are sure you need it. By using a stock badge build from the Espruino site, you&rsquo;ll lose the built-in NodeConf EU main.js code and will just have a REPL over Bluetooth on your badge.</p>
 
 
 <footer class=" footline" >
@@ -754,8 +872,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -769,6 +885,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -850,55 +969,6 @@
             
                 
                     
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
-            
-        
-                    
-                        
-            
-            
-                
-                    
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-                        
-            
-            
-                
-                    
                     
                 
                 
@@ -918,6 +988,38 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -1202,6 +1304,22 @@
             
         
                     
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
             
         
                     
@@ -1212,10 +1330,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/" title="Challenges"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/getting-started/other-code-samples/" title="Other Code Samples"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/challenges/detect-button-press/" title="Detect Button Press" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/getting-started/using-prototyping-area/" title="Using the prototyping area" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 

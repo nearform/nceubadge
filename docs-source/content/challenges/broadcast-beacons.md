@@ -6,5 +6,7 @@ draft: false
 ---
 ### Challenge 8
 
-Broadcast a URL using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).
+Broadcast a URL over Bluetooth LE using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).
+
+You'll get lots of guidance on the Puck.js site [here for Eddystone](https://www.espruino.com/Puck.js+Eddystone) and [here for iBeacon](https://www.espruino.com/Puck.js+iBeacon).
 

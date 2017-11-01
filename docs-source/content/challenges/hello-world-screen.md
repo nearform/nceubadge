@@ -6,4 +6,6 @@ draft: false
 ---
 ### Challenge 1
 
-Display "Hello World" on the badge's display
+This challenge is just to get you warmed up and comfortable using the Web IDE. See if you can display "Hello World" on the badge's screen. 
+
+Check out the Espruino site to see what you can do with [Graphics](https://www.espruino.com/Graphics) and [Fonts](https://www.espruino.com/Fonts).

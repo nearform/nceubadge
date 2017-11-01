@@ -6,4 +6,4 @@ draft: false
 ---
 ### Challenge 7
 
-Setup NFC and broadcast a different URL to the one built-into your badge. Prove it works using an Android phone.
+This is an easy one. Change the NFC URL that your badge transmits. Find someone with a Samsung Galaxy or similar phone to test it.

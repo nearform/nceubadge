@@ -16,7 +16,7 @@ Hardware Features include:
 * Powered by a CR2032 battery which can last up to a week depending on what code you are running
 * Daylight-readable LCD screen
 * 6 input buttons
-* Capacative touch sensors on all 6 corners
+* Capacitive touch sensors on all 6 corners
 * Prototyping area with 8 CPU pins accessible
 * Holes for LEDs on all 6 corners
 * NFC antenna
@@ -63,7 +63,7 @@ g.drawString("Hello World",0,0);
 g.flip();
 ``` 
 
-### Capacative Sense
+### Capacitive Sense
 You can read the capacitance (and hence touch) from the 6 corners using 
 
 ```javascript

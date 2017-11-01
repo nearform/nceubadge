@@ -51,11 +51,11 @@
     
     <item>
       <title>Detect Capacitive Touch</title>
-      <link>http://nodeconfeubadge.org/challenges/detect-capacative-touch/</link>
+      <link>http://nodeconfeubadge.org/challenges/detect-capacitive-touch/</link>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
-      <guid>http://nodeconfeubadge.org/challenges/detect-capacative-touch/</guid>
-      <description>Challenge 3 Detect the application and removal of your hand from the capacative sensors on the corners of the badge.</description>
+      <guid>http://nodeconfeubadge.org/challenges/detect-capacitive-touch/</guid>
+      <description>Challenge 3 Detect the application and removal of your hand from the capacitive sensors on the corners of the badge.</description>
     </item>
     
     <item>
@@ -134,7 +134,7 @@ console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute a
       <description>This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.
 The badge uses the same core module as the Puck.js and can run most of the same software.
 Hardware Features include:
- nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacative touch sensors on all 6 corners Prototyping area with 8 CPU pins accessible Holes for LEDs on all 6 corners NFC antenna SWD programming pins  CPU Pins (Vertical line of holes along left hand edge of badge) You write to or read from a pin with:</description>
+ nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacitive touch sensors on all 6 corners Prototyping area with 8 CPU pins accessible Holes for LEDs on all 6 corners NFC antenna SWD programming pins  CPU Pins (Vertical line of holes along left hand edge of badge) You write to or read from a pin with:</description>
     </item>
     
     <item>

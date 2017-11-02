@@ -10,20 +10,20 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Using the prototyping area :: NodeConf EU Badge</title>
+    <title>Using the prototyping area and corners :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1509631333" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1509631333" rel="stylesheet">
-    <link href="/css/hybrid.css?1509631333" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1509631333" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1509631333" rel="stylesheet">
-    <link href="/css/auto-complete.css?1509631333" rel="stylesheet">
-    <link href="/css/theme.css?1509631333" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1509631333" rel="stylesheet">
+    <link href="/css/nucleus.css?1509638748" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1509638748" rel="stylesheet">
+    <link href="/css/hybrid.css?1509638748" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1509638748" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1509638748" rel="stylesheet">
+    <link href="/css/auto-complete.css?1509638748" rel="stylesheet">
+    <link href="/css/theme.css?1509638748" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1509638748" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1509631333"></script>
+    <script src="/js/jquery-2.x.min.js?1509638748"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1509631333"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1509631333"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1509638748"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1509638748"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1509631333"></script>
+<script type="text/javascript" src="/js/search.js?1509638748"></script>
 
     
   </div>
@@ -211,9 +211,9 @@
  
   
     
-      <li data-nav-id="/getting-started/using-prototyping-area/" title="Using the prototyping area" class="dd-item active">
+      <li data-nav-id="/getting-started/using-prototyping-area/" title="Using the prototyping area and corners" class="dd-item active">
         <a href="/getting-started/using-prototyping-area/">
-        Using the prototyping area
+        Using the prototyping area and corners
         
         </a>
     </li>
@@ -585,25 +585,6 @@
  
   
     
-      <li data-nav-id="/challenges/record-and-playback-sound/" title="Record and Playback Sound" class="dd-item ">
-        <a href="/challenges/record-and-playback-sound/">
-        Record and Playback Sound
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/challenges/implement-dat-protocol/" title="Implement Dat Protocol" class="dd-item ">
         <a href="/challenges/implement-dat-protocol/">
         Implement Dat Protocol
@@ -671,7 +652,7 @@
             
           
           
-            <a href='/'></a> > <a href='/getting-started/'>Getting Started</a> > Using the prototyping area
+            <a href='/'></a> > <a href='/getting-started/'>Getting Started</a> > Using the prototyping area and corners
           
          
           
@@ -687,10 +668,12 @@
 <ul>
 <li>
 <ul>
-<li><a href="#pin-hole-behaviour">Pin/Hole behaviour</a>
+<li><a href="#hole-behaviour">Hole behaviour</a>
 <ul>
-<li><a href="#corners">Corners</a></li>
+<li><a href="#prototype-holes">Prototype holes</a></li>
+<li><a href="#corner-holes">Corner holes</a></li>
 </ul></li>
+<li><a href="#important-note-re-leds-and-touch-sensing">Important note re LEDs and touch sensing</a></li>
 <li><a href="#board-layout">Board layout</a></li>
 </ul></li>
 </ul>
@@ -706,7 +689,7 @@
         
         <div id="body-inner">
           
-            <h1>Using the prototyping area</h1>
+            <h1>Using the prototyping area and corners</h1>
           
 
         
@@ -718,11 +701,11 @@
 
 <p>As always, the <a href="https://www.espruino.com/">Espruino web-site</a> has lots more info and examples.</p>
 
-<h2 id="pin-hole-behaviour">Pin/Hole behaviour</h2>
+<h2 id="hole-behaviour">Hole behaviour</h2>
 
-<p>The edge holes and the corner holes each have slightly different capabilities as follows:</p>
+<p>The edge holes and the corner holes each have slightly different capabilities.</p>
 
-<p>### Proto pins</p>
+<h3 id="prototype-holes">Prototype holes</h3>
 
 <ul>
 <li>0 - Digital I/O Only</li>
@@ -736,7 +719,7 @@
 <li>8 - Digital I/O and Serial RX</li>
 </ul>
 
-<h3 id="corners">Corners</h3>
+<h3 id="corner-holes">Corner holes</h3>
 
 <ul>
 <li>1 - Digital I/O Only</li>
@@ -746,6 +729,10 @@
 <li>5 - Digital I/O and Analogue-in (ADC)</li>
 <li>6 - Digital I/O and Analogue-in (ADC)</li>
 </ul>
+
+<h2 id="important-note-re-leds-and-touch-sensing">Important note re LEDs and touch sensing</h2>
+
+<p>As LEDn == CORNERn, adding most LEDs to a corner will prevent capacitive sense functioning on that corner. White and blue LEDs will probably work but not other colours.</p>
 
 <h2 id="board-layout">Board layout</h2>
 
@@ -1220,22 +1207,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1258,20 +1229,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1509631333"></script>
-    <script src="/js/perfect-scrollbar.min.js?1509631333"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1509631333"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1509631333"></script>
-    <script src="/js/featherlight.min.js?1509631333"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1509631333"></script>
-    <script src="/js/highlight.pack.js?1509631333"></script>
+    <script src="/js/clipboard.min.js?1509638748"></script>
+    <script src="/js/perfect-scrollbar.min.js?1509638748"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1509638748"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1509638748"></script>
+    <script src="/js/featherlight.min.js?1509638748"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1509638748"></script>
+    <script src="/js/highlight.pack.js?1509638748"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1509631333"></script>
-    <script src="/js/learn.js?1509631333"></script>
-    <script src="/js/hugo-learn.js?1509631333"></script>
+    <script src="/js/modernizr.custom.71422.js?1509638748"></script>
+    <script src="/js/learn.js?1509638748"></script>
+    <script src="/js/hugo-learn.js?1509638748"></script>
 
-    <link href="/mermaid/mermaid.css?1509631333" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1509631333"></script>
+    <link href="/mermaid/mermaid.css?1509638748" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1509638748"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

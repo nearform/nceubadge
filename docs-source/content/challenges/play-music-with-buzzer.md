@@ -6,6 +6,8 @@ draft: false
 ---
 ### Challenge 5
 
-We have lots of buzzers at the Hacking Station. You just have to solder the red wire to one of the D0-D8 holes on the edge of the badge and the black wire to one of the Ground (-) holes.
+We have lots of buzzers at the Hacking Station. You just have to solder the red wire to one of the D0-D6 holes on the edge of the badge and the black wire to one of the Ground (-) holes.
 
 Then impress everyone with your groovy tunes using the [APIs here](https://www.espruino.com/Making+Music).
+
+Note: Gordon is working on a variation of this that uses two digital pins and doubles the output volume.

@@ -59,7 +59,7 @@ Buttons are a great example of how you write event-driven code with Espruino rat
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/detect-capacitive-touch/</guid>
-      <description>Challenge 3 It&amp;rsquo;s very easy to read a capacitance value from the 6 lanyard holes in the badge. Experiment with the code and how the badge responds to touch. Then come up with a use for it. Perhaps related to LEDs on the on-screen display?
+      <description>Challenge 3 It&amp;rsquo;s very easy to read a capacitance value from the 6 lanyard holes in the badge. Experiment with the code and how the badge responds to touch. Then come up with a use for it.
 See the getting started area for the relevant API call.</description>
     </item>
     
@@ -90,8 +90,9 @@ Make your badge connectable  Enter the Konami code, if you haven&amp;rsquo;t alr
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/play-music-with-buzzer/</guid>
-      <description>Challenge 5 We have lots of buzzers at the Hacking Station. You just have to solder the red wire to one of the D0-D8 holes on the edge of the badge and the black wire to one of the Ground (-) holes.
-Then impress everyone with your groovy tunes using the APIs here.</description>
+      <description>Challenge 5 We have lots of buzzers at the Hacking Station. You just have to solder the red wire to one of the D0-D6 holes on the edge of the badge and the black wire to one of the Ground (-) holes.
+Then impress everyone with your groovy tunes using the APIs here.
+Note: Gordon is working on a variation of this that uses two digital pins and doubles the output volume.</description>
     </item>
     
     <item>
@@ -144,7 +145,7 @@ You could also try the built-in Blockly graphical editor which is very similar t
       <description>This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.
 The badge uses the same core module as the Puck.js and can run most of the same software.
 Hardware Features include:
- nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacitive touch sensors on all 6 corners Prototyping area with 8 CPU pins accessible Holes for LEDs on all 6 corners NFC antenna SWD programming pins  CPU Pins (Vertical line of holes along left hand edge of badge) You write to or read from a pin with:</description>
+ nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacitive touch sensors on all 6 corners Digital I/O on all 6 corners Analogue-in on 3 corners Prototyping area with 8 CPU pins accessible Digital I/O on all 8 pins Analogue-in on 4 pins Holes for LEDs on all 6 corners NFC antenna SWD programming pins  Proto holes and corner holes You write or read a digital high/low to/from a hole with:</description>
     </item>
     
     <item>
@@ -158,7 +159,7 @@ You&amp;rsquo;ll get lots of guidance on the Puck.js site here for Eddystone and
     </item>
     
     <item>
-      <title>Using the prototyping area</title>
+      <title>Using the prototyping area and corners</title>
       <link>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</link>
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
@@ -224,7 +225,7 @@ You can get started with the code here.</description>
       
       <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</guid>
       <description>Challenge 14 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.
-This is an advanced task and may involve installing the LED light&amp;rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the light.
+This is an advanced task and may involve installing the lightbulb&amp;rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the lightbulb.
 You can get guidance here and here but they may not contain a solution specific to this lightbulb.</description>
     </item>
     
@@ -258,16 +259,6 @@ Also consider the new BLE mesh networking standard which is currently not suppor
       <description>Challenge 17 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.
 If you figure it out, write a blogpost about it!
 Some of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.</description>
-    </item>
-    
-    <item>
-      <title>Record and Playback Sound</title>
-      <link>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</link>
-      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</guid>
-      <description>Challenge 17 Record some sound using the &amp;ldquo;buzzer&amp;rdquo; and play it back.
-Information on recording using the Waveform class can be found here.</description>
     </item>
     
     <item>

@@ -5,7 +5,6 @@ chapter: true
 date: 2017-10-28T10:29:15+01:00
 draft: false
 ---
-### Chapter 1
 
 # Try all of these challenges!
 You'll start with Hello World and hopefully by Wednesday you'll have a giant P2P badge network running.
@@ -31,14 +30,16 @@ Try combining multiple challenges into one codebase.
 17. Communicate with some other Bluetooth devices
 18. Implement DAT protocol on Espruino
 
+### The Grand Challenge
+Don't forget [the grand challenge](/#the-grand-challenge)!
 
-## Advanced tools
+### Advanced tools
 There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.
 
-### Android
+#### Android
 * [nRF Connect](https://play.google.com/store/apps/details?id=no.nordicsemi.android.mcp&hl=en)
 * [nRF Toolbox](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&hl=en)
 
-### iOS
+#### iOS
 * [nRF Connect](https://itunes.apple.com/us/app/nrf-connect/id1054362403?mt=8)
 * [nRF Toolbox](https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8)

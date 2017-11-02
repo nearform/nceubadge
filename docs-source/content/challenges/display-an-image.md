@@ -10,5 +10,5 @@ You can see that we took all of your names and turned them into images that were
 
 To get started, have a look at the end of [this page](https://www.espruino.com/Graphics) or at the [nasty hacky code](https://github.com/nearform/nceubadge/blob/master/name-generator/bulk-generate.js) we created to generate all the badge images.
 
-Remember the badge is 128x64 monochrome.
+Remember the badge display is 128x64 monochrome.
 

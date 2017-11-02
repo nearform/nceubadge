@@ -17,23 +17,33 @@ Hardware Features include:
 * Daylight-readable LCD screen
 * 6 input buttons
 * Capacitive touch sensors on all 6 corners
+* Digital I/O on all 6 corners
+* Analogue-in on 3 corners
 * Prototyping area with 8 CPU pins accessible
+* Digital I/O on all 8 pins
+* Analogue-in on 4 pins
 * Holes for LEDs on all 6 corners
 * NFC antenna
 * SWD programming pins
 
 
-### CPU Pins (Vertical line of holes along left hand edge of badge)
-You write to or read from a pin with: 
+### Proto holes and corner holes
+You write or read a digital high/low to/from a hole with: 
 
 ```javascript
-digitalWrite(pin, value);
-digitalRead(pin);
+digitalWrite(hole, value);
+digitalRead(hole);
 ```
 
-where pin is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top) and value is 0 or 1.
+where hole is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top), CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6 and value is 0 or 1.
 
-The firmware has some extra API calls and variables for some of the badge features. You can use them as follows:
+You read an analogue value from a hole with: 
+
+```javascript
+analogRead(hole);
+```
+
+where hole is one of D2, D3, D4, D5, CORNER4, CORNER5, CORNER6.
 
 ### Buttons
 You can use a generic call like 
@@ -85,7 +95,7 @@ You can read the capacitance (and hence touch) from the 6 corners using
 Badge.capSense(corner);
 ```
 
-where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6. 
+where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6. See [note here](/getting-started/using-prototyping-area/#important-note-re-leds-and-touch-sensing) about issue of using sense and LEDs together.
 
 
 ### Battery Percentage
@@ -115,8 +125,6 @@ NRF.nfcURL("url")
 ```
 
 where URL is something like https://www.nearform.com
-
-*NOTE: If your phone is having difficulty picking up the NFC URL, it is likely that the tuning capacitors on your badge need to be changed to different values. Head on over to the Hacking Lounge to get them replaced or be shown how to do it yourself.*
 
 ## Advanced Only: Flashing updated firmware
 If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phone and use nRF Toolbox on either [Android](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&hl=en) or [iOS](https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8) to send it to the badge.

@@ -13,17 +13,17 @@
     <title>Accessing Hardware Features :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1509631333" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1509631333" rel="stylesheet">
-    <link href="/css/hybrid.css?1509631333" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1509631333" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1509631333" rel="stylesheet">
-    <link href="/css/auto-complete.css?1509631333" rel="stylesheet">
-    <link href="/css/theme.css?1509631333" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1509631333" rel="stylesheet">
+    <link href="/css/nucleus.css?1509638748" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1509638748" rel="stylesheet">
+    <link href="/css/hybrid.css?1509638748" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1509638748" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1509638748" rel="stylesheet">
+    <link href="/css/auto-complete.css?1509638748" rel="stylesheet">
+    <link href="/css/theme.css?1509638748" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1509638748" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1509631333"></script>
+    <script src="/js/jquery-2.x.min.js?1509638748"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1509631333"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1509631333"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1509638748"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1509638748"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1509631333"></script>
+<script type="text/javascript" src="/js/search.js?1509638748"></script>
 
     
   </div>
@@ -211,9 +211,9 @@
  
   
     
-      <li data-nav-id="/getting-started/using-prototyping-area/" title="Using the prototyping area" class="dd-item ">
+      <li data-nav-id="/getting-started/using-prototyping-area/" title="Using the prototyping area and corners" class="dd-item ">
         <a href="/getting-started/using-prototyping-area/">
-        Using the prototyping area
+        Using the prototyping area and corners
         
         </a>
     </li>
@@ -585,25 +585,6 @@
  
   
     
-      <li data-nav-id="/challenges/record-and-playback-sound/" title="Record and Playback Sound" class="dd-item ">
-        <a href="/challenges/record-and-playback-sound/">
-        Record and Playback Sound
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
       <li data-nav-id="/challenges/implement-dat-protocol/" title="Implement Dat Protocol" class="dd-item ">
         <a href="/challenges/implement-dat-protocol/">
         Implement Dat Protocol
@@ -689,7 +670,7 @@
 <ul>
 <li>
 <ul>
-<li><a href="#cpu-pins-vertical-line-of-holes-along-left-hand-edge-of-badge">CPU Pins (Vertical line of holes along left hand edge of badge)</a></li>
+<li><a href="#proto-holes-and-corner-holes">Proto holes and corner holes</a></li>
 <li><a href="#buttons">Buttons</a></li>
 <li><a href="#leds">LEDs</a></li>
 <li><a href="#graphics">Graphics</a></li>
@@ -734,23 +715,32 @@
 <li>Daylight-readable LCD screen</li>
 <li>6 input buttons</li>
 <li>Capacitive touch sensors on all 6 corners</li>
+<li>Digital I/O on all 6 corners</li>
+<li>Analogue-in on 3 corners</li>
 <li>Prototyping area with 8 CPU pins accessible</li>
+<li>Digital I/O on all 8 pins</li>
+<li>Analogue-in on 4 pins</li>
 <li>Holes for LEDs on all 6 corners</li>
 <li>NFC antenna</li>
 <li>SWD programming pins</li>
 </ul>
 
-<h3 id="cpu-pins-vertical-line-of-holes-along-left-hand-edge-of-badge">CPU Pins (Vertical line of holes along left hand edge of badge)</h3>
+<h3 id="proto-holes-and-corner-holes">Proto holes and corner holes</h3>
 
-<p>You write to or read from a pin with:</p>
+<p>You write or read a digital high/low to/from a hole with:</p>
 
-<pre><code class="language-javascript">digitalWrite(pin, value);
-digitalRead(pin);
+<pre><code class="language-javascript">digitalWrite(hole, value);
+digitalRead(hole);
 </code></pre>
 
-<p>where pin is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top) and value is 0 or 1.</p>
+<p>where hole is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top), CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6 and value is 0 or 1.</p>
 
-<p>The firmware has some extra API calls and variables for some of the badge features. You can use them as follows:</p>
+<p>You read an analogue value from a hole with:</p>
+
+<pre><code class="language-javascript">analogRead(hole);
+</code></pre>
+
+<p>where hole is one of D2, D3, D4, D5, CORNER4, CORNER5, CORNER6.</p>
 
 <h3 id="buttons">Buttons</h3>
 
@@ -800,7 +790,7 @@ g.flip();
 <pre><code class="language-javascript">Badge.capSense(corner);
 </code></pre>
 
-<p>where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6.</p>
+<p>where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6. See <a href="/getting-started/using-prototyping-area/#important-note-re-leds-and-touch-sensing">note here</a> about issue of using sense and LEDs together.</p>
 
 <h3 id="battery-percentage">Battery Percentage</h3>
 
@@ -828,8 +818,6 @@ g.flip();
 </code></pre>
 
 <p>where URL is something like <a href="https://www.nearform.com">https://www.nearform.com</a></p>
-
-<p><em>NOTE: If your phone is having difficulty picking up the NFC URL, it is likely that the tuning capacitors on your badge need to be changed to different values. Head on over to the Hacking Lounge to get them replaced or be shown how to do it yourself.</em></p>
 
 <h2 id="advanced-only-flashing-updated-firmware">Advanced Only: Flashing updated firmware</h2>
 
@@ -1304,22 +1292,6 @@ g.flip();
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1333,7 +1305,7 @@ g.flip();
             <a class="nav nav-prev" href="/getting-started/other-code-samples/" title="Other Code Samples"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/getting-started/using-prototyping-area/" title="Using the prototyping area" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/getting-started/using-prototyping-area/" title="Using the prototyping area and corners" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1342,20 +1314,20 @@ g.flip();
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1509631333"></script>
-    <script src="/js/perfect-scrollbar.min.js?1509631333"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1509631333"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1509631333"></script>
-    <script src="/js/featherlight.min.js?1509631333"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1509631333"></script>
-    <script src="/js/highlight.pack.js?1509631333"></script>
+    <script src="/js/clipboard.min.js?1509638748"></script>
+    <script src="/js/perfect-scrollbar.min.js?1509638748"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1509638748"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1509638748"></script>
+    <script src="/js/featherlight.min.js?1509638748"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1509638748"></script>
+    <script src="/js/highlight.pack.js?1509638748"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1509631333"></script>
-    <script src="/js/learn.js?1509631333"></script>
-    <script src="/js/hugo-learn.js?1509631333"></script>
+    <script src="/js/modernizr.custom.71422.js?1509638748"></script>
+    <script src="/js/learn.js?1509638748"></script>
+    <script src="/js/hugo-learn.js?1509638748"></script>
 
-    <link href="/mermaid/mermaid.css?1509631333" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1509631333"></script>
+    <link href="/mermaid/mermaid.css?1509638748" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1509638748"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

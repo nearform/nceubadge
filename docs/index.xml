@@ -113,7 +113,9 @@ You could also try the built-in Blockly graphical editor which is very similar t
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/on-screen-menu/</guid>
-      <description>Challenge 6 If you implement an on-screen menu with up-down-left-right-select then you could have lots of your challenges on the badge at the same time and demo them to people. Have a look at the github repo for the sample code.</description>
+      <description>Challenge 6 If you implement an on-screen menu with up-down-left-right-select then you could have lots of your challenges on the badge at the same time and demo them to people. Have a look at the github repo for the sample code.
+Add to the existing menu You can also try the following:
+ Turn off &amp;lsquo;Reset Before Send&amp;rsquo; in the Web IDE options Write your code a bit like this:  Badge.</description>
     </item>
     
     <item>

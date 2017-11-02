@@ -38,7 +38,7 @@ Gordon Williams
 @Espruino
 www.espruino.com
 www.nearform.com`);
-   wait(e => m = menu.list(g, mainmenu));
+   wait(e => Badge.menu());
   },
   "Make Connectable": () => {
    Badge.drawCenter(`-- Now Connectable --
@@ -50,7 +50,7 @@ capable browser to start coding!`);
    g.drawString("Name: Badge " + NRF.getAddress().substr(-5).replace(":", ""), 0, 44);
    g.drawString("MAC: " + NRF.getAddress(), 0, 50);
    g.flip();
-   wait(() => { NRF.sleep(); m = menu.list(g, mainmenu) });
+   wait(() => { NRF.sleep(); Badge.menu(); });
    NRF.wake();
   },
   "T-Rex": Badge.trex,
@@ -65,6 +65,7 @@ capable browser to start coding!`);
   },
   "Back to Badge": Badge.badge
  };
+ if (Badge.apps) for (var i in Badge.apps) mainmenu[i]=Badge.apps[i];
 
  Badge.reset();
  var menu = require("graphical_menu");

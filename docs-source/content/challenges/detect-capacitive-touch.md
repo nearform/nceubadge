@@ -6,4 +6,6 @@ draft: false
 ---
 ### Challenge 3
 
-Detect the application and removal of your hand from the capacitive sensors on the corners of the badge.
+It's very easy to read a capacitance value from the 6 lanyard holes in the badge. Experiment with the code and how the badge responds to touch. Then come up with a use for it. Perhaps related to LEDs on the on-screen display?
+
+See the [getting started area](/getting-started/basic-hardware-features/) for the relevant API call.

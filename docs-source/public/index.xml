@@ -17,7 +17,8 @@
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/hello-world-screen/</guid>
-      <description>Challenge 1 Display &amp;ldquo;Hello World&amp;rdquo; on the badge&amp;rsquo;s display</description>
+      <description>Challenge 1 This challenge is just to get you warmed up and comfortable using the Web IDE. See if you can display &amp;ldquo;Hello World&amp;rdquo; on the badge&amp;rsquo;s screen.
+Check out the Espruino site to see what you can do with Graphics and Fonts.</description>
     </item>
     
     <item>
@@ -46,7 +47,10 @@
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/detect-button-press/</guid>
-      <description>Challenge 2 Detect the various buttons being pressed/released on the badge.</description>
+      <description>Challenge 2 Reading the instantaneous value of a button is easy (see the getting started docs) but how do you deal with debouncing so it&amp;rsquo;s reliable?
+What about more than one button being pressed at the same time?
+Help is at hand on the Espruino site.
+Buttons are a great example of how you write event-driven code with Espruino rather than the more traditional read-loops that people starting on Arduino tend to use.</description>
     </item>
     
     <item>
@@ -55,7 +59,8 @@
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/detect-capacitive-touch/</guid>
-      <description>Challenge 3 Detect the application and removal of your hand from the capacitive sensors on the corners of the badge.</description>
+      <description>Challenge 3 It&amp;rsquo;s very easy to read a capacitance value from the 6 lanyard holes in the badge. Experiment with the code and how the badge responds to touch. Then come up with a use for it. Perhaps related to LEDs on the on-screen display?
+See the getting started area for the relevant API call.</description>
     </item>
     
     <item>
@@ -64,7 +69,9 @@
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/flash-leds/</guid>
-      <description>Challenge 4 Add some LEDs to the corners of the badge and make them flash.</description>
+      <description>Challenge 4 It&amp;rsquo;s very easy to add LEDs to the 6 corners of your badge. In fact you probably don&amp;rsquo;t even have to solder them. Just stick them in with the short leg oriented to the squared off side of each white circle.
+Then try turning them on and off (hint: check the getting started pages). How about some timer-based patterns too? Or controlling them with the buttons?
+Note: The low-power nature of the badge means that if you light all LEDs together they&amp;rsquo;ll be quite dim and you&amp;rsquo;ll burn through the battery much more quickly.</description>
     </item>
     
     <item>
@@ -83,7 +90,8 @@ Make your badge connectable  Enter the Konami code, if you haven&amp;rsquo;t alr
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/play-music-with-buzzer/</guid>
-      <description>Challenge 5 Solder a buzzer to one of the pins and ground and then play some tunes out on it.</description>
+      <description>Challenge 5 We have lots of buzzers at the Hacking Station. You just have to solder the red wire to one of the D0-D8 holes on the edge of the badge and the black wire to one of the Ground (-) holes.
+Then impress everyone with your groovy tunes using the APIs here.</description>
     </item>
     
     <item>
@@ -93,7 +101,9 @@ Make your badge connectable  Enter the Konami code, if you haven&amp;rsquo;t alr
       
       <guid>http://nodeconfeubadge.org/getting-started/hello-world-console/</guid>
       <description>Of course we start with Hello World. Follow the connection instructions, then click on the left hand side of the IDE and type:
-console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute about what just happened there in terms of communications flow.</description>
+console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute about what just happened there in terms of communications flow.
+You should try out other aspects of the Web IDE. It has full auto-complete in the REPL window including Button/LED names and functions.
+You could also try the built-in Blockly graphical editor which is very similar to Scratch.</description>
     </item>
     
     <item>
@@ -102,7 +112,7 @@ console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute a
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/on-screen-menu/</guid>
-      <description>Challenge 6 Implement an on-screen menu with up-down-left-right-select.</description>
+      <description>Challenge 6 If you implement an on-screen menu with up-down-left-right-select then you could have lots of your challenges on the badge at the same time and demo them to people. Have a look at the github repo for the sample code.</description>
     </item>
     
     <item>
@@ -122,15 +132,15 @@ console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute a
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/broadcast-nfc-url/</guid>
-      <description>Challenge 7 Setup NFC and broadcast a different URL to the one built-into your badge. Prove it works using an Android phone.</description>
+      <description>Challenge 7 This is an easy one. Change the NFC URL that your badge transmits. Find someone with a Samsung Galaxy or similar phone to test it.</description>
     </item>
     
     <item>
       <title>Accessing Hardware Features</title>
-      <link>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</link>
+      <link>http://nodeconfeubadge.org/getting-started/accessing-hardware-features/</link>
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
-      <guid>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</guid>
+      <guid>http://nodeconfeubadge.org/getting-started/accessing-hardware-features/</guid>
       <description>This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.
 The badge uses the same core module as the Puck.js and can run most of the same software.
 Hardware Features include:
@@ -143,7 +153,8 @@ Hardware Features include:
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/broadcast-beacons/</guid>
-      <description>Challenge 8 Broadcast a URL using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).</description>
+      <description>Challenge 8 Broadcast a URL over Bluetooth LE using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).
+You&amp;rsquo;ll get lots of guidance on the Puck.js site here for Eddystone and here for iBeacon.</description>
     </item>
     
     <item>
@@ -152,9 +163,8 @@ Hardware Features include:
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
-      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.
-As always, the Espruino web-site has lots more info and examples.
-This image shows the basic board setup:</description>
+      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes in that grid are unconnected and can be used to attach your components together.
+As always, the Espruino web-site has lots more info and examples.</description>
     </item>
     
     <item>
@@ -167,48 +177,14 @@ This image shows the basic board setup:</description>
     </item>
     
     <item>
-      <title>Use Badge for HID</title>
+      <title>Use the Badge as a HID Button</title>
       <link>http://nodeconfeubadge.org/challenges/use-badge-for-hid/</link>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/use-badge-for-hid/</guid>
-      <description>Challenge 10 Turn the badge into a HID button for your laptop and use it as a clicker for your talk at NodeConf!</description>
-    </item>
-    
-    <item>
-      <title>Connect to BLE Lightbulb</title>
-      <link>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</link>
-      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</guid>
-      <description>Challenge 11 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.</description>
-    </item>
-    
-    <item>
-      <title>Connect to BLE LED Strip</title>
-      <link>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</link>
-      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</guid>
-      <description>Challenge 12 See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.</description>
-    </item>
-    
-    <item>
-      <title>Communicate with another Badge</title>
-      <link>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</link>
-      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</guid>
-      <description>Challenge 13 Setup some sort of two way BLE commuication with someone else&amp;rsquo;s badge. Work as a team.</description>
-    </item>
-    
-    <item>
-      <title>Record and Playback Sound</title>
-      <link>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</link>
-      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</guid>
-      <description>Challenge 14 Record sound using the &amp;ldquo;buzzer&amp;rdquo; and play it back.</description>
+      <description>Challenge 10 HID means Human Interface Device and it&amp;rsquo;s a standard for connecting Bluetooth input devices like keyboards and mice to computers. Your badge can act as a HID button for your laptop including multimedia keys. You could even use it as a clicker for your talk at NodeConf!
+Check out the instructions here and try it out for yourself.
+Note: Bluetooth HID can&amp;rsquo;t be enabled on an active connection.</description>
     </item>
     
     <item>
@@ -217,7 +193,7 @@ This image shows the basic board setup:</description>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/display-an-image/</guid>
-      <description>Challenge 15 Take a PNG. Convert it to the correct format and display it on the badge.</description>
+      <description>Challenge 11 You can see that we took all of your names and turned them into images that were included as part of the software of each badge. A different image for every badge. Your challenge is to do something similar. Find an image somewhere, convert it into the correct format and display it on the badge. You&amp;rsquo;ll have lots of fun with Imagemagick outputting blank images or inverted ones :-)</description>
     </item>
     
     <item>
@@ -226,16 +202,51 @@ This image shows the basic board setup:</description>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</guid>
-      <description>Challenge 16 Implement Web Bluetooth with the Puck.js library. Make a webpage that got your last tweet from Twitter and then display it on the badge screen.</description>
+      <description>Challenge 12 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.
+Eventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.
+Lots of information about web Bluetooth and Espruino here.</description>
     </item>
     
     <item>
-      <title>Detect a Person with a PIR Sensor</title>
+      <title>Detect movement with a PIR Sensor</title>
       <link>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</link>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/</guid>
-      <description>Challenge 17 Detect person/heat/movement with a PIR sensor.</description>
+      <description>Challenge 13 We have a small number of PIR sensors at the Hacking Table. You can easily wire one of them up to your badge so it can detect motion. Now think of ways you could use that at an event.
+You can get started with the code here.</description>
+    </item>
+    
+    <item>
+      <title>Connect to BLE Lightbulb</title>
+      <link>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</guid>
+      <description>Challenge 14 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.
+This is an advanced task and may involve installing the LED light&amp;rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the light.
+You can get guidance here and here but they may not contain a solution specific to this lightbulb.</description>
+    </item>
+    
+    <item>
+      <title>Connect to BLE LED Strip</title>
+      <link>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</guid>
+      <description>Challenge 15 See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.
+This is a very advanced task and may involve installing the LED strip&amp;rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the strip.
+You can get guidance here and here but they do not contain a solution specific to this strip.</description>
+    </item>
+    
+    <item>
+      <title>Communicate with another Badge</title>
+      <link>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</guid>
+      <description>Challenge 16 This is another advanced challenge. We recommend starting with the instructions here and then decide if you want to continue.
+Also consider the new BLE mesh networking standard which is currently not supported on Espruino but would make for an impressive community contribution.</description>
     </item>
     
     <item>
@@ -244,7 +255,19 @@ This image shows the basic board setup:</description>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</guid>
-      <description>Challenge 18 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.</description>
+      <description>Challenge 17 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.
+If you figure it out, write a blogpost about it!
+Some of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.</description>
+    </item>
+    
+    <item>
+      <title>Record and Playback Sound</title>
+      <link>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</guid>
+      <description>Challenge 17 Record some sound using the &amp;ldquo;buzzer&amp;rdquo; and play it back.
+Information on recording using the Waveform class can be found here.</description>
     </item>
     
     <item>
@@ -253,8 +276,9 @@ This image shows the basic board setup:</description>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/implement-dat-protocol/</guid>
-      <description>Challenge 19 We&amp;rsquo;re kidding.
-Or are we?</description>
+      <description>Challenge 18 We&amp;rsquo;re kidding.
+Or are we?
+What sort of P2P messaging system could be created by all the badges at the event? Without burning through the battery in 5 minutes.</description>
     </item>
     
   </channel>

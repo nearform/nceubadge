@@ -1,10 +1,12 @@
 ---
 title: "Communicate with another Badge"
-weight: 13
+weight: 16
 date: 2017-10-28T10:29:15+01:00
 draft: false
 ---
-### Challenge 13
+### Challenge 16
 
-Setup some sort of two way BLE commuication with someone else's badge. Work as a team.
+This is another advanced challenge. We recommend starting with the [instructions here](https://www.espruino.com/Puck.js+Controlling+Other+Pucks) and then decide if you want to continue.
+
+Also consider the new [BLE mesh networking standard](http://forum.espruino.com/conversations/308148/) which is currently not supported on Espruino but would make for an impressive community contribution.
 

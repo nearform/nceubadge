@@ -36,23 +36,38 @@ where pin is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top) and value is 
 The firmware has some extra API calls and variables for some of the badge features. You can use them as follows:
 
 ### Buttons
-You can use  
+You can use a generic call like 
 
 ```javascript
-digitalWrite(button, value);
 digitalRead(button);
 ``` 
 
-where value is 1 or 0 and button is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR
+where button is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR
 
-### LEDs
-If you add LEDs to the corner holes, you can turn them on/off with 
+or with a Button-specific call 
 
 ```javascript
-digitalWrite(led);
+BTNx.read();
+``` 
+
+where BTNx is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR
+
+### LEDs
+If you add LEDs to the corner holes, you can turn them on/off with a generic call
+
+```javascript
+digitalWrite(led, value);
 ```
 
 where led is one of LED1, LED2, LED3, LED4, LED5, LED6.
+
+or with an LED-specific call 
+
+```javascript
+LEDx.write(value);
+```
+
+where LEDx is one of LED1, LED2, LED3, LED4, LED5, LED6 and value is 0 or 1.
 
 ### Graphics
 In many Espruino examples on the main site, you'll find setup code for different types of screens. That has already been taken care of for you on the badge and you can just access the graphics functions directly. e.g.
@@ -103,5 +118,7 @@ where URL is something like https://www.nearform.com
 
 *NOTE: If your phone is having difficulty picking up the NFC URL, it is likely that the tuning capacitors on your badge need to be changed to different values. Head on over to the Hacking Lounge to get them replaced or be shown how to do it yourself.*
 
-## Advanced: Flashing updated firmware
-If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phobe and use nRF Toolbox on either [Android](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&hl=en) or [iOS](https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8) to send it to the badge.
+## Advanced Only: Flashing updated firmware
+If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phone and use nRF Toolbox on either [Android](https://play.google.com/store/apps/details?id=no.nordicsemi.android.nrftoolbox&hl=en) or [iOS](https://itunes.apple.com/us/app/nrf-toolbox/id820906058?mt=8) to send it to the badge.
+
+Please only do this if you are sure you need it. By using a stock badge build from the Espruino site, you'll lose the built-in NodeConf EU main.js code and will just have a REPL over Bluetooth on your badge.

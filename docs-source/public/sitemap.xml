@@ -73,7 +73,7 @@
   </url>
   
   <url>
-    <loc>http://nodeconfeubadge.org/getting-started/basic-hardware-features/</loc>
+    <loc>http://nodeconfeubadge.org/getting-started/accessing-hardware-features/</loc>
     <lastmod>2017-10-28T15:30:33+01:00</lastmod>
   </url>
   
@@ -98,26 +98,6 @@
   </url>
   
   <url>
-    <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://nodeconfeubadge.org/challenges/display-an-image/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
@@ -133,7 +113,27 @@
   </url>
   
   <url>
+    <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/communicate-with-another-badge/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</loc>
+    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
   

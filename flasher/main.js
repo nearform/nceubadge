@@ -8,8 +8,6 @@ Badge.badgeImages = [{ width: 128, height: 64, bpp: 1,
  buffer: E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4AAAAAAAAAAAAAAAAAAH/+AAAAAAAAAAAAAAAAAAH//AAAAAAAAAAAAAAAAAAD//zwAAAAAAAAAAAAAAAAD//5+AAAAAAAAAAAAAAAAB//+fgAAAAAAAAAAAAAAAA///j5AAAAAAAAAAAAAAAAP//88YAAAAAAAAAAAAAAAHx//AOAAAAAAAAAAAAAAAD4H/4HwAAAAAAB/gAAAAAA8Q//j+AAAAAAAf4AAAAAAePH/5/gAAAAAAGAAAAAAAHn5/+f4AAAAAABgAAAAAAB5+f/n/AcAwDgCYAOAMGHA+fH/5/w/g/D+L2AP4XP74Pzz/+f8MMYYhjhgGDHDDjD8Af/n/DBECAIwfxARggwQ/gH/5/4gTAgCMH8wGQIMEP+Y/+f+IE/8PjBgMBkCDBD/nH/n/iBMAOIgYDAZAgwQ/54/5/4gTAGCIGAwGQIMEP+fH+f8IEwBgiBgMBECDBD/n4/n/CBGAYYgYBgxAgwQ/5/H5/wgRznOIGAO4QIMEH+f4+f8IEHw+iBgB8ECDBB/n/Hn/AAAAAAAAAAAAAAAf5/45/gAAAAAAAAAAAAAAD8f/AP4AAAAAAAAAAAAAAA+B/4B8AAAAAAAAAAAAAAAHAP/APAAAAAAAAAAAAAAABjz/zxgAAAAAAAAAAAAAAAJ8f4+QAAAAAAAAAAAAAAAAfn+fgAAAAAAAAAAAAAAAAH5/n4AAAAAAAAAAAAAAAAA8f88AAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAH/4AAAAAAAAAAAAAAAAAAD//AAAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
 }
 ];
-// pretokenise JS to give us a bit more space
-E.setFlags({ pretokenise: 1 });
 // Get it all back to normal-ish
 Badge.reset = () => {
  clearInterval();
@@ -25,6 +23,8 @@ Badge.drawCenter = s => {
   s.split("\n").forEach((s, i) => g.drawString(s, (128-g.stringWidth(s))/2, i*6));
   g.flip();
 };
+// User-defined apps
+Badge.apps = {};
 // Main menu
 Badge.menu = () => {
  function wait(cb) { m = { move: cb, select: cb }; }
@@ -38,7 +38,7 @@ Gordon Williams
 @Espruino
 www.espruino.com
 www.nearform.com`);
-   wait(e => m = menu.list(g, mainmenu));
+   wait(e => Badge.menu());
   },
   "Make Connectable": () => {
    Badge.drawCenter(`-- Now Connectable --
@@ -50,7 +50,7 @@ capable browser to start coding!`);
    g.drawString("Name: Badge " + NRF.getAddress().substr(-5).replace(":", ""), 0, 44);
    g.drawString("MAC: " + NRF.getAddress(), 0, 50);
    g.flip();
-   wait(() => { NRF.sleep(); m = menu.list(g, mainmenu) });
+   wait(() => { NRF.sleep(); Badge.menu(); });
    NRF.wake();
   },
   "T-Rex": Badge.trex,
@@ -65,7 +65,7 @@ capable browser to start coding!`);
   },
   "Back to Badge": Badge.badge
  };
-
+ for (var i in Badge.apps) mainmenu[i]=Badge.apps[i];
  Badge.reset();
  var menu = require("graphical_menu");
  var m = menu.list(g, mainmenu);

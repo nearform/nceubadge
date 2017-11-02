@@ -13,17 +13,17 @@
     <title>Using the prototyping area :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1509569490" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1509569490" rel="stylesheet">
-    <link href="/css/hybrid.css?1509569490" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1509569490" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1509569490" rel="stylesheet">
-    <link href="/css/auto-complete.css?1509569490" rel="stylesheet">
-    <link href="/css/theme.css?1509569490" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1509569490" rel="stylesheet">
+    <link href="/css/nucleus.css?1509630971" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1509630971" rel="stylesheet">
+    <link href="/css/hybrid.css?1509630971" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1509630971" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1509630971" rel="stylesheet">
+    <link href="/css/auto-complete.css?1509630971" rel="stylesheet">
+    <link href="/css/theme.css?1509630971" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1509630971" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1509569490"></script>
+    <script src="/js/jquery-2.x.min.js?1509630971"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1509569490"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1509569490"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1509630971"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1509630971"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1509569490"></script>
+<script type="text/javascript" src="/js/search.js?1509630971"></script>
 
     
   </div>
@@ -566,9 +566,9 @@
  
   
     
-      <li data-nav-id="/challenges/record-and-playback-sound/" title="Record and Playback Sound" class="dd-item ">
-        <a href="/challenges/record-and-playback-sound/">
-        Record and Playback Sound
+      <li data-nav-id="/challenges/communicate-with-other-ble-device/" title="Communicate with another Device" class="dd-item ">
+        <a href="/challenges/communicate-with-other-ble-device/">
+        Communicate with another Device
         
         </a>
     </li>
@@ -585,9 +585,9 @@
  
   
     
-      <li data-nav-id="/challenges/communicate-with-other-ble-device/" title="Communicate with another Device" class="dd-item ">
-        <a href="/challenges/communicate-with-other-ble-device/">
-        Communicate with another Device
+      <li data-nav-id="/challenges/record-and-playback-sound/" title="Record and Playback Sound" class="dd-item ">
+        <a href="/challenges/record-and-playback-sound/">
+        Record and Playback Sound
         
         </a>
     </li>
@@ -683,7 +683,18 @@
                 
                     <div class="progress">
     <div class="wrapper">
-
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#pin-hole-behaviour">Pin/Hole behaviour</a>
+<ul>
+<li><a href="#corners">Corners</a></li>
+</ul></li>
+<li><a href="#board-layout">Board layout</a></li>
+</ul></li>
+</ul>
+</nav>
     </div>
 </div>
 
@@ -701,11 +712,39 @@
         
 
 
-<p>You can add whatever hardware you like to the prototyping area. It&rsquo;s where you&rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.</p>
+
+
+<p>You can add whatever hardware you like to the prototyping area. It&rsquo;s where you&rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes in that grid are unconnected and can be used to attach your components together.</p>
 
 <p>As always, the <a href="https://www.espruino.com/">Espruino web-site</a> has lots more info and examples.</p>
 
-<p>This image shows the basic board setup:</p>
+<h2 id="pin-hole-behaviour">Pin/Hole behaviour</h2>
+
+<p>The edge holes and the corner holes each have slightly different capabilities as follows:</p>
+
+<p>### Proto pins
+0 - Digital I/O Only
+1 - Digital I/O Only
+2 - Digital I/O and Analogue-in (ADC)
+3 - Digital I/O and Analogue-in (ADC)
+4 - Digital I/O and Analogue-in (ADC)
+5 - Digital I/O and Analogue-in (ADC)
+6 - Digital I/O Only
+7 - Digital I/O and Serial TX
+8 - Digital I/O and Serial RX</p>
+
+<h3 id="corners">Corners</h3>
+
+<p>1 - Digital I/O Only
+2 - Digital I/O Only
+3 - Digital I/O Only
+4 - Digital I/O and Analogue-in (ADC)
+5 - Digital I/O and Analogue-in (ADC)
+6 - Digital I/O and Analogue-in (ADC)</p>
+
+<h2 id="board-layout">Board layout</h2>
+
+<p>This shows the basic board layout:</p>
 
 <p><img src="/images/badge_basics_01.png" alt="Board basics" /></p>
 
@@ -1214,20 +1253,20 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1509569490"></script>
-    <script src="/js/perfect-scrollbar.min.js?1509569490"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1509569490"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1509569490"></script>
-    <script src="/js/featherlight.min.js?1509569490"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1509569490"></script>
-    <script src="/js/highlight.pack.js?1509569490"></script>
+    <script src="/js/clipboard.min.js?1509630971"></script>
+    <script src="/js/perfect-scrollbar.min.js?1509630971"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1509630971"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1509630971"></script>
+    <script src="/js/featherlight.min.js?1509630971"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1509630971"></script>
+    <script src="/js/highlight.pack.js?1509630971"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1509569490"></script>
-    <script src="/js/learn.js?1509569490"></script>
-    <script src="/js/hugo-learn.js?1509569490"></script>
+    <script src="/js/modernizr.custom.71422.js?1509630971"></script>
+    <script src="/js/learn.js?1509630971"></script>
+    <script src="/js/hugo-learn.js?1509630971"></script>
 
-    <link href="/mermaid/mermaid.css?1509569490" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1509569490"></script>
+    <link href="/mermaid/mermaid.css?1509630971" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1509630971"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

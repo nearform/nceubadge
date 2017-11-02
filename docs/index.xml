@@ -163,9 +163,8 @@ You&amp;rsquo;ll get lots of guidance on the Puck.js site here for Eddystone and
       <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
-      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.
-As always, the Espruino web-site has lots more info and examples.
-This image shows the basic board setup:</description>
+      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes in that grid are unconnected and can be used to attach your components together.
+As always, the Espruino web-site has lots more info and examples.</description>
     </item>
     
     <item>
@@ -251,6 +250,17 @@ Also consider the new BLE mesh networking standard which is currently not suppor
     </item>
     
     <item>
+      <title>Communicate with another Device</title>
+      <link>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</link>
+      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</guid>
+      <description>Challenge 17 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.
+If you figure it out, write a blogpost about it!
+Some of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.</description>
+    </item>
+    
+    <item>
       <title>Record and Playback Sound</title>
       <link>http://nodeconfeubadge.org/challenges/record-and-playback-sound/</link>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
@@ -261,23 +271,12 @@ Information on recording using the Waveform class can be found here.</descriptio
     </item>
     
     <item>
-      <title>Communicate with another Device</title>
-      <link>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</link>
-      <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
-      
-      <guid>http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/</guid>
-      <description>Challenge 18 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.
-If you figure it out, write a blogpost about it!
-Some of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.</description>
-    </item>
-    
-    <item>
       <title>Implement Dat Protocol</title>
       <link>http://nodeconfeubadge.org/challenges/implement-dat-protocol/</link>
       <pubDate>Sat, 28 Oct 2017 10:29:15 +0100</pubDate>
       
       <guid>http://nodeconfeubadge.org/challenges/implement-dat-protocol/</guid>
-      <description>Challenge 19 We&amp;rsquo;re kidding.
+      <description>Challenge 18 We&amp;rsquo;re kidding.
 Or are we?
 What sort of P2P messaging system could be created by all the badges at the event? Without burning through the battery in 5 minutes.</description>
     </item>

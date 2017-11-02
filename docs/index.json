@@ -32,7 +32,7 @@
 	"title": "Challenges",
 	"tags": [],
 	"description": "",
-	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble on Node.js on your laptop to read the beacon data\n Turn Badge into HID buttons for your PC. Joystick or clicker for your talk Creating and displaying your own images Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge Detect movement with PIR sensor Connect Badge to BLE LED Lightbulb Connect Badge to BLE LED Strip Communicate with another badge Record sound and play it back Communicate with some other Bluetooth device (Garmin, Fitbit etc) Implement DAT protocol on Espruino  Advanced tools There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.\nAndroid  nRF Connect nRF Toolbox  iOS  nRF Connect nRF Toolbox  "
+	"content": " Chapter 1 Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble and Node.js on your laptop to read the beacon data\n Turn the Badge into HID buttons for your PC. Create and display your own images Implement Web Bluetooth with the Puck.js library Detect movement with a PIR sensor Connect to a BLE LED Lightbulb Connect to a BLE LED Strip Communicate with another badge Communicate with some other Bluetooth devices Implement DAT protocol on Espruino  Advanced tools There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.\nAndroid  nRF Connect nRF Toolbox  iOS  nRF Connect nRF Toolbox  "
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/detect-button-press/",
@@ -116,7 +116,7 @@
 	"title": "Using the prototyping area",
 	"tags": [],
 	"description": "",
-	"content": "You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes are unconnected and can be used to attach your components together.\nAs always, the Espruino web-site has lots more info and examples.\nThis image shows the basic board setup:\n"
+	"content": " You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes in that grid are unconnected and can be used to attach your components together.\nAs always, the Espruino web-site has lots more info and examples.\nPin/Hole behaviour The edge holes and the corner holes each have slightly different capabilities as follows:\n### Proto pins 0 - Digital I/O Only 1 - Digital I/O Only 2 - Digital I/O and Analogue-in (ADC) 3 - Digital I/O and Analogue-in (ADC) 4 - Digital I/O and Analogue-in (ADC) 5 - Digital I/O and Analogue-in (ADC) 6 - Digital I/O Only 7 - Digital I/O and Serial TX 8 - Digital I/O and Serial RX\nCorners 1 - Digital I/O Only 2 - Digital I/O Only 3 - Digital I/O Only 4 - Digital I/O and Analogue-in (ADC) 5 - Digital I/O and Analogue-in (ADC) 6 - Digital I/O and Analogue-in (ADC)\nBoard layout This shows the basic board layout:\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/use-noble-on-laptop/",
@@ -175,6 +175,13 @@
 	"content": " Challenge 16 This is another advanced challenge. We recommend starting with the instructions here and then decide if you want to continue.\nAlso consider the new BLE mesh networking standard which is currently not supported on Espruino but would make for an impressive community contribution.\n"
 },
 {
+	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/",
+	"title": "Communicate with another Device",
+	"tags": [],
+	"description": "",
+	"content": " Challenge 17 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.\nIf you figure it out, write a blogpost about it!\nSome of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.\n"
+},
+{
 	"uri": "http://nodeconfeubadge.org/challenges/record-and-playback-sound/",
 	"title": "Record and Playback Sound",
 	"tags": [],
@@ -182,18 +189,11 @@
 	"content": " Challenge 17 Record some sound using the \u0026ldquo;buzzer\u0026rdquo; and play it back.\nInformation on recording using the Waveform class can be found here.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/",
-	"title": "Communicate with another Device",
-	"tags": [],
-	"description": "",
-	"content": " Challenge 18 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.\nIf you figure it out, write a blogpost about it!\nSome of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.\n"
-},
-{
 	"uri": "http://nodeconfeubadge.org/challenges/implement-dat-protocol/",
 	"title": "Implement Dat Protocol",
 	"tags": [],
 	"description": "",
-	"content": " Challenge 19 We\u0026rsquo;re kidding.\nOr are we?\nWhat sort of P2P messaging system could be created by all the badges at the event? Without burning through the battery in 5 minutes.\n"
+	"content": " Challenge 18 We\u0026rsquo;re kidding.\nOr are we?\nWhat sort of P2P messaging system could be created by all the badges at the event? Without burning through the battery in 5 minutes.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/",

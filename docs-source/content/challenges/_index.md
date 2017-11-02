@@ -20,17 +20,16 @@ Try combining multiple challenges into one codebase.
 6. Implement your own on-screen menu
 7. Broadcast a different NFC URL
 8. Broadcast an Eddystone and iBeacon message
-9. Use Noble on Node.js on your laptop to read the beacon data  
-10. Turn Badge into HID buttons for your PC. Joystick or clicker for your talk
-11. Creating and displaying your own images
-12. Implement Web Bluetooth with the Puck.js library. Make a webpage that got their last tweet from Twitter and then printed it onto the badge
-13. Detect movement with PIR sensor
-14. Connect Badge to BLE LED Lightbulb
-15. Connect Badge to BLE LED Strip
+9. Use Noble and Node.js on your laptop to read the beacon data  
+10. Turn the Badge into HID buttons for your PC.
+11. Create and display your own images
+12. Implement Web Bluetooth with the Puck.js library
+13. Detect movement with a PIR sensor
+14. Connect to a BLE LED Lightbulb
+15. Connect to a BLE LED Strip
 16. Communicate with another badge
-17. Record sound and play it back
-18. Communicate with some other Bluetooth device (Garmin, Fitbit etc)
-19. Implement DAT protocol on Espruino
+17. Communicate with some other Bluetooth devices
+18. Implement DAT protocol on Espruino
 
 
 ## Advanced tools

@@ -42,6 +42,13 @@
 	"content": " Challenge 2 Reading the instantaneous value of a button is easy (see the getting started docs) but how do you deal with debouncing so it\u0026rsquo;s reliable?\nWhat about more than one button being pressed at the same time?\nHelp is at hand on the Espruino site.\nButtons are a great example of how you write event-driven code with Espruino rather than the more traditional read-loops that people starting on Arduino tend to use.\n"
 },
 {
+	"uri": "http://nodeconfeubadge.org/workshop/",
+	"title": "Workshop",
+	"tags": [],
+	"description": "",
+	"content": " Monday\u0026rsquo;s Workshop TBD\n"
+},
+{
 	"uri": "http://nodeconfeubadge.org/challenges/detect-capacitive-touch/",
 	"title": "Detect Capacitive Touch",
 	"tags": [],

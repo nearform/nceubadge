@@ -207,7 +207,8 @@ Note: Bluetooth HID can&amp;rsquo;t be enabled on an active connection.</descrip
       <guid>http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/</guid>
       <description>Challenge 12 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.
 Eventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.
-Lots of information about web Bluetooth and Espruino here.</description>
+Lots of information about web Bluetooth and Espruino here.
+Add a menu via Web Bluetooth You can really see the power of Web Bluetooth and Espruino by trying something like this:</description>
     </item>
     
     <item>

@@ -144,7 +144,7 @@
 	"title": "Create a Web Bluetooth Page",
 	"tags": [],
 	"description": "",
-	"content": " Challenge 12 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.\nEventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.\nLots of information about web Bluetooth and Espruino here.\n"
+	"content": " Challenge 12 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.\nEventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.\nLots of information about web Bluetooth and Espruino here.\nAdd a menu via Web Bluetooth You can really see the power of Web Bluetooth and Espruino by trying something like this:\nPuck.write(` Badge.apps[\u0026quot;My Foobar\u0026quot;] = function() { Badge.reset(); // my stuff // when done, call Badge.menu // eg. setWatch(Badge.menu, BTNB, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); }; `);  Create code based on the above in a webpage and host it on GitHub Pages. Write it so that anyone can go to the page, click a button and add the app to their badge.\nNote however that if you use any of Espruino\u0026rsquo;s modules, you\u0026rsquo;ll have to run it through the CLI first to output a JS file that also contains the modules.\n"
 },
 {
 	"uri": "http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/",

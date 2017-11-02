@@ -13,23 +13,25 @@ As always, the [Espruino web-site](https://www.espruino.com/) has lots more info
 The edge holes and the corner holes each have slightly different capabilities as follows:
 
 ### Proto pins
-0 - Digital I/O Only
-1 - Digital I/O Only
-2 - Digital I/O and Analogue-in (ADC)
-3 - Digital I/O and Analogue-in (ADC)
-4 - Digital I/O and Analogue-in (ADC)
-5 - Digital I/O and Analogue-in (ADC)
-6 - Digital I/O Only
-7 - Digital I/O and Serial TX
-8 - Digital I/O and Serial RX
+
+* 0 - Digital I/O Only
+* 1 - Digital I/O Only
+* 2 - Digital I/O and Analogue-in (ADC)
+* 3 - Digital I/O and Analogue-in (ADC)
+* 4 - Digital I/O and Analogue-in (ADC)
+* 5 - Digital I/O and Analogue-in (ADC)
+* 6 - Digital I/O Only
+* 7 - Digital I/O and Serial TX
+* 8 - Digital I/O and Serial RX
  
 ### Corners
-1 - Digital I/O Only
-2 - Digital I/O Only
-3 - Digital I/O Only
-4 - Digital I/O and Analogue-in (ADC)
-5 - Digital I/O and Analogue-in (ADC)
-6 - Digital I/O and Analogue-in (ADC)
+
+* 1 - Digital I/O Only
+* 2 - Digital I/O Only
+* 3 - Digital I/O Only
+* 4 - Digital I/O and Analogue-in (ADC)
+* 5 - Digital I/O and Analogue-in (ADC)
+* 6 - Digital I/O and Analogue-in (ADC)
 
 ## Board layout
 This shows the basic board layout:

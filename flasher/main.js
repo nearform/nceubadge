@@ -23,6 +23,8 @@ Badge.drawCenter = s => {
   s.split("\n").forEach((s, i) => g.drawString(s, (128-g.stringWidth(s))/2, i*6));
   g.flip();
 };
+// User-defined apps
+Badge.apps = {};
 // Main menu
 Badge.menu = () => {
  function wait(cb) { m = { move: cb, select: cb }; }
@@ -63,8 +65,7 @@ capable browser to start coding!`);
   },
   "Back to Badge": Badge.badge
  };
- if (Badge.apps) for (var i in Badge.apps) mainmenu[i]=Badge.apps[i];
-
+ for (var i in Badge.apps) mainmenu[i]=Badge.apps[i];
  Badge.reset();
  var menu = require("graphical_menu");
  var m = menu.list(g, mainmenu);

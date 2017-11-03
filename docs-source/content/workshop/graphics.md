@@ -37,6 +37,8 @@ function plotCap() {
 setInterval(plotCap,50)
 ```
 
+![Plot capacitance](/images/workshop_graphics1.jpg)
+
 **Note:** This uses a whole bunch of battery power because of polling the
 capacitive sense as well as updating the screen, and if left this way
 could run the Badge's battery down in a few hours. When using the buttons
@@ -72,6 +74,8 @@ function plotCap() {
   plotBadge(caps);
 }
 ```
+
+![Plot corners](/images/workshop_graphics2.jpg)
 
 We're using a separate `plotBadge` function here so we can use it
 later to output the pattern we want the user to enter.

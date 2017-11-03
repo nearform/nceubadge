@@ -15,5 +15,7 @@ you'll only be able to use White and Blue LEDs, not any of the coloured
 ones!
 * Getting rid of all the callbacks. I've been super lazy - you could probably
 tidy things up a lot more using Promises.
-* Making the game Multiplayer!
-* Make a much better game!
+* Make a much better game.
+* Use the Bluetooth to connect to another Badge and control it
+* Interface with a Web Bluetooth Website
+* Make a multiplayer game!

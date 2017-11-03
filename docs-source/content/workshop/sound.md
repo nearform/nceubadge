@@ -13,6 +13,8 @@ badge, so we're going to add one.
 Get one of the gold coloured discs from the hacking bench - these are piezo
 speakers of the type you'd find in digital watches.
 
+![Piezo](/images/workshop_sound1.jpg)
+
 Use the wire strippers and try and strip around 2cm of insulation off each of
 the two wires. By careful - maybe try stripping 1cm first, then another cm,
 as the wire is really delicate.
@@ -21,8 +23,14 @@ Twist each bit of wire so it makes a nice braid, then poke each through the
 holes on the edge of the board marked 0 and 1 (the order doesn't matter) and
 twist them around tightly as below. 0 and 1 correspond to pins `D0` and `D1`.
 
+![Piezo wires](/images/workshop_sound2.jpg)
+
 **Note:** You're welcome to solder the speaker on if you want to - it's just
 quick and reversible to twist.
+
+![Piezo attached](/images/workshop_sound3.jpg)
+
+![Piezo attached](/images/workshop_sound4.jpg)
 
 Now get a bit of double-sided tape and tape the speaker to the back of your 
 badge. It makes it louder if it can vibrate something else.

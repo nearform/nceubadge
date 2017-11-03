@@ -175,6 +175,8 @@ function game(pattern) {
 game([])
 ```
 
+![Game over](/images/workshop_end.jpg)
+
 ## Finally!
 
 And that's it! The finished game should look like this:

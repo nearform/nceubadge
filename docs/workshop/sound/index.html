@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>Sound :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/sound/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -628,158 +628,6 @@
           
           
         
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/get-connected/" title="Get Connected" class="dd-item ">
-        <a href="/workshop/get-connected/">
-        Get Connected
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/clean-slate/" title="Clean Slate" class="dd-item ">
-        <a href="/workshop/clean-slate/">
-        Clean Slate
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/capacitive-sense/" title="Capacitive Sense" class="dd-item ">
-        <a href="/workshop/capacitive-sense/">
-        Capacitive Sense
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/graphics/" title="Graphics" class="dd-item ">
-        <a href="/workshop/graphics/">
-        Graphics
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/sound/" title="Sound" class="dd-item ">
-        <a href="/workshop/sound/">
-        Sound
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/making-a-game/" title="Making a Game" class="dd-item ">
-        <a href="/workshop/making-a-game/">
-        Making a Game
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/what-next/" title="What next?" class="dd-item ">
-        <a href="/workshop/what-next/">
-        What next?
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
-          
-            
-            
-
-
- 
-  
-    
-      <li data-nav-id="/workshop/adding-to-the-menu/" title="Adding to your Badge&#39;s menu" class="dd-item ">
-        <a href="/workshop/adding-to-the-menu/">
-        Adding to your Badge&#39;s menu
-        
-        </a>
-    </li>
-     
-  
- 
-
-            
           
         
         </ul>
@@ -825,6 +673,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +683,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > Sound
+          
+         
           
          
           
@@ -841,14 +697,28 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#sound">Sound</a>
+<ul>
+<li><a href="#it-s-too-quiet">It&rsquo;s too quiet!</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Sound</h1>
           
 
         
@@ -856,18 +726,151 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="sound">Sound</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>It&rsquo;d be nice if our game made some sounds. There&rsquo;s no speaker built into the
+badge, so we&rsquo;re going to add one.</p>
+
+<p>Get one of the gold coloured discs from the hacking bench - these are piezo
+speakers of the type you&rsquo;d find in digital watches.</p>
+
+<p><img src="/images/workshop_sound1.jpg" alt="Piezo" /></p>
+
+<p>Use the wire strippers and try and strip around 2cm of insulation off each of
+the two wires. By careful - maybe try stripping 1cm first, then another cm,
+as the wire is really delicate.</p>
+
+<p>Twist each bit of wire so it makes a nice braid, then poke each through the
+holes on the edge of the board marked 0 and 1 (the order doesn&rsquo;t matter) and
+twist them around tightly as below. 0 and 1 correspond to pins <code>D0</code> and <code>D1</code>.</p>
+
+<p><img src="/images/workshop_sound2.jpg" alt="Piezo wires" /></p>
+
+<p><strong>Note:</strong> You&rsquo;re welcome to solder the speaker on if you want to - it&rsquo;s just
+quick and reversible to twist.</p>
+
+<p><img src="/images/workshop_sound3.jpg" alt="Piezo attached" /></p>
+
+<p><img src="/images/workshop_sound4.jpg" alt="Piezo attached" /></p>
+
+<p>Now get a bit of double-sided tape and tape the speaker to the back of your
+badge. It makes it louder if it can vibrate something else.</p>
+
+<p>Now you can test it - in the left-hand side of the IDE type:</p>
+
+<pre><code>digitalWrite(D0,0)
+</code></pre>
+
+<p>This sets pin <code>D0</code> to be connected to ground.</p>
+
+<pre><code>analogWrite(D1,0.5,{freq:1000})
+</code></pre>
+
+<p>This puts a 1kHz frequency on pin D1, and you should be able to hear
+a really annoying high pitched beep.</p>
+
+<p>Type this to turn it off:</p>
+
+<pre><code>digitalWrite(D1,0)
+</code></pre>
+
+<p>So now all we need is a handy function to do timed beeps:</p>
+
+<pre><code>function beep(freq, time, callback) {
+  digitalWrite(D0,0);
+  analogWrite(D1,0.5,{freq:freq});
+  setTimeout(function() {
+    digitalWrite(D1,0);
+    if (callback) callback();
+  }, time);
+}
+</code></pre>
+
+<p>Which you can try with:</p>
+
+<pre><code>beep(700,1000)
+</code></pre>
+
+<p>For a 700Hz beep for 1 second, and so on&hellip;</p>
+
+<p>For our Simon game we need a different beep for each corner, so let&rsquo;s make
+a function for that.</p>
+
+<pre><code>function beepForCorner(corner, time) {
+  var pitches = [&quot;no_corner_0&quot;,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000
+  ];
+  beep(pitches[corner], time);
+}
+</code></pre>
+
+<p>Which you can use with <code>beepForCorner(2,1000)</code>.</p>
+
+<p>These pitches are totally un-musical, but if you were so inclined you could
+look up some more pleasing notes at <a href="https://pages.mtu.edu/~suits/notefreqs.html">https://pages.mtu.edu/~suits/notefreqs.html</a>
+and use those frequencies instead.</p>
+
+<h2 id="it-s-too-quiet">It&rsquo;s too quiet!</h2>
+
+<p>(optional!)</p>
+
+<p>Unfortunately the piezo speakers we&rsquo;re using aren&rsquo;t really meant to run
+off a voltage as low as we have on the badge (3V).</p>
+
+<p>We&rsquo;re driving them with a square wave between 0V and 3V while <code>D0</code> is at 0V,
+so the total swing in voltage is 0V.</p>
+
+<p>However, if we could make <code>D0</code> go to 3V when <code>D1</code> was at 0V and vice-versa,
+we&rsquo;d be able to get double the voltage swing - 6V!</p>
+
+<p>The following code uses the NRF52LL library, which has a bit more info
+in it: <a href="http://www.espruino.com/NRF52LL">http://www.espruino.com/NRF52LL</a></p>
+
+<p>Basically there&rsquo;s nothing built in to the Espruino interpreter to handle this,
+so we have to set up the hardware that&rsquo;s on the chip ourself - which is
+pretty low-level.</p>
+
+<pre><code>
+function beep(freq, time, callback) {
+  var ll = require(&quot;NRF52LL&quot;);
+  // set up D0 and D1 as outputs
+  digitalWrite(D0,0);
+  digitalWrite(D1,0);
+  // create two 'toggle' tasks, one for each pin
+  var t0 = ll.gpiote(6, {type:&quot;task&quot;,pin:D0,lo2hi:1,hi2lo:1,initialState:0});
+  var t1 = ll.gpiote(7, {type:&quot;task&quot;,pin:D1,lo2hi:1,hi2lo:1,initialState:1});
+  // create a timer that counts up to a value depending on the frequency
+  var tmr = ll.timer(3,{cc:[500000/freq],cc0clear:1});
+  // use two PPI to trigger toggle events
+  ll.ppiEnable(6, tmr.eCompare[0], t0.tOut);
+  ll.ppiEnable(7, tmr.eCompare[0], t1.tOut);
+  // Manually trigger a task to start the timer
+  poke32(tmr.tClear,1);
+  poke32(tmr.tStart,1);
+  setTimeout(function() {
+    poke32(tmr.tStop,1);
+    ll.ppiDisable(6);
+    ll.ppiDisable(7);
+    if (callback) callback();
+  }, time);
+}
+</code></pre>
+
+<p>This code uses a library that&rsquo;s dynamically loaded in by the IDE, so you&rsquo;ll
+have to use the code on the <strong>right-hand side of the IDE</strong> and use the <code>Upload</code> button
+in order to have it work correctly.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1413,6 +1416,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1456,22 +1479,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1482,10 +1489,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/graphics/" title="Graphics"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/workshop/making-a-game/" title="Making a Game" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1515,3 +1522,4 @@
 
   </body>
 </html>
+

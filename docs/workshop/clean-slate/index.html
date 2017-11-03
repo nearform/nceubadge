@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>Clean Slate :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/clean-slate/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -655,7 +655,7 @@
  
   
     
-      <li data-nav-id="/workshop/clean-slate/" title="Clean Slate" class="dd-item ">
+      <li data-nav-id="/workshop/clean-slate/" title="Clean Slate" class="dd-item active">
         <a href="/workshop/clean-slate/">
         Clean Slate
         
@@ -825,6 +825,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +835,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > Clean Slate
+          
+         
           
          
           
@@ -841,14 +849,25 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#clean-slate">Clean Slate</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Clean Slate</h1>
           
 
         
@@ -856,18 +875,29 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="clean-slate">Clean Slate</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>Clear everything out of the right-hand side of the IDE window, and click the
+&lsquo;Upload&rsquo; button in the middle of the screen (a picture of a chip and an up-arrow).</p>
+
+<p>The Badge should now just display the &lsquo;Espruino&rsquo; logo - this is what gets
+displayed when no code has been loaded.</p>
+
+<p>Don&rsquo;t worry though <strong>- this hasn&rsquo;t overwritten what was on the badge before.</strong>
+That code is in Flash memory, and uploading an empty file has left the contents
+ of RAM empty, while the Flash memory has stayed the same. Removing the battery
+ and re-inserting (or flicking it away with your finger) will make the badge
+ reload everything.</p>
+
+<p><strong>Note:</strong> If you have <code>Save on Send</code> set in the options, or type <code>save()</code>
+then it <em>will</em> blow away the contents of the badge.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1365,6 +1395,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1456,22 +1506,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1482,10 +1516,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/get-connected/" title="Get Connected"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/workshop/capacitive-sense/" title="Capacitive Sense" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1515,3 +1549,4 @@
 
   </body>
 </html>
+

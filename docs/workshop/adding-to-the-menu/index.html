@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>Adding to your Badge&#39;s menu :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/adding-to-the-menu/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -769,7 +769,7 @@
  
   
     
-      <li data-nav-id="/workshop/adding-to-the-menu/" title="Adding to your Badge&#39;s menu" class="dd-item ">
+      <li data-nav-id="/workshop/adding-to-the-menu/" title="Adding to your Badge&#39;s menu" class="dd-item active">
         <a href="/workshop/adding-to-the-menu/">
         Adding to your Badge&#39;s menu
         
@@ -825,6 +825,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +835,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > Adding to your Badge's menu
+          
+         
           
          
           
@@ -841,14 +849,25 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#adding-to-your-badge-s-menu">Adding to your Badge&rsquo;s menu</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Adding to your Badge&#39;s menu</h1>
           
 
         
@@ -856,18 +875,51 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="adding-to-your-badge-s-menu">Adding to your Badge&rsquo;s menu</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>Next we&rsquo;re going to add the game we just made as a menu item inside
+the existing badge software.</p>
+
+<p>Wrap everything you&rsquo;ve done into the following function on the right-hand
+side of the IDE.</p>
+
+<pre><code>Badge.apps[&quot;Simon Game&quot;] = function() {
+  Badge.reset();
+  setWatch(Badge.menu, BTNB, { repeat: 1, debounce: 50, edge: &quot;rising&quot; });
+  
+  // Your code
+};
+</code></pre>
+
+<p>Now we need to get the badge back doing badgey stuff. disconnect the IDE
+from your badge, and pull the battery gently away from the PCB with a
+fingernail. When the display flickers off, let go and your badge will
+restart with the old code on it.</p>
+
+<p>Now do the Konami code again - <code>UUDDLRLRBA</code>, go to <code>Make Connectable</code>,
+and connect with the Web IDE. Simply <strong>Copy &amp; Paste</strong> your code from the
+right-hand side over to the left, <strong>don&rsquo;t Upload</strong>. If you upload, it&rsquo;ll
+reset the device and upload your code as it did before.</p>
+
+<p>This way, your code will now be loaded into RAM alongside the Badge&rsquo;s code.</p>
+
+<p>Disconnect the IDE and press the <code>A</code> button on the badge to exit the
+<code>Connectable</code> state. You&rsquo;ll now have a new menu item at the end of the list
+called <code>Simon Game</code>, and when you choose it it&rsquo;ll run your game!</p>
+
+<p><strong>Note:</strong> We&rsquo;ve totally filled up the flash memory with all the Badge stuff,
+so you won&rsquo;t be able to save your game like this and if you reset your badge
+by removing the battery it&rsquo;ll disappear.</p>
+
+<p>Instead, you&rsquo;d have to upload and save just the game as was done in the
+last step.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1461,6 +1513,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1482,7 +1535,7 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/what-next/" title="What next?"> <i class="fa fa-chevron-left"></i></a>
         
         
             <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
@@ -1515,3 +1568,4 @@
 
   </body>
 </html>
+

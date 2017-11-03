@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>Graphics :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/graphics/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -693,7 +693,7 @@
  
   
     
-      <li data-nav-id="/workshop/graphics/" title="Graphics" class="dd-item ">
+      <li data-nav-id="/workshop/graphics/" title="Graphics" class="dd-item active">
         <a href="/workshop/graphics/">
         Graphics
         
@@ -825,6 +825,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +835,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > Graphics
+          
+         
           
          
           
@@ -841,14 +849,25 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#graphics">Graphics</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Graphics</h1>
           
 
         
@@ -856,18 +875,89 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="graphics">Graphics</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>The badge exposes the LCD via a built-in variable called <code>g</code>. This has
+a bunch of methods such as <code>drawLine</code> or <code>drawString</code> that can be accessed
+(<a href="http://www.espruino.com/Graphics">http://www.espruino.com/Graphics</a>) however each command acts on an internal
+memory buffer. To update the display itself you need to call <code>g.flip()</code>.</p>
+
+<p>Try entering the following code on the left-hand side:</p>
+
+<pre><code>g.clear();
+g.drawString(&quot;Hello World!&quot;);
+g.flip();
+</code></pre>
+
+<p>The badge should now display the obvious &lsquo;Hello World&rsquo;!</p>
+
+<p>But what if we want to display our capacitance data? Enter the following
+on the <em>left-hand side</em>.</p>
+
+<pre><code>function plotCap() {
+  g.clear();  
+  var caps = [1,2,3,4,5,6].map(c=&gt;Badge.capSense(c));
+  caps.forEach(
+    (cap,x) =&gt; g.fillRect(x*21,64,(x+1)*21, 64-cap/1000)
+  );
+  g.flip();
+}
+setInterval(plotCap,50)
+</code></pre>
+
+<p><img src="/images/workshop_graphics1.jpg" alt="Plot capacitance" /></p>
+
+<p><strong>Note:</strong> This uses a whole bunch of battery power because of polling the
+capacitive sense as well as updating the screen, and if left this way
+could run the Badge&rsquo;s battery down in a few hours. When using the buttons
+rather than capacitive sense, the hardware itself can detect the change
+in the wire&rsquo;s voltage while the processor is asleep - you do that
+using <code>setWatch</code> - which is super power efficient.</p>
+
+<p>This is just displaying a few bars, but it would make more sense to display
+the status on a hexagon that matched the badge itself:</p>
+
+<pre><code>function plotBadge(presses) {
+  g.clear();    
+  // function to work out each corner's coordinates
+  function corner(c,r) {
+    var a = (c-2)*Math.PI/3;
+    return [64+Math.sin(a)*40*r, 32-Math.cos(a)*30*r];
+  }
+  // draw a hexagon - a line to each corner in turn
+  g.moveTo.apply(g,corner(6,1));
+  [1,2,3,4,5,6].forEach(c=&gt;g.lineTo.apply(g,corner(c,1)));
+  // Draw a circle where pressed
+  presses.forEach((hit,c) =&gt; {
+    if (!hit) return;
+    var coords = corner(c+1,0.8);
+    g.fillCircle(coords[0],coords[1],5);
+  });
+  g.flip();
+}
+
+function plotCap() {  
+  var caps = [1,2,3,4,5,6].map(c=&gt;Badge.capSense(c)&gt;20000);
+  plotBadge(caps);
+}
+</code></pre>
+
+<p><img src="/images/workshop_graphics2.jpg" alt="Plot corners" /></p>
+
+<p>We&rsquo;re using a separate <code>plotBadge</code> function here so we can use it
+later to output the pattern we want the user to enter.</p>
+
+<p><strong>Note:</strong> because we&rsquo;re entering this on the left-hand side we
+already have the interval from the last code we entered - just
+re-entering <code>plotCap</code> will replace the old one and the code will magically
+start working.</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1397,6 +1487,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1456,22 +1566,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1482,10 +1576,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/capacitive-sense/" title="Capacitive Sense"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/workshop/sound/" title="Sound" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1515,3 +1609,4 @@
 
   </body>
 </html>
+

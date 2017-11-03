@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>What next? :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/what-next/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -750,7 +750,7 @@
  
   
     
-      <li data-nav-id="/workshop/what-next/" title="What next?" class="dd-item ">
+      <li data-nav-id="/workshop/what-next/" title="What next?" class="dd-item active">
         <a href="/workshop/what-next/">
         What next?
         
@@ -825,6 +825,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +835,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > What next?
+          
+         
           
          
           
@@ -841,14 +849,25 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#what-next">What next?</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>What next?</h1>
           
 
         
@@ -856,18 +875,29 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="what-next">What next?</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>What about:</p>
+
+<ul>
+<li>Putting LEDs around the corners and using those to show the correct
+patterns. However, due to the way the capacitive sense and LEDs are shared,
+you&rsquo;ll only be able to use White and Blue LEDs, not any of the coloured
+ones!</li>
+<li>Getting rid of all the callbacks. I&rsquo;ve been super lazy - you could probably
+tidy things up a lot more using Promises.</li>
+<li>Make a much better game.</li>
+<li>Use the Bluetooth to connect to another Badge and control it</li>
+<li>Interface with a Web Bluetooth Website</li>
+<li>Make a multiplayer game!</li>
+</ul>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1445,6 +1475,7 @@
             
                 
                     
+                    
                 
                 
 
@@ -1461,6 +1492,9 @@
             
                 
                     
+                        
+                        
+                    
                 
                 
 
@@ -1482,10 +1516,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/making-a-game/" title="Making a Game"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/workshop/adding-to-the-menu/" title="Adding to your Badge&#39;s menu" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1515,3 +1549,4 @@
 
   </body>
 </html>
+

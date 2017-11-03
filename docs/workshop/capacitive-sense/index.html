@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>Capacitive Sense :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/capacitive-sense/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -674,7 +674,7 @@
  
   
     
-      <li data-nav-id="/workshop/capacitive-sense/" title="Capacitive Sense" class="dd-item ">
+      <li data-nav-id="/workshop/capacitive-sense/" title="Capacitive Sense" class="dd-item active">
         <a href="/workshop/capacitive-sense/">
         Capacitive Sense
         
@@ -825,6 +825,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +835,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > Capacitive Sense
+          
+         
           
          
           
@@ -841,14 +849,25 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#capacitive-sense">Capacitive Sense</a></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Capacitive Sense</h1>
           
 
         
@@ -856,18 +875,42 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="capacitive-sense">Capacitive Sense</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>To detect a press, we want to use the capacitive sense functionality on the badge.
+Type <code>Badge.capSense(1)</code> on the left-hand side of the IDE. You can use tab-complete
+to help you. You should get a number displayed in the region of about <code>10,000</code> - this
+value depends on the capacitance on that corner of the badge.</p>
+
+<p>Press your finger on the corner marked <code>1</code> and try again (up arrow, then enter)
+- you should see a much higher value - probably over <code>100,000</code>.</p>
+
+<p>We can read all 6 corners using ES6 arrow functions and <code>map</code>:</p>
+
+<pre><code>[1,2,3,4,5,6].map(c=&gt;Badge.capSense(c))
+</code></pre>
+
+<p>Note that not all corners are identical - for instance the corner nearest the
+Bluetooth module (corner 3) will probably read a bit less, because there&rsquo;s less
+wire.</p>
+
+<p>It&rsquo;s easy enough for us to just threshold the capacitance values to
+return an array of boolean values. You can use up-arrow and left to
+move the cursor and edit the last line (or even the mouse), <strong>but
+you need to get the cursor on the end of the line before you
+hit enter or it&rsquo;ll create a newline rather than executing</strong>:</p>
+
+<pre><code>[1,2,3,4,5,6].map(c=&gt;Badge.capSense(c)&gt;20000)
+</code></pre>
+
+<p>So at this point it&rsquo;d be nice to use the display to show our values&hellip;</p>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1381,6 +1424,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1456,22 +1519,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1482,10 +1529,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/clean-slate/" title="Clean Slate"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/workshop/graphics/" title="Graphics" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1515,3 +1562,4 @@
 
   </body>
 </html>
+

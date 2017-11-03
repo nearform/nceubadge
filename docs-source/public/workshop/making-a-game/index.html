@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
 
-    <title>Workshop :: NodeConf EU Badge</title>
+    <title>Making a Game :: NodeConf EU Badge</title>
     
     
     <link href="/css/nucleus.css?1509718954" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/workshop/">
+  <body class="" data-url="/workshop/making-a-game/">
     <nav id="sidebar" class="">
 
 
@@ -613,7 +613,7 @@
     
     <li data-nav-id="/workshop/" title="Workshop" class="dd-item 
         parent
-        active
+        
         
         ">
       <a href="/workshop/">
@@ -731,7 +731,7 @@
  
   
     
-      <li data-nav-id="/workshop/making-a-game/" title="Making a Game" class="dd-item ">
+      <li data-nav-id="/workshop/making-a-game/" title="Making a Game" class="dd-item active">
         <a href="/workshop/making-a-game/">
         Making a Game
         
@@ -825,6 +825,8 @@
                         </a>
                     </span>
                   
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
                   <span class="links">
                     
           
@@ -833,7 +835,13 @@
             
           
           
-            <a href='/'></a> > Workshop
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/workshop/'>Workshop</a> > Making a Game
+          
+         
           
          
           
@@ -841,14 +849,32 @@
                   </span>
                 </div>
                 
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li><a href="#making-a-game">Making a Game</a>
+<ul>
+<li><a href="#left-right">Left -&gt; Right</a></li>
+<li><a href="#outputting-a-pattern">Outputting a pattern</a></li>
+<li><a href="#detecting-the-pattern">Detecting the pattern</a></li>
+<li><a href="#sticking-it-together">Sticking it together</a></li>
+<li><a href="#finally">Finally!</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
               </div>
             </div>
             
 
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>Making a Game</h1>
           
 
         
@@ -856,18 +882,355 @@
 
 
 
-<h1 id="monday-s-workshop">Monday&rsquo;s Workshop</h1>
+<h1 id="making-a-game">Making a Game</h1>
 
-<p>We&rsquo;re going to make a 6-cornered <a href="https://en.wikipedia.org/wiki/Simon_(game)">&lsquo;Simon&rsquo; game</a>,
- using capacitive sense on each corner of the badge instead of the usual 4 cornered game.</p>
+<p>Ok, now we&rsquo;ll need to make two functions:</p>
+
+<ul>
+<li>A function to output a pattern</li>
+<li>A function to check the player&rsquo;s input against a pattern.</li>
+</ul>
+
+<p>These will take a simple array of numbers, which is the pattern
+to output.</p>
+
+<h2 id="left-right">Left -&gt; Right</h2>
+
+<p>We&rsquo;ve got enough code that we probably want to start using the
+right-hand side of the IDE as a proper editor. No changes will take
+effect until you press the <code>Upload</code> button, but when you upload it&rsquo;ll
+blow away any previous changes you made on the left-hand side.</p>
+
+<h2 id="outputting-a-pattern">Outputting a pattern</h2>
+
+<p>We&rsquo;ve already got the <code>plotBadge</code> function from the Graphics section,
+as well as <code>beepForCorner</code> from the Sound section. All we need to do
+is call them at the right times. Copy <code>plotBadge</code> and the <code>beep</code> stuff onto
+the right-hand side, as well as this - and then click the <code>Upload</code> button in
+the middle of the screen.</p>
+
+<pre><code>// Show the given pattern
+function showPattern(pattern, callback) {
+  // Nothing left - finish
+  if (!pattern.length) return callback();  
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Display a corner and beep
+  plotBadge([corner==1, corner==2, corner==3, corner==4, corner==5, corner==6]);
+  beepForCorner(corner, 1000);
+  // clear screen after a timeout
+  setTimeout(function() {    
+    g.clear();
+    g.flip();
+    // go to next
+    setTimeout(function() {
+      showPattern(pattern, callback);
+    }, 200);
+  }, 1000);
+}
+
+showPattern([1,2,3,4], ()=&gt;console.log(&quot;Done!&quot;));
+</code></pre>
+
+<h2 id="detecting-the-pattern">Detecting the pattern</h2>
+
+<p>So now you need the following to detect the pattern sequence - it&rsquo;s a
+bit big, but there are comments below:</p>
+
+<pre><code>/* Wait for either a corner to be pressed (pressState=true)
+or released (pressState=false), and report back what was
+pressed in the callback */
+function waitForPress(pressState, callback) {
+  var intr = setInterval(function() {
+    // Detect pressed corners
+    var pressed = [1,2,3,4,5,6].map(c=&gt;Badge.capSense(c)&gt;20000);
+    // Create a string of only the pressed corners
+    pressed = pressed.map((x,i)=&gt;x?i+1:&quot;&quot;).join(&quot;&quot;);
+    // Call the callback when something is either pressed or released
+    if ((pressed!=&quot;&quot;) == pressState) {
+      clearInterval(intr);
+      callback(pressed);
+    }
+  },20);
+}
+
+// Draw big fullscreen, centered text
+function plotText(txt) {
+  g.clear();
+  var size = 32;
+  g.setFontVector(size);
+  while (g.stringWidth(txt)&gt;120) {
+    g.setFontVector(--size);
+  }
+  g.drawString(txt,(128-g.stringWidth(txt))/2,(64-size)/2);
+  g.setFontBitmap();
+  g.flip();
+}
+
+// Repeatedly test for the correct pattern
+function testPattern(pattern, callback) {
+  // Nothing left - finish - I guess we passed
+  if (!pattern.length) return callback(true);
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Wait for a press
+  plotText(&quot;?&quot;);  
+  waitForPress(true, function(pressedCorner) {
+    // check our corner
+    if (pressedCorner == corner) {
+      plotText(corner);
+      beepForCorner(corner, 1000);
+      // Great! Next corner, after a delay and
+      // the button is released
+      setTimeout(function() {
+        waitForPress(false, function() {        
+          testPattern(pattern, callback);
+        });
+      }, 1000);
+    } else {
+      // Game over
+      plotText(&quot;NO!&quot;);
+      beep(200, 1000); // low beep
+      setTimeout(function() {
+        callback(false);
+      }, 1000);
+    }
+  });
+}
+
+
+// Test this out
+testPattern([1,2,3,4], x=&gt;console.log(&quot;Done!&quot;,x));
+</code></pre>
+
+<h2 id="sticking-it-together">Sticking it together</h2>
+
+<p>So now it&rsquo;s reasonably easy to stick showing the pattern and testing
+for the pattern together:</p>
+
+<pre><code>var pattern = [5,3,4];
+showPattern(pattern, ()=&gt;{
+  testPattern(pattern, x=&gt;console.log(&quot;Done!&quot;,x));
+});
+</code></pre>
+
+<p>And finally, you can wrap the whole thing up so that after each successful
+pattern it adds one more item to the end:</p>
+
+<pre><code>function randomCorner() {
+  return 0|Math.min(1+Math.random()*6, 6);
+}
+
+function game(pattern) {
+  // add a new corner
+  pattern.push(randomCorner());
+  // Show and test
+  console.log(&quot;Trying &quot;,pattern);
+  showPattern(pattern, ()=&gt;{
+    testPattern(pattern, success=&gt;{
+      if (success) {
+        plotText(&quot;:)&quot;);
+        setTimeout(()=&gt;game(pattern), 1000);
+      } else {
+        plotText(&quot;Game Over&quot;);
+        // restart when A pressed
+        setWatch(function() {
+          console.log(&quot;Restarting&quot;);
+          game([]);
+        }, BTNA, {repeat:0, debounce:20, edge:&quot;rising&quot;});
+      }
+    });
+  });
+}
+
+game([])
+</code></pre>
+
+<p><img src="/images/workshop_end.jpg" alt="Game over" /></p>
+
+<h2 id="finally">Finally!</h2>
+
+<p>And that&rsquo;s it! The finished game should look like this:</p>
+
+<pre><code>function plotBadge(presses) {
+  g.clear();    
+  // function to work out each corner's coordinates
+  function corner(c,r) {
+    var a = (c-2)*Math.PI/3;
+    return [64+Math.sin(a)*40*r, 32-Math.cos(a)*30*r];
+  }
+  // draw a hexagon - a line to each corner in turn
+  g.moveTo.apply(g,corner(6,1));
+  [1,2,3,4,5,6].forEach(c=&gt;g.lineTo.apply(g,corner(c,1)));
+  // Draw a circle where pressed
+  presses.forEach((hit,c) =&gt; {
+    if (!hit) return;
+    var coords = corner(c+1,0.8);
+    g.fillCircle(coords[0],coords[1],5);
+  });
+  g.flip();
+}
+
+function beep(freq, time, callback) {
+  var ll = require(&quot;NRF52LL&quot;);
+  // set up D0 and D1 as outputs
+  digitalWrite(D0,0);
+  digitalWrite(D1,0);
+  // create two 'toggle' tasks, one for each pin
+  var t0 = ll.gpiote(6, {type:&quot;task&quot;,pin:D0,lo2hi:1,hi2lo:1,initialState:0});
+  var t1 = ll.gpiote(7, {type:&quot;task&quot;,pin:D1,lo2hi:1,hi2lo:1,initialState:1});
+  // create a timer that counts up to a value depending on the frequency
+  var tmr = ll.timer(3,{cc:[500000/freq],cc0clear:1});
+  // use two PPI to trigger toggle events
+  ll.ppiEnable(6, tmr.eCompare[0], t0.tOut);
+  ll.ppiEnable(7, tmr.eCompare[0], t1.tOut);
+  // Manually trigger a task to start the timer
+  poke32(tmr.tClear,1);
+  poke32(tmr.tStart,1);
+  setTimeout(function() {
+    poke32(tmr.tStop,1);
+    ll.ppiDisable(6);
+    ll.ppiDisable(7);
+    if (callback) callback();
+  }, time);
+}
+
+function beepForCorner(corner, time) {
+  var pitches = [&quot;no_corner_0&quot;,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000
+  ];
+  beep(pitches[corner], time);
+}
+
+// Show the given pattern
+function showPattern(pattern, callback) {
+  // Nothing left - finish
+  if (!pattern.length) return callback();  
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Display a corner and beep
+  plotBadge([corner==1, corner==2, corner==3, corner==4, corner==5, corner==6]);
+  beepForCorner(corner, 1000);
+  // clear screen after a timeout
+  setTimeout(function() {    
+    g.clear();
+    g.flip();
+    // go to next
+    setTimeout(function() {
+      showPattern(pattern, callback);
+    }, 200);
+  }, 1000);
+}
+
+/* Wait for either a corner to be pressed (pressState=true)
+or released (pressState=false), and report back what was
+pressed in the callback */
+function waitForPress(pressState, callback) {
+  var intr = setInterval(function() {
+    // Detect pressed corners
+    var pressed = [1,2,3,4,5,6].map(c=&gt;Badge.capSense(c)&gt;20000);
+    // Create a string of only the pressed corners
+    pressed = pressed.map((x,i)=&gt;x?i+1:&quot;&quot;).join(&quot;&quot;);
+    // Call the callback when something is either pressed or released
+    if ((pressed!=&quot;&quot;) == pressState) {
+      clearInterval(intr);
+      callback(pressed);
+    }
+  },20);
+}
+
+// Draw big fullscreen, centered text
+function plotText(txt) {
+  g.clear();
+  var size = 32;
+  g.setFontVector(size);
+  while (g.stringWidth(txt)&gt;120) {
+    g.setFontVector(--size);
+  }
+  g.drawString(txt,(128-g.stringWidth(txt))/2,(64-size)/2);
+  g.setFontBitmap();
+  g.flip();
+}
+
+// Repeatedly test for the correct pattern
+function testPattern(pattern, callback) {
+  // Nothing left - finish - I guess we passed
+  if (!pattern.length) return callback(true);
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Wait for a press
+  plotText(&quot;?&quot;);  
+  waitForPress(true, function(pressedCorner) {
+    // check our corner
+    if (pressedCorner == corner) {
+      plotText(corner);
+      beepForCorner(corner, 1000);
+      // Great! Next corner, after a delay and
+      // the button is released
+      setTimeout(function() {
+        waitForPress(false, function() {        
+          testPattern(pattern, callback);
+        });
+      }, 1000);
+    } else {
+      // Game over
+      plotText(&quot;NO!&quot;);
+      beep(200, 1000); // low beep
+      setTimeout(function() {
+        callback(false);
+      }, 1000);
+    }
+  });
+}
+
+function randomCorner() {
+  return 0|Math.min(1+Math.random()*6, 6);
+}
+
+function game(pattern) {
+  // add a new corner
+  pattern.push(randomCorner());
+  // Show and test
+  console.log(&quot;Trying &quot;,pattern);
+  showPattern(pattern, ()=&gt;{
+    testPattern(pattern, success=&gt;{
+      if (success) {
+        plotText(&quot;:)&quot;);
+        setTimeout(()=&gt;game(pattern), 1000);
+      } else {
+        plotText(&quot;Game Over&quot;);
+        // restart when A pressed
+        setWatch(function() {
+          console.log(&quot;Restarting&quot;);
+          game([]);
+        }, BTNA, {repeat:0, debounce:20, edge:&quot;rising&quot;});
+      }
+    });
+  });
+}
+
+game([])
+</code></pre>
 
 
 <footer class=" footline" >
 	
 </footer>
 
-        
-            </div> 
+
         
         </div> 
       </div>
@@ -1429,6 +1792,26 @@
             
                 
                     
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
                 
                 
 
@@ -1456,22 +1839,6 @@
             
         
                     
-                        
-            
-            
-                
-                    
-                
-                
-
-                    
-                    
-                    
-
-                    
-            
-        
-                    
             
         
                     
@@ -1482,10 +1849,10 @@
 
 
         
-            <a class="nav nav-prev" href="/challenges/implement-dat-protocol/" title="Implement Dat Protocol"> <i class="fa fa-chevron-left"></i></a>
+            <a class="nav nav-prev" href="/workshop/sound/" title="Sound"> <i class="fa fa-chevron-left"></i></a>
         
         
-            <a class="nav nav-next" href="/workshop/get-connected/" title="Get Connected" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+            <a class="nav nav-next" href="/workshop/what-next/" title="What next?" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
         
     </div>
 
@@ -1515,3 +1882,4 @@
 
   </body>
 </html>
+

@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Making a Game
-
 Ok, now we'll need to make two functions:
 
 * A function to output a pattern

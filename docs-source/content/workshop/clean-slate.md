@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Clean Slate
-
 Clear everything out of the right-hand side of the IDE window, and click the
 'Upload' button in the middle of the screen (a picture of a chip and an up-arrow).
 

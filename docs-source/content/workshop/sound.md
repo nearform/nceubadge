@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Sound
-
 It'd be nice if our game made some sounds. There's no speaker built into the
 badge, so we're going to add one.
 

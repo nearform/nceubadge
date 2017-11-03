@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Get Connected
-
 The first step is going to be getting set up and connected to your badge. If
 you haven't already, check out http://nodeconfeubadge.org/getting-started/
 as a getting started guide.

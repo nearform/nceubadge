@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Capacitive Sense
-
 To detect a press, we want to use the capacitive sense functionality on the badge.
 Type `Badge.capSense(1)` on the left-hand side of the IDE. You can use tab-complete
 to help you. You should get a number displayed in the region of about `10,000` - this

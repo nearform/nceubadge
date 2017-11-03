@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Graphics
-
 The badge exposes the LCD via a built-in variable called `g`. This has 
 a bunch of methods such as `drawLine` or `drawString` that can be accessed
 (http://www.espruino.com/Graphics) however each command acts on an internal

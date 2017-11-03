@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# Adding to your Badge's menu
-
 Next we're going to add the game we just made as a menu item inside
 the existing badge software.
 

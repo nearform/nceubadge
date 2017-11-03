@@ -5,8 +5,6 @@ date: 2017-11-03T09:45:33+01:00
 draft: false
 ---
 
-# What next?
-
 What about:
 
 * Putting LEDs around the corners and using those to show the correct 

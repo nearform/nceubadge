@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://nodeconfeubadge.org/workshop/get-connected/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/challenges/hello-world-screen/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
   </url>
@@ -15,6 +20,11 @@
   <url>
     <loc>http://nodeconfeubadge.org/getting-started/</loc>
     <lastmod>2017-10-24T15:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/workshop/clean-slate/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
   </url>
   
   <url>
@@ -33,6 +43,11 @@
   </url>
   
   <url>
+    <loc>http://nodeconfeubadge.org/workshop/capacitive-sense/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/workshop/</loc>
     <lastmod>2017-11-02T10:29:15+01:00</lastmod>
   </url>
@@ -43,8 +58,18 @@
   </url>
   
   <url>
+    <loc>http://nodeconfeubadge.org/workshop/graphics/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/challenges/flash-leds/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/workshop/sound/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
   </url>
   
   <url>
@@ -55,6 +80,11 @@
   <url>
     <loc>http://nodeconfeubadge.org/challenges/play-music-with-buzzer/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/workshop/making-a-game/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
   </url>
   
   <url>
@@ -88,6 +118,11 @@
   </url>
   
   <url>
+    <loc>http://nodeconfeubadge.org/workshop/what-next/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</loc>
     <lastmod>2017-10-28T15:30:33+01:00</lastmod>
   </url>
@@ -95,6 +130,11 @@
   <url>
     <loc>http://nodeconfeubadge.org/challenges/use-noble-on-laptop/</loc>
     <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://nodeconfeubadge.org/workshop/adding-to-the-menu/</loc>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
   </url>
   
   <url>
@@ -144,7 +184,7 @@
   
   <url>
     <loc>http://nodeconfeubadge.org/</loc>
-    <lastmod>2017-10-28T10:29:15+01:00</lastmod>
+    <lastmod>2017-11-03T09:45:33+01:00</lastmod>
   </url>
   
   <url>

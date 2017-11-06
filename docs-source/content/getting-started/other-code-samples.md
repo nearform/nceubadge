@@ -14,7 +14,7 @@ There are three places you can find code to learn from and use:
 ## Badge Repo Code
 The pre-installed main.js code is a treasure trove of useful snippets. Note however that it's too big to be uploaded in its entirety via the Web IDE.
 
-* [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/main.js)
+* [Pre-installed badge code](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/flasher/main.js)
 
 ### Games
 Relive your original Gameboy, Nokia and video arcade days with the following games :-)

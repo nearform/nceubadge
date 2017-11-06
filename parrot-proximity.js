@@ -25,7 +25,7 @@ function displayGif (gifArray) {
     function drawImage () {
         currentIndex = ++currentIndex % gifArray.length;
         g.clear();
-        g.drawImage(gifArray[index], 0, 0);
+        g.drawImage(gifArray[currentIndex], 0, 0);
         g.flip();
         frameTimeout = setTimeout(() => drawImage(), Math.max(minFrameTime, maxFrameTime - (neighbourTimeReduction * neighboursNearby)));
     }

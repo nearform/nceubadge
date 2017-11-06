@@ -50,7 +50,7 @@ function setupFindNeighboursOnService () {
         }, 3000);
 
         NRF.setScan(function (device) {
-            if (device.servicedata.baaf) {
+            if (device.servicedata && device.servicedata.baaf) {
                 neighboursNearby++;
             }
             if (neighboursNearby >= 10) {

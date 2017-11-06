@@ -6,3 +6,4 @@ cd docs-source
 hugo
 cd public
 cp -R * ../../docs
+cp ../../web_bluetooth/* ../../docs/web_bluetooth

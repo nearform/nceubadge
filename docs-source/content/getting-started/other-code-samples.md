@@ -29,6 +29,8 @@ Relive your original Gameboy, Nokia and video arcade days with the following gam
 ### Web Bluetooth
 * [Retrieve all images stored on a badge](https://github.com/nearform/nceubadge/blob/master/web_bluetooth/badge_images.html) ([try it](https://nodeconfeubadge.org/web_bluetooth/badge_images.html))
 * [Take a picture with getUserMedia and put it on the badge](https://github.com/nearform/nceubadge/blob/master/web_bluetooth/badge_photo.html) ([try it](https://nodeconfeubadge.org/web_bluetooth/badge_photo.html))
+* [Upload an image to the badge badge](https://github.com/nearform/nceubadge/blob/master/web_bluetooth/badge_upload.html) ([try it](https://nodeconfeubadge.org/web_bluetooth/badge_upload.html))
+
 
 ### Misc
 * Check out the [world's most awkward REPL](https://www.espruino.com/ide/#https://raw.githubusercontent.com/nearform/nceubadge/master/repl.js)

@@ -27,7 +27,7 @@ function displayGif (gifArray) {
         g.clear();
         g.drawImage(gifArray[index], 0, 0);
         g.flip();
-        frameTimeout = setTimeout(() => drawImage, Math.max(minFrameTime, maxFrameTime - (neighbourTimeReduction * neighboursNearby)));
+        frameTimeout = setTimeout(() => drawImage(), Math.max(minFrameTime, maxFrameTime - (neighbourTimeReduction * neighboursNearby)));
     }
 
     drawImage();
@@ -47,7 +47,7 @@ function setupFindNeighboursOnService () {
         
         var scanTimeout = setTimeout(function () {
             NRF.setScan();
-        }, 1000);
+        }, 3000);
 
         NRF.setScan(function (device) {
             if (device.servicedata.baaf) {

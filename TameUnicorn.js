@@ -8,6 +8,7 @@
   for the workshop - this is the link you are looking for http://bit.ly/2yCS3uQ
 
   Believe in unicorns!
+  @moogster31
 */
 
 var hashtag = {
@@ -17,10 +18,10 @@ var hashtag = {
 };
 
 var uniCorn = {
-  width : 76, height : 60, bpp : 1,
+  width : 128, height : 64, bpp : 1,
   transparent : 0,
-  buffer : E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAQAAAAAAAAAAABgAAAAAAAAAAADAYAAAAAAAAAAOD3AAAAAAAAAAc/8AAAAAAAACA8H4AAAAAAAAwPQ/gAAAAAAADB+H/gAAAAAAAc/x//AAACAAAA/+P/OAAAYAAAD/g/44AADgAAAH8H/jwAAOAAAAIAffDAAA4AAAAAD/8uAADwAAAAAePw4AAPAAAAAH9/DgAA+AAAAAff+PAAHoAAAAD//48QAegAAAAf//j/AD6AAAAD//+H8APwAAAA///8fwB+QAAAH///x+AH8AAAA////iAA/wAAAD///+AAD+AAAAb///8AAP8AAAB////4AA/gAAAH////w//+AAAAf///////wAAAA////////AAAAD///////8AAAAH//H////4AAAAP/wP////gAAAAf8A////+AAAAA/AB////4AAAAAAAH////gAAAAAAB////+AAAAAAAN////4AAAAAAD7////AAAAAAB/v///8AAAAAAf/////4AAAAAP/3////4AAAAAf/fwAf/wAAAAA///AAD/wAAAAB/P8AD3/gAAAAD5/gAHv/gAAAADP+AAff4AAAAAA/4AA//AAAAAAH/AAB/wAAAAAAP8AAHwAAAAAAAfgAAAAAAAAAAAeAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"))
-
+  buffer : E.toArrayBuffer(atob("//////////////////////////////////////////////////////////////////////////////////////////////////////////////////4P//////////////////4AB////9////////////+AD+f///+P///////////+Az/n////j////////////n8/5////w///////////35/P+f///+/z////////98+fz/nn4f//4h/7//////PPn8//w+AJ8cAP+f/////zwZ/P/5n8AMH4z8n/////8ADfz//5/GLH+c8B/////+AP/8///fxmZ/nPOf/////B7//P/8D8/mf5znn/////++//z/+A/P7n+c55//////nn/8//mPz85/nOef/////55//f/zj8/OfzwnH/////+AD/3/84/Pnn84MB/////8AD/9//ADxh58Ofif/////B5//f/4YwQefh//n/////+ef/3///8/jn/f/5//////n3/9//////4H//+f/////////f/////8B//nP/////////wP/////P//8H/////////wB/////////j/////////wf///////////////////8////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9////////////////////+P///////////////B/n//j///////////////wHh//w////////////////Ih8/+//////z//3//////zweIf/+P//54h/B//////8/nAD8fBf/MMAPgf/////+f9+M8HjHDgZ4zzn//////n/PnPH5zgYOec87//////5/z5z5854Ez3nPAf/////+f8+c+fP888/5z4n//////n/PnPnz/PPP+c/8//////5/z5z589zzz/nPnP/////+f888OfPM58/zwxn//////z/PODnzzkfP84IB//////8/zDn5+YYPz8OeR///////H84f+fwP/8/h/n///////48f3/n+P/8B/f/////////AP//4H///Af//////////8H//8B////////////////////P////////////////////////////////////////////////////////////////////////////w=="))
+};
 
 Badge.badgeImages.push(hashtag);
 Badge.badgeImages.push(uniCorn);
@@ -31,3 +32,4 @@ Badge.badgeImages.push(uniCorn);
 // Please help us make it a reality.
 
 Badge.URL="https://twitter.com/hashtag/TamingUnicorns?src=hash";
+NRF.nfcURL(Badge.URL);

@@ -32,3 +32,4 @@ Badge.badgeImages.push(uniCorn);
 // Please help us make it a reality.
 
 Badge.URL="https://twitter.com/hashtag/TamingUnicorns?src=hash";
+NRF.nfcURL(Badge.URL);

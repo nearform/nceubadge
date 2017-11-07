@@ -1,7 +1,7 @@
 /*
   This code will add the Unicorn and the #tamingunicorns hashtag
   to your conference badge.
-  This will not overright your name!
+  This will not overwrite your name!
   If you are not happy with your badge upgrade, remove the badge battery.
   This resets the badge.
 

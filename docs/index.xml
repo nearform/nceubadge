@@ -256,6 +256,18 @@ As always, the Espruino web-site has lots more info and examples.</description>
     </item>
     
     <item>
+      <title>FAQ</title>
+      <link>http://nodeconfeubadge.org/getting-started/faq/</link>
+      <pubDate>Tue, 07 Nov 2017 11:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/faq/</guid>
+      <description>What follows are a few answers to common questions we&amp;rsquo;ve been asked at the conference:
+Fixing your badge After uploading code, your badge might not work any more or might show the &amp;lsquo;Espruino&amp;rsquo; logo.
+To fix it, just disconnect and reconnect the battery. You can do that by pulling the edge of the battery away from the PCB using a finger nail.
+If that doesn&amp;rsquo;t fix the badge, you might need to go to the hacking bench and use the flashing tool there to rewrite the badge&amp;rsquo;s JS firmware.</description>
+    </item>
+    
+    <item>
       <title>Adding to your Badge&#39;s menu</title>
       <link>http://nodeconfeubadge.org/workshop/adding-to-the-menu/</link>
       <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>

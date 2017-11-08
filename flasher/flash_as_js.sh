@@ -20,7 +20,8 @@ IMGB64=`echo $IMGB64 | sed -e $REGEX`
 #echo $IMGB64
 
 cat main.js | sed -e "s/CUSTOM_BADGE_IMAGE/$IMGB64/" |  sed -e "s/CUSTOM_BADGE_URL/$URL/" > main.custom.js
-espruino --board HEXBADGE.json main.custom.js -ohex main.custom.hex
+minify ./main.custom.js -o ./main.minified.js
+espruino --board HEXBADGE.json main.minified.js -ohex main.custom.hex
 echo ""
 
-node flasherhack.js
+node flasherhack.js > ./out.js

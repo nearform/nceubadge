@@ -1,17 +1,36 @@
 // This is the pre-installed code, and is too big to be uploaded via the Web IDE
-Badge.URL = "CUSTOM_BADGE_URL";
-Badge.badgeImages = [{ width: 128, height: 64, bpp: 1,
- buffer: E.toArrayBuffer(atob("CUSTOM_BADGE_IMAGE"))
-}, { width: 128, height: 64, bpp: 1,
- buffer: E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwHAPwD+AH/wH4AAfAcP/B+B4P/g/+B/8H/gAH4PH/wfweH/8P/wf/D/4AB+Dx/8H8Hj//j/+H/x/8Dgfw8f/B/h5//4//x4A+CD+H+PHgAf8ef//P/8eAPAB/x/jx4AHvHn//z//ngHwAf8f88eAB755//8//5/94AH/nvPH/weee///P/+f/eAD/557x/8Hn3n//z//n/3wAf+ef8f/B4/5//8//54A8AH/Hj/H/geH+f//P/8eAPAB/x4/x4AHh/n//j//HgD4MP4eH8eAB4P4//4//h/8f/w4Hg/HgAeB+H/8P/wf/D/8AB4Px4AHgfg/+D/4H/wf+AAeB8eAA4DwD8A/wB/8B+AAHAPDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//4PwAfgAAAAAAAAAAAAP//+D8AH4AAAAAAAAAAAAD///g/AB+AAAAAAAAAAAAA///4PwAfgAAAAAAAAAAAAP//+D8AH4AAAAAAAAAAAAD///g/AB+AAAAAAAAAAAAA/gAAPwAfgAAAAAAAAAAAAP4AAD8AH4AAAAAAAAAAAAD+AAA/AB+AAAAAAAAAAAAA/gAAPwAfgAAAAAAAAAAAAP4AAD8AH4AAAAAAAAAAAAD//+A/AB+AAAAAAAAAAAAA///gPwAfgAAAAAAAAAAAAP//4D8AH4AAAAAAAAAAAAD//+A/AB+AAAAAAAAAAAAA///gPwAfgAAAAAAAAAAAAP//4D8AH4AAAAAAAAAAAAD+AAA/AB+AAAAAAAAAAAAA/gAAPwA/gAAAAAAAAAAAAP4AAD+AP4AAAAAAAAAAAAD+AAA/gH8AAAAAAAAAAAAA/gAAH+D/AAAAAAAAAAAAAP//+B///wAAAAAAAAAAAAD///gP//4AAAAAAAAAAAAA///4B//8AAAAAAAAAAAAAP//+AP/+AAAAAAAAAAAAAD///gB/+AAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
-}, { width: 128, height: 64, bpp: 1,
- buffer: E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4AAAAAAAAAAAAAAAAAAH/+AAAAAAAAAAAAAAAAAAH//AAAAAAAAAAAAAAAAAAD//zwAAAAAAAAAAAAAAAAD//5+AAAAAAAAAAAAAAAAB//+fgAAAAAAAAAAAAAAAA///j5AAAAAAAAAAAAAAAAP//88YAAAAAAAAAAAAAAAHx//AOAAAAAAAAAAAAAAAD4H/4HwAAAAAAB/gAAAAAA8Q//j+AAAAAAAf4AAAAAAePH/5/gAAAAAAGAAAAAAAHn5/+f4AAAAAABgAAAAAAB5+f/n/AcAwDgCYAOAMGHA+fH/5/w/g/D+L2AP4XP74Pzz/+f8MMYYhjhgGDHDDjD8Af/n/DBECAIwfxARggwQ/gH/5/4gTAgCMH8wGQIMEP+Y/+f+IE/8PjBgMBkCDBD/nH/n/iBMAOIgYDAZAgwQ/54/5/4gTAGCIGAwGQIMEP+fH+f8IEwBgiBgMBECDBD/n4/n/CBGAYYgYBgxAgwQ/5/H5/wgRznOIGAO4QIMEH+f4+f8IEHw+iBgB8ECDBB/n/Hn/AAAAAAAAAAAAAAAf5/45/gAAAAAAAAAAAAAAD8f/AP4AAAAAAAAAAAAAAA+B/4B8AAAAAAAAAAAAAAAHAP/APAAAAAAAAAAAAAAABjz/zxgAAAAAAAAAAAAAAAJ8f4+QAAAAAAAAAAAAAAAAfn+fgAAAAAAAAAAAAAAAAH5/n4AAAAAAAAAAAAAAAAA8f88AAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAH/4AAAAAAAAAAAAAAAAAAD//AAAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
-}
-];
+const initialUrl = "CUSTOM_BADGE_URL"
+Badge.URL = initialUrl;
+
+Badge.badgeImages = [{
+    // your name image goes here! create with the name-generator in repo
+    width: 128, height: 64, bpp: 1,
+    buffer: E.toArrayBuffer(atob("CUSTOM_BADGE_IMAGE"))
+},
+{
+    width: 128, height: 64, bpp: 1,
+    buffer: E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwHAPwD+AH/wH4AAfAcP/B+B4P/g/+B/8H/gAH4PH/wfweH/8P/wf/D/4AB+Dx/8H8Hj//j/+H/x/8Dgfw8f/B/h5//4//x4A+CD+H+PHgAf8ef//P/8eAPAB/x/jx4AHvHn//z//ngHwAf8f88eAB755//8//5/94AH/nvPH/weee///P/+f/eAD/557x/8Hn3n//z//n/3wAf+ef8f/B4/5//8//54A8AH/Hj/H/geH+f//P/8eAPAB/x4/x4AHh/n//j//HgD4MP4eH8eAB4P4//4//h/8f/w4Hg/HgAeB+H/8P/wf/D/8AB4Px4AHgfg/+D/4H/wf+AAeB8eAA4DwD8A/wB/8B+AAHAPDgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf//4PwAfgAAAAAAAAAAAAP//+D8AH4AAAAAAAAAAAAD///g/AB+AAAAAAAAAAAAA///4PwAfgAAAAAAAAAAAAP//+D8AH4AAAAAAAAAAAAD///g/AB+AAAAAAAAAAAAA/gAAPwAfgAAAAAAAAAAAAP4AAD8AH4AAAAAAAAAAAAD+AAA/AB+AAAAAAAAAAAAA/gAAPwAfgAAAAAAAAAAAAP4AAD8AH4AAAAAAAAAAAAD//+A/AB+AAAAAAAAAAAAA///gPwAfgAAAAAAAAAAAAP//4D8AH4AAAAAAAAAAAAD//+A/AB+AAAAAAAAAAAAA///gPwAfgAAAAAAAAAAAAP//4D8AH4AAAAAAAAAAAAD+AAA/AB+AAAAAAAAAAAAA/gAAPwA/gAAAAAAAAAAAAP4AAD+AP4AAAAAAAAAAAAD+AAA/gH8AAAAAAAAAAAAA/gAAH+D/AAAAAAAAAAAAAP//+B///wAAAAAAAAAAAAD///gP//4AAAAAAAAAAAAA///4B//8AAAAAAAAAAAAAP//+AP/+AAAAAAAAAAAAAD///gB/+AAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
+},
+{
+    width: 128, height: 64, bpp: 1,
+    buffer: E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/4AAAAAAAAAAAAAAAAAAH/+AAAAAAAAAAAAAAAAAAH//AAAAAAAAAAAAAAAAAAD//zwAAAAAAAAAAAAAAAAD//5+AAAAAAAAAAAAAAAAB//+fgAAAAAAAAAAAAAAAA///j5AAAAAAAAAAAAAAAAP//88YAAAAAAAAAAAAAAAHx//AOAAAAAAAAAAAAAAAD4H/4HwAAAAAAB/gAAAAAA8Q//j+AAAAAAAf4AAAAAAePH/5/gAAAAAAGAAAAAAAHn5/+f4AAAAAABgAAAAAAB5+f/n/AcAwDgCYAOAMGHA+fH/5/w/g/D+L2AP4XP74Pzz/+f8MMYYhjhgGDHDDjD8Af/n/DBECAIwfxARggwQ/gH/5/4gTAgCMH8wGQIMEP+Y/+f+IE/8PjBgMBkCDBD/nH/n/iBMAOIgYDAZAgwQ/54/5/4gTAGCIGAwGQIMEP+fH+f8IEwBgiBgMBECDBD/n4/n/CBGAYYgYBgxAgwQ/5/H5/wgRznOIGAO4QIMEH+f4+f8IEHw+iBgB8ECDBB/n/Hn/AAAAAAAAAAAAAAAf5/45/gAAAAAAAAAAAAAAD8f/AP4AAAAAAAAAAAAAAA+B/4B8AAAAAAAAAAAAAAAHAP/APAAAAAAAAAAAAAAABjz/zxgAAAAAAAAAAAAAAAJ8f4+QAAAAAAAAAAAAAAAAfn+fgAAAAAAAAAAAAAAAAH5/n4AAAAAAAAAAAAAAAAA8f88AAAAAAAAAAAAAAAAAAP/AAAAAAAAAAAAAAAAAAAH/4AAAAAAAAAAAAAAAAAAD//AAAAAAAAAAAAAAAAAAAH+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
+}];
+const prefix = '////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////'
+Badge.partyParrot = [
+    "//////////////////////////7///////////////////39/////////////////8UAAD////////////////gqvkD//////////////9wHjOcA//////////////4CPpfph//////////////BFDO/+B/////////////warHoFmB////////////8N3zAADOD////////////hVAKRGBAP///////////4d4LwO8AAP///////////DvgcCNQYC///////////4JkJkJMgBj//////////+H/4ux/5HGH//////////wPUj9Bp0Zgf/////////8F73+WBSh+x//////////gsr+743AGmh/////////8Pp9f/hwY/GD////////vh3tVo2KpgH8f////////+H93994PYLHi/////////w/e/9+Afw+hB/////////Fy+7puCmHTSP////////4enFt9gOgMR4/////////AP/j2scCC+/j////////4Hf+867kA/esf////////gO3P/d7gCOrh////////4sCvl/56gvNdH////////hgfoc/6GGZCIf///////4GV+734Nof1dH////////D+MuOd/9/jhgf///////gK3BPvHJ7/iXx///////8B/6A+/8p+Z+eH//////8A/16B2dd896P4f/////+gXeLqAW1f7c0Uj/////9gvyf3LBAfdr8M+H/////gH7Y/y+6aO3Wuu4v////4JgBPtb4O+/vte5g////+Bq/M3q/xRn/if35j////4Pt04fH34P/U987eH////Fh2ztq3vGz8PlnvQP///03PuR1+vf/2sdZ364f///ifNe/fHi/viehP7/g///8AIMJEEQAIAACAA8AD///gAAAAAAAAAAAAAAAAH/8=",
+    "OP/////////////////+AAA/////////////////ADsgP///////////////g1/54D//////////////4Pf/f3D/////////////9Hfu7usD/////////////g0fnCDWH////////////8O6uIADUH////////////B1L0FADgf///////////4uwGgfsAA////////////CaAUGiggB///////////4OMCYw8SCHf//////////HYafAhsMIH//////////wX+G8NaYe4f//////////jltPoKjBWwf/////////4Hvv5hnKO/g//////////Bb1N6B6c98o/////////+MvJl8ZYBe6D/////////xfzsx5ygbzuH////////+G2/j2B1A9f0X////////4NrFf7HwBvfof////////wr1x+4Twv/2h/////////NaP/64EHL33H////////8a+1/YAkfscsf////////xf3+i/wNdbvQ/////////B+1u9uge7zeH////////+cz7XfcDFNH4f////////4Yr92t6P3xth/////////ge/ff9f/g+qP/////////gc21aqe6vzc/////////+AT3+d56mbpgf////////wQdm1+U/v/ugP////////mAGv/d8/qNokB///////4doBW43ReRxQ2Af//////B5yAVb//37vNqAf/////4f/WAD3olH/OVvwH/////Dm2sAzXy6zPfP+4H////w73b2Ovd/W9vqT/IH////H/qkUU+Zs+P39y/cH///4aW9Xf/XffeKdB++mH///g1d5a1ftvmS2s+/W9P//+K3d/Vnb/j586/NWfwP//wXP+Bt/ftre2Y///dAP//EARAAAAAwAQBAAAAEAf/4AAAAAAAAAAAAAAAAAAc=",
+    "///////////////////////////////////////////////////////////////////////////////9gAB///+////////////8AAIAH//////////////+AL6bwP//////////////wc+yf4P/////////////8FeHz7QH/////////////A6ff3/8f////////////4SO7/hz4////////////+HXrzAAfw////////////wdp7wAAMD///////////+PeD+A3CAH///////////w+4EYJKAAP//////////+DcQKgFaCA///////////xf+B8ARQAh//////////+L/994Vwi/h//////////4f9fWDTEHsD//////////Erv7uELA72H/////////4b55/wBFHy+H/////////jte+YgmI3OoP////////8PB/24H8D770f////////yVf9n4Y0P/fR////////+Gv///4IAnA+D////////8O/3/dRqCCf4H////////wv/3z9Awc/uwf////////Dn/ov+ADR3Xj////////8Oufn3IIb1fyO////////4F7r8bsD/bbw/////////w8/tv+cLP/9G/////////SLv//S3zev8H////////8B+/rv//+69sC////////4A+/Svu3iOM8I////////AH97+Ti+f7/+QD//////4aL9Hp6/9+vydQC//////w0H7773erP0T+7B//////BQEe//6zx0n8HrAv////8DyAXX3vfv/+99Nwf////xmtAAP//r10L/3T0P////Dv70AL9Z2vX2s/PwH///+H/+vILE+e9XjfbzYH///4d/6fS/N5v+e+w/9wD///hZAiEBAAAgAAAgCIgP///CAAAAAAAAAAAAAAAAH/8=",
+    "////////////////////////////////////////f///////////////////////////////////////////f////////////////////////////////////////////////////////////9////////////////////4cj/////////////////+ABAf//////////////+8A6tAD///////////////AuFtwB//////////////gbf5++D/////////////gX9/3/9D////////////8DP3939/X////////////w//9eE/MP///////////8b776AAD4P///////////B7hPwDAEgf//////////4Fsg+LB4YB/////////3/B/8BuC2gAHv/////////8X/wOwA2IAf//////////hu73/lsUEwf/////////8H6//4NIA/g//////////Df/+/xhQH7h/////////8Pf//2EAwT+b/////////x/18/8ORA/6H////////+D///foBiL38P////////wTf///glQn75/////////Dva///FEDXfh///////+8ef87f8AI/7+H////////x/s//90LD2XY/////////H7////hwvv+D////////g//3P/9Aj934P////////n1Xvu3/AO+vx////////8D//6/fsEd+/P////////wP7/f+z8X//w////////wAOP/99/87v/H3/7/////Dwv//+uHv7/8f///////x8gO2967s/v/j///////8f9kB/z7////mH///////BX5cABr/9/+/4f//////8f//vAA/e//97h///////h//9r9S7fqu9kH//////8EBBgAAAAAKbQoP//////wAAAAAAAAAAAAAf////8=",
+    "/////////////////////////v///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////9gAO////////////////4AhBAv//////////////8APndAH//////////////A+Yz9wH/////////////w6du+7OH////////////8Fc7vr/uH///////////+B637AI/sP///////////w9fGaAA2Qf//////////8B8lCg1V0w///////////A1cBsCpCAH//////////4J+wIAlYICH/////////+C+9AsAQIBVf/////////gV7eXoIyhGR/////////+H6v+/ilUB7D/////////gpe/p9Bnob8P////////4A7vniQaYx/Kf////////i+j9PVgBgLsg////////8Bn2/O+DrAdfD///////+gHg5f3cHsB/4P///////8A9/611cKUNn8f///////iFL/ltmgDD+8R///////+Ab9/muFgwSe9H///////gwJFm5O+Az83sf//////wDD32mVz4AL7dD//////4B/D/1r/X4A7zsf/////8BfoC7W7f+sHmfg//////jCT+B/mXq+ZUmqP/////gK//wD95X5Zm79w/////4C2+ZeB/33+6sd8H////+HP/5f4Ad9nnQn+Y////vh/qu4+2wJx71vtrj////wT5P+39N0AAp/+68P///4Tnv5T+qpthR795Xw////wrB+279v9v8b378fB///4N71Xlfdz3dv9+LrcP///ghRCAZQAgBQYkAAhAf//+AAAAAAAAAAAAAAAAA//8=",
+].map(function (buff) {
+      return {width: 124, height: 64, bpp: 1, transparent: 0, buffer: E.toArrayBuffer(atob(prefix + buff))};
+});
 // Get it all back to normal-ish
 Badge.reset = () => {
  clearInterval();
  clearWatch();
+ Badge.URL = initialUrl;
+ NRF.nfcURL(Badge.URL);
  Bluetooth.removeAllListeners();
  LoopbackB.removeAllListeners();
  g.setRotation(0, 1);
@@ -33,7 +52,7 @@ Badge.menu = () => {
   "About": function () {
    Badge.drawCenter(`-- NodeConf EU 2017 Badge --
 Sponsored by NearForm
-
+Battery: ${Badge.getBatteryPercentage()}
 Gordon Williams
 @Espruino
 www.espruino.com
@@ -54,8 +73,8 @@ capable browser to start coding!`);
    NRF.wake();
   },
   "T-Rex": Badge.trex,
+  "Join The Party": Badge.proximityParrot,
   "Flappy Bird": Badge.flappy,
-  "REPL": Badge.repl,
   "Sketch": Badge.sketch,
   "Delete Sketch": () => {
    delete Badge.sketchedImage;
@@ -73,100 +92,6 @@ capable browser to start coding!`);
  setWatch(e => m.move(1), BTND, { repeat: 1, debounce: 50, edge: "rising" });
  setWatch(e => m.select(), BTNA, { repeat: 1, debounce: 50, edge: "rising" });
 }
-Badge.repl = () => {
- Badge.reset();
- var KEYMAPLOWER = [
-  "`1234567890-=\x08\x08\x08",
-  "\tqwertyuiop[]\n\n\n",
-  "\0asdfghjkl;'#\x84\x82\x85",
-  "\x01\\zxcvbnm,./ \x80\x83\x81",
- ];
- var KEYMAPUPPER = [
-  "¬!\"£$%^&*()_+\x08\x08\x08",
-  "\tQWERTYUIOP{}\n\n\n",
-  "\0ASDFGHJKL:@~\x84\x82\x85",
-  "\x01|ZXCVBNM<>? \x80\x83\x81",
- ];
- var KEYEXTRA = [
-  String.fromCharCode(27, 91, 68),
-  String.fromCharCode(27, 91, 67),
-  String.fromCharCode(27, 91, 65),
-  String.fromCharCode(27, 91, 66),
-  String.fromCharCode(27, 91, 53, 126),
-  String.fromCharCode(27, 91, 54, 126),
- ];
- var KEYIMG = {
-  width: 64, height: 32, bpp: 1,
-  buffer: E.toArrayBuffer(atob("AAAAAAAAAAAAAAAAAAACAAAAAAAAAAYAAAAAAAAAD+AAAAAAAAAGAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8DAAAAAAAAAQOAAAAAAAADgwAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAAADgAAAAAAAAAO4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAugAAAAAAAAG7AAAAAAAAA5OAAAAAAAApkwAAAAAAADiCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=="))
- };
- var kbx = 0, kby = 0, kbShift = false;
- g.setRotation(3, 1);
- function drawKB() {
-  var yoff = 128 - 32;
-  var map = kbShift ? KEYMAPUPPER : KEYMAPLOWER;
-  g.drawImage(KEYIMG, 0, yoff);
-  g.drawString(map[0], 0, yoff);
-  g.drawString(map[1], 0, yoff + 8);
-  g.drawString(map[2], 0, yoff + 16);
-  g.drawString(map[3], 0, yoff + 24);
-  for (var y = 0; y < 7; y++) {
-   var xo = kbx * 4;
-   var yo = yoff + y + kby * 8;
-   g.setPixel(xo, yo, !g.getPixel(xo++, yo));
-   g.setPixel(xo, yo, !g.getPixel(xo++, yo));
-   g.setPixel(xo, yo, !g.getPixel(xo++, yo));
-   g.setPixel(xo, yo, !g.getPixel(xo, yo));
-  }
-  g.flip();
- }
-
- // key movement
- setWatch(() => { kby = (kby + 3) & 3; drawKB() }, BTNR, { repeat: true, debounce: 50, edge: "rising" });
- setWatch(() => { kby = (kby + 1) & 3; drawKB() }, BTNL, { repeat: true, debounce: 50, edge: "rising" });
- setWatch(() => { kbx = (kbx + 15) & 15; drawKB() }, BTNU, { repeat: true, debounce: 50, edge: "rising" });
- setWatch(() => { kbx = (kbx + 1) & 15; drawKB() }, BTND, { repeat: true, debounce: 50, edge: "rising" });
- setWatch(() => { kbShift = !kbShift; drawKB() }, BTNB, { repeat: true, debounce: 50, edge: "rising" });
- setWatch(() => {
-  if (BTNB.read()) return Badge.menu();
-  // actually select
-  var map = kbShift ? KEYMAPUPPER : KEYMAPLOWER;
-  kbShift = false;
-  drawKB();
-  var key = map[kby][kbx];
-  if (key !== undefined && key.charCodeAt(0) > 127)
-   key = KEYEXTRA[key.charCodeAt(0) - 128];
-  if (key !== undefined) LoopbackB.write(key)
- }, BTNA, { repeat: true, debounce: 50, edge: "rising" });
-
- g.clear();
- drawKB();
- LoopbackB.removeAllListeners();
- Bluetooth.removeAllListeners();
- // Set up the terminal
- term = require("VT100").connect(g, {
-  charWidth: 4,
-  charHeight: 7,
-  marginTop: 0,
-  marginLeft: 0,
-  marginBottom: 40
- });
- term.__proto__.scrollDown = () => {
-  g.setColor(0);
-  g.fillRect(0, 128 - 32, 64, 128); // remove kb
-  g.setColor(1);
-  new Uint8Array(g.buffer).set(new Uint8Array(g.buffer, 7), 0);
-  drawKB();
-  g.flip();
-  this.y--;
- };
- LoopbackB.on('data', e => {
-  for (var i in e) term.char(e[i]);
-  g.flip();
- });
- Bluetooth.on('data', e => LoopbackB.write(e));
- LoopbackA.setConsole();
- console.log("JS REPL\nHold B then A\nto exit");
-};
 Badge.badge = () => {
  Badge.reset();
  var counter = 0;
@@ -291,6 +216,64 @@ Badge.trex = () => {
  gameStart();
  setWatch(x => Badge.menu(), BTNB, { repeat: 0, debounce: 50, edge: "rising" });
 };
+Badge.proximityParrot = () => {
+  Badge.reset();
+
+  Badge.URL = "http://cultofthepartyparrot.com/";
+  NRF.nfcURL(Badge.URL);
+
+  var maxFrameTime = 2500;
+  var minFrameTime = 50;
+  var neighbourTimeReduction = 400;
+  var neighboursWanted = 5
+  var neighboursNearby = 0;
+  var searchTime = 10000;
+  
+  // you can customise how many people need to be around to make the parrot party hard!
+  setWatch(x => { neighboursWanted = Math.max(neighboursWanted - 1, 0); }, BTNU, { repeat: 1, debounce: 50, edge: "rising" });
+  setWatch(x => { neighboursWanted++; }, BTND, { repeat: 1, debounce: 50, edge: "rising" });
+
+  // you can also customise how much faster (or slower) it gets with more people around!
+  setWatch(x => { neighbourTimeReduction += 100; }, BTNL, { repeat: 1, debounce: 50, edge: "rising" });
+  setWatch(x => { neighbourTimeReduction -= 100; }, BTNR, { repeat: 1, debounce: 50, edge: "rising" });
+
+  function displayGif (gifArray) {
+      var currentIndex = -1;
+      function drawImage () {
+          var currentMax = Math.min((neighboursWanted * neighbourTimeReduction) + neighboursWanted, maxFrameTime)
+          currentIndex = ++currentIndex % gifArray.length;
+          g.clear();
+          g.drawImage(gifArray[currentIndex], 0, 0);
+          g.flip();
+          setTimeout(() => drawImage(), Math.min(Math.max(minFrameTime, currentMax - (neighbourTimeReduction * neighboursNearby))), currentMax);
+      }
+      drawImage();
+  }
+ 
+  function setupFindNeighboursOnService () {
+    setInterval(function () {
+        const foundDevices = {}
+        neighboursNearby = 0;
+        setTimeout(function () { NRF.setScan(); }, 300);
+        
+        NRF.setScan(function (device) {
+            if (device.servicedata && device.servicedata["baaf"] && !foundDevices[device.id]) {
+                neighboursNearby++;
+                foundDevices[device.id] = true;
+            }
+            NRF.setScan();
+        })
+    }, searchTime);
+  };
+  
+  // setup broadcast.
+  NRF.setAdvertising({ "0xBAAF": [42] }, { interval: 100 });
+  setupFindNeighboursOnService();
+  displayGif(Badge.partyParrot);
+
+  // exit with "B"
+  setWatch(x => Badge.menu(), BTNB, { repeat: 0, debounce: 50, edge: "rising" });
+};
 Badge.flappy = () => {
  Badge.reset();
  var SPEED = 0.5;
@@ -298,15 +281,14 @@ Badge.flappy = () => {
   width: 8, height: 8, bpp: 1,
   transparent: 0,
   buffer: new Uint8Array([
-0b00000000,
-0b01111000,
-0b10000100,
-0b10111010,
-0b10100100,
-0b10000100,
-0b01111000,
-0b00000000,
-  ]).buffer
+            0b00000000,
+            0b01111000,
+            0b10000100,
+            0b10111010,
+            0b10100100,
+            0b10000100,
+            0b01111000,
+            0b00000000]).buffer
  };
 
  var birdy, birdvy;

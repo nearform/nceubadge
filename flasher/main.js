@@ -25,6 +25,7 @@ Badge.partyParrot = [
 ].map(function (buff) {
       return {width: 124, height: 64, bpp: 1, transparent: 0, buffer: E.toArrayBuffer(atob(prefix + buff))};
 });
+Badge.LEDs = [LED1, LED2, LED3, LED4, LED5, LED6]
 // Get it all back to normal-ish
 Badge.reset = () => {
  clearInterval();
@@ -33,6 +34,7 @@ Badge.reset = () => {
  NRF.nfcURL(Badge.URL);
  Bluetooth.removeAllListeners();
  LoopbackB.removeAllListeners();
+ Badge.LEDs.forEach(l => digitalWrite(l, 0))
  g.setRotation(0, 1);
  g.clear();
  g.flip();
@@ -222,6 +224,8 @@ Badge.proximityParrot = () => {
   Badge.URL = "http://cultofthepartyparrot.com/";
   NRF.nfcURL(Badge.URL);
 
+  var LEDs = Badge.LEDs;
+  var currentLEDIndex = Badge.LEDs.length -1;
   var maxFrameTime = 2500;
   var minFrameTime = 50;
   var neighbourTimeReduction = 400;
@@ -240,6 +244,10 @@ Badge.proximityParrot = () => {
   function displayGif (gifArray) {
       var currentIndex = -1;
       function drawImage () {
+          digitalWrite(LEDs[currentLEDIndex], 0);
+          currentLEDIndex = (currentLEDIndex + 1) % Badge.LEDs.length;
+          digitalWrite(LEDs[currentLEDIndex], 1);
+
           var currentMax = Math.min((neighboursWanted * neighbourTimeReduction) + neighboursWanted, maxFrameTime)
           currentIndex = ++currentIndex % gifArray.length;
           g.clear();

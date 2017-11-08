@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: conoro/docker-hugo:latest
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run:
+          name: "Run Hugo"
+          command: 
+            hugo -v -s ~/project/docs-source
+      - run:
+          name: "Install pip"
+          command: apk add --update python python-dev py-pip
+      - run:
+          name: "Install python-dateutil"
+          command: pip install python-dateutil
+      - run:
+          name: "Install s3cmd"
+          command: pip install --no-deps s3cmd
+      - run:
+          name: "Setup AWS access key"
+          command: echo "access_key = $AWS_ACCESS_KEY_ID" >> ~/.s3cfg
+      - run:
+          name: "Setup AWS secret key"
+          command: echo "secret_key = $AWS_SECRET_ACCESS_KEY" >> ~/.s3cfg
+      - run:
+          name: "Install awscli"
+          command: pip install awscli
+      - run:
+          name: "Set a Cloudfront property"
+          command: aws configure set preview.cloudfront true
+      - deploy:
+          command: |
+            s3cmd sync --config=.s3cfg --no-mime-magic --delete-removed -P -M -r public/ s3://nodeconfeubadge/
+            aws cloudfront create-invalidation --distribution-id $PROD_CF_DIST --paths "/*"

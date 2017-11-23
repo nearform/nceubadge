@@ -33,5 +33,5 @@ jobs:
           command: aws configure set preview.cloudfront true
       - deploy:
           command: |
-            s3cmd sync --config=.s3cfg --no-mime-magic --delete-removed -P -M -r public/ s3://nodeconfeubadge/
+            s3cmd sync --config=.s3cfg --no-mime-magic --delete-removed -P -M -r docs-source/public/ s3://nodeconfeubadge/
             aws cloudfront create-invalidation --distribution-id $PROD_CF_DIST --paths "/*"

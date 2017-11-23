@@ -1,0 +1,56 @@
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=320, initial-scale=1">
+    <title>Badge image viewer</title>
+  </head>
+  <body>
+    <p>Retrieves all images from the badge. Make sure your badge is in 'make connectable' mode and click the button.</p>
+    <canvas id="c" width="128" height="64"></canvas>
+  <script src="https://www.puck-js.com/puck.js"></script>
+  <script>
+  function getImage() {
+    document.getElementById("getImage").innerHTML = "Working...";
+    Puck.eval("Badge.badgeImages.length",  function(imageCount) {      
+      var canvas = document.getElementById("c");
+      var context = canvas.getContext("2d");
+      canvas.width = 128;
+      canvas.height = 64*imageCount;
+      var imageNo = 0;
+      
+      
+      function getOneImage() {      
+        if (imageNo>=imageCount) {
+          document.getElementById("getImage").innerHTML = "Get Images";      
+          return
+        }
+        document.getElementById("getImage").innerHTML = "Getting "+imageNo;      
+        Puck.eval("btoa(E.toString(Badge.badgeImages["+imageNo+"].buffer))",  function(b64image) {      
+          var binaryData = atob(b64image);
+          console.log(b64image);
+          var imageData = new ImageData(128, 64);
+          var buffer = imageData.data;
+          for (i=0;i<128*64/8;i++) {
+            var byte = binaryData.charCodeAt(i);
+            for (var ib=0;ib<8;ib++) {
+              var col = ((byte<<ib)&128)?0:255;
+              var offs = ((i*8)+ib)*4;
+              buffer[offs  ]=col;
+              buffer[offs+1]=col;
+              buffer[offs+2]=col;
+              buffer[offs+3]=255;
+            }
+          }
+          context.putImageData(imageData, 0, 64*imageNo);
+          imageNo++;
+          getOneImage();
+        });
+      }
+      getOneImage();
+    });
+  }
+  </script>  
+  <button id="getImage" onclick="getImage();">Get Images</button>
+  </body>
+</html>

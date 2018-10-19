@@ -13,9 +13,9 @@ home = [ "HTML", "RSS", "JSON"]
   # See the config.toml file from this documentation site to have an example.
   editURL = ""
   # Author of the site, will be used in meta information
-  author = "nearForm"
+  author = "NearForm"
   # Description of the site, will be used in meta information
-  description = "All about the NodeConf EU 2017 Badge"
+  description = "All about the NodeConf EU Badge"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = false
   # Disable search function. It will hide search bar

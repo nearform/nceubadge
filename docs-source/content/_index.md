@@ -1,31 +1,17 @@
-# NodeConf EU 2017 Badge
+# NodeConf EU 2018 Badge
 
 Welcome!
 
 We hope you are as excited as we are about the badge. We've spent the past few months designing and preparing it for the event.
 
 ## The Badge
+
 The open source hardware badge contains a small but powerful Bluetooth LE module running [Espruino](https://www.espruino.com) software, which is a JavaScript interpreter optimised for low-power devices. On this site, we'll explain the basics of using and programming the badge and even how to add hardware to it.
 
 ## Getting Started
 
-In the [Getting Started](/getting-started/) area we give you all the details of:
+We'll have more info here, including on how to re-flash the firmware on your badge, soon.
 
-* Unlocking the badge
-* The built-in software features
-* Connecting to the badge
-* Hello World on the console
-* Other code samples to learn from
-* The hardware features
-* Board prototype area (including the pin-out)
+## 2017 Badge
 
-### Your Challenges
-
-We have a [set of challenges](/challenges/) for you to get maximum use out of the badge and learn lots in the process.
-
-### The Grand Challenge
-For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do but it must make use of the Badge. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to. 
-
-Anyone who wishes to enter must demo their completed entry to the judges between 4.30pm and 5pm on Wednesday Nov 8th in the Hacking Lounge.
-
-The winner will be announced at the Closing Party dinner on Wednesday night. They and the runners-up will demo what they have created to the crowd. 
+The old docs for the 2017 badge can be found in [Getting Started](/2017badge/getting-started/) and [challenges](/2017badge/challenges/).

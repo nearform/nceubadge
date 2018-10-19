@@ -1,258 +1,258 @@
 [
 {
-	"uri": "http://nodeconfeubadge.org/workshop/get-connected/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/get-connected/",
 	"title": "Get Connected",
 	"tags": [],
 	"description": "",
 	"content": "The first step is going to be getting set up and connected to your badge. If you haven\u0026rsquo;t already, check out http://nodeconfeubadge.org/getting-started/ as a getting started guide.\nIf you\u0026rsquo;re not on a Mac, you might want to check out Puck.js\u0026rsquo;s guide for setting up the Web IDE: http://www.espruino.com/Puck.js+Quick+Start#using-the-espruino-ide\nYou should now have a REPL that you can type stuff at!\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/hello-world-screen/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/hello-world-screen/",
 	"title": "Hello World on screen",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 1 This challenge is just to get you warmed up and comfortable using the Web IDE. See if you can display \u0026ldquo;Hello World\u0026rdquo; on the badge\u0026rsquo;s screen.\nCheck out the Espruino site to see what you can do with Graphics and Fonts.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/unlocking-your-badge/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/unlocking-your-badge/",
 	"title": "Unlocking Your Badge",
 	"tags": [],
 	"description": "",
 	"content": "There\u0026rsquo;s a lot more to your badge\u0026rsquo;s software than you realise. Try this:\n Up Up Down Down Left Right Left Right B A  (Yup the Konami code!)\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/",
 	"title": "Getting Started",
 	"tags": [],
 	"description": "",
 	"content": " Chapter 1 Getting Started Lets get you setup with accessing the secret menus, connecting to your badge over Bluetooth and getting Hello World running.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/clean-slate/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/clean-slate/",
 	"title": "Clean Slate",
 	"tags": [],
 	"description": "",
 	"content": "Clear everything out of the right-hand side of the IDE window, and click the \u0026lsquo;Upload\u0026rsquo; button in the middle of the screen (a picture of a chip and an up-arrow).\nThe Badge should now just display the \u0026lsquo;Espruino\u0026rsquo; logo - this is what gets displayed when no code has been loaded.\nDon\u0026rsquo;t worry though - this hasn\u0026rsquo;t overwritten what was on the badge before. That code is in Flash memory, and uploading an empty file has left the contents of RAM empty, while the Flash memory has stayed the same. Removing the battery and re-inserting (or flicking it away with your finger) will make the badge reload everything.\nNote: If you have Save on Send set in the options, or type save() then it will blow away the contents of the badge.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/built-in-software/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/built-in-software/",
 	"title": "Built-in Software",
 	"tags": [],
 	"description": "",
 	"content": "Now that you\u0026rsquo;ve unlocked the badge (you\u0026rsquo;ll have to do this any time you remove the battery), you can explore the built in sample apps. Out of the box, your badge has the following:\n Your name pre-flashed into the firmware Image display cycling Selectable menus T-Rex who has escaped the Chrome browser Flappy Bird The world\u0026rsquo;s most awkward on-board REPL Etch-a-sketch  Source code for all of these is of course in the Github Repo. More details on these and other samples are here.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/",
 	"title": "Challenges",
 	"tags": [],
 	"description": "",
 	"content": " Try all of these challenges! You\u0026rsquo;ll start with Hello World and hopefully by Wednesday you\u0026rsquo;ll have a giant P2P badge network running.\nTry combining multiple challenges into one codebase.\n Hello World on screen Detect Button press Detect capacitive touch Add LEDs and flash them Add a Buzzer/Speaker and play music Implement your own on-screen menu Broadcast a different NFC URL Broadcast an Eddystone and iBeacon message Use Noble and Node.js on your laptop to read the beacon data\n Turn the Badge into HID buttons for your PC. Create and display your own images Implement Web Bluetooth with the Puck.js library Detect movement with a PIR sensor Connect to a BLE LED Lightbulb Connect to a BLE LED Strip Communicate with another badge Communicate with some other Bluetooth devices Implement DAT protocol on Espruino  The Grand Challenge Don\u0026rsquo;t forget the grand challenge!\nAdvanced tools There are several mobile apps from Nordic Semiconductor that you may find useful in any challenges that use Bluetooth. nRF toolbox can also be used to update the badges firmware or re-flash a badge that you have messed up.\nAndroid  nRF Connect nRF Toolbox  iOS  nRF Connect nRF Toolbox  "
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/detect-button-press/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/detect-button-press/",
 	"title": "Detect Button Press",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 2 Reading the instantaneous value of a button is easy (see the getting started docs) but how do you deal with debouncing so it\u0026rsquo;s reliable?\nWhat about more than one button being pressed at the same time?\nHelp is at hand on the Espruino site.\nButtons are a great example of how you write event-driven code with Espruino rather than the more traditional read-loops that people starting on Arduino tend to use.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/capacitive-sense/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/capacitive-sense/",
 	"title": "Capacitive Sense",
 	"tags": [],
 	"description": "",
 	"content": "To detect a press, we want to use the capacitive sense functionality on the badge. Type Badge.capSense(1) on the left-hand side of the IDE. You can use tab-complete to help you. You should get a number displayed in the region of about 10,000 - this value depends on the capacitance on that corner of the badge.\nPress your finger on the corner marked 1 and try again (up arrow, then enter) - you should see a much higher value - probably over 100,000.\nWe can read all 6 corners using ES6 arrow functions and map:\n[1,2,3,4,5,6].map(c=\u0026gt;Badge.capSense(c))  Note that not all corners are identical - for instance the corner nearest the Bluetooth module (corner 3) will probably read a bit less, because there\u0026rsquo;s less wire.\nIt\u0026rsquo;s easy enough for us to just threshold the capacitance values to return an array of boolean values. You can use up-arrow and left to move the cursor and edit the last line (or even the mouse), but you need to get the cursor on the end of the line before you hit enter or it\u0026rsquo;ll create a newline rather than executing:\n[1,2,3,4,5,6].map(c=\u0026gt;Badge.capSense(c)\u0026gt;20000)  So at this point it\u0026rsquo;d be nice to use the display to show our values\u0026hellip;\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/",
 	"title": "Workshop",
 	"tags": [],
 	"description": "",
 	"content": " Monday\u0026rsquo;s Workshop We\u0026rsquo;re going to make a 6-cornered \u0026lsquo;Simon\u0026rsquo; game, using capacitive sense on each corner of the badge instead of the usual 4 cornered game.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/detect-capacitive-touch/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/detect-capacitive-touch/",
 	"title": "Detect Capacitive Touch",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 3 It\u0026rsquo;s very easy to read a capacitance value from the 6 lanyard holes in the badge. Experiment with the code and how the badge responds to touch. Then come up with a use for it.\nSee the getting started area for the relevant API call.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/graphics/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/graphics/",
 	"title": "Graphics",
 	"tags": [],
 	"description": "",
 	"content": "The badge exposes the LCD via a built-in variable called g. This has a bunch of methods such as drawLine or drawString that can be accessed (http://www.espruino.com/Graphics) however each command acts on an internal memory buffer. To update the display itself you need to call g.flip().\nTry entering the following code on the left-hand side:\ng.clear(); g.drawString(\u0026quot;Hello World!\u0026quot;); g.flip();  The badge should now display the obvious \u0026lsquo;Hello World\u0026rsquo;!\nBut what if we want to display our capacitance data? Enter the following on the left-hand side.\nfunction plotCap() { g.clear(); var caps = [1,2,3,4,5,6].map(c=\u0026gt;Badge.capSense(c)); caps.forEach( (cap,x) =\u0026gt; g.fillRect(x*21,64,(x+1)*21, 64-cap/1000) ); g.flip(); } setInterval(plotCap,50)  Note: This uses a whole bunch of battery power because of polling the capacitive sense as well as updating the screen, and if left this way could run the Badge\u0026rsquo;s battery down in a few hours. When using the buttons rather than capacitive sense, the hardware itself can detect the change in the wire\u0026rsquo;s voltage while the processor is asleep - you do that using setWatch - which is super power efficient.\nThis is just displaying a few bars, but it would make more sense to display the status on a hexagon that matched the badge itself:\nfunction plotBadge(presses) { g.clear(); // function to work out each corner's coordinates function corner(c,r) { var a = (c-2)*Math.PI/3; return [64+Math.sin(a)*40*r, 32-Math.cos(a)*30*r]; } // draw a hexagon - a line to each corner in turn g.moveTo.apply(g,corner(6,1)); [1,2,3,4,5,6].forEach(c=\u0026gt;g.lineTo.apply(g,corner(c,1))); // Draw a circle where pressed presses.forEach((hit,c) =\u0026gt; { if (!hit) return; var coords = corner(c+1,0.8); g.fillCircle(coords[0],coords[1],5); }); g.flip(); } function plotCap() { var caps = [1,2,3,4,5,6].map(c=\u0026gt;Badge.capSense(c)\u0026gt;20000); plotBadge(caps); }  We\u0026rsquo;re using a separate plotBadge function here so we can use it later to output the pattern we want the user to enter.\nNote: because we\u0026rsquo;re entering this on the left-hand side we already have the interval from the last code we entered - just re-entering plotCap will replace the old one and the code will magically start working.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/flash-leds/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/flash-leds/",
 	"title": "Flash LEDs",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 4 It\u0026rsquo;s very easy to add LEDs to the 6 corners of your badge. In fact you probably don\u0026rsquo;t even have to solder them. Just stick them in with the short leg oriented to the squared off side of each white circle.\nThen try turning them on and off (hint: check the getting started pages). How about some timer-based patterns too? Or controlling them with the buttons?\nNote: The low-power nature of the badge means that if you light all LEDs together they\u0026rsquo;ll be quite dim and you\u0026rsquo;ll burn through the battery much more quickly.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/sound/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/sound/",
 	"title": "Sound",
 	"tags": [],
 	"description": "",
 	"content": " It\u0026rsquo;d be nice if our game made some sounds. There\u0026rsquo;s no speaker built into the badge, so we\u0026rsquo;re going to add one.\nGet one of the gold coloured discs from the hacking bench - these are piezo speakers of the type you\u0026rsquo;d find in digital watches.\nUse the wire strippers and try and strip around 2cm of insulation off each of the two wires. By careful - maybe try stripping 1cm first, then another cm, as the wire is really delicate.\nTwist each bit of wire so it makes a nice braid, then poke each through the holes on the edge of the board marked 0 and 1 (the order doesn\u0026rsquo;t matter) and twist them around tightly as below. 0 and 1 correspond to pins D0 and D1.\nNote: You\u0026rsquo;re welcome to solder the speaker on if you want to - it\u0026rsquo;s just quick and reversible to twist.\nNow get a bit of double-sided tape and tape the speaker to the back of your badge. It makes it louder if it can vibrate something else.\nNow you can test it - in the left-hand side of the IDE type:\ndigitalWrite(D0,0)  This sets pin D0 to be connected to ground.\nanalogWrite(D1,0.5,{freq:1000})  This puts a 1kHz frequency on pin D1, and you should be able to hear a really annoying high pitched beep.\nType this to turn it off:\ndigitalWrite(D1,0)  So now all we need is a handy function to do timed beeps:\nfunction beep(freq, time, callback) { digitalWrite(D0,0); analogWrite(D1,0.5,{freq:freq}); setTimeout(function() { digitalWrite(D1,0); if (callback) callback(); }, time); }  Which you can try with:\nbeep(700,1000)  For a 700Hz beep for 1 second, and so on\u0026hellip;\nFor our Simon game we need a different beep for each corner, so let\u0026rsquo;s make a function for that.\nfunction beepForCorner(corner, time) { var pitches = [\u0026quot;no_corner_0\u0026quot;, 500, 600, 700, 800, 900, 1000 ]; beep(pitches[corner], time); }  Which you can use with beepForCorner(2,1000).\nThese pitches are totally un-musical, but if you were so inclined you could look up some more pleasing notes at https://pages.mtu.edu/~suits/notefreqs.html and use those frequencies instead.\nIt\u0026rsquo;s too quiet! (optional!)\nUnfortunately the piezo speakers we\u0026rsquo;re using aren\u0026rsquo;t really meant to run off a voltage as low as we have on the badge (3V).\nWe\u0026rsquo;re driving them with a square wave between 0V and 3V while D0 is at 0V, so the total swing in voltage is 0V.\nHowever, if we could make D0 go to 3V when D1 was at 0V and vice-versa, we\u0026rsquo;d be able to get double the voltage swing - 6V!\nThe following code uses the NRF52LL library, which has a bit more info in it: http://www.espruino.com/NRF52LL\nBasically there\u0026rsquo;s nothing built in to the Espruino interpreter to handle this, so we have to set up the hardware that\u0026rsquo;s on the chip ourself - which is pretty low-level.\n function beep(freq, time, callback) { var ll = require(\u0026quot;NRF52LL\u0026quot;); // set up D0 and D1 as outputs digitalWrite(D0,0); digitalWrite(D1,0); // create two 'toggle' tasks, one for each pin var t0 = ll.gpiote(6, {type:\u0026quot;task\u0026quot;,pin:D0,lo2hi:1,hi2lo:1,initialState:0}); var t1 = ll.gpiote(7, {type:\u0026quot;task\u0026quot;,pin:D1,lo2hi:1,hi2lo:1,initialState:1}); // create a timer that counts up to a value depending on the frequency var tmr = ll.timer(3,{cc:[500000/freq],cc0clear:1}); // use two PPI to trigger toggle events ll.ppiEnable(6, tmr.eCompare[0], t0.tOut); ll.ppiEnable(7, tmr.eCompare[0], t1.tOut); // Manually trigger a task to start the timer poke32(tmr.tClear,1); poke32(tmr.tStart,1); setTimeout(function() { poke32(tmr.tStop,1); ll.ppiDisable(6); ll.ppiDisable(7); if (callback) callback(); }, time); }  This code uses a library that\u0026rsquo;s dynamically loaded in by the IDE, so you\u0026rsquo;ll have to use the code on the right-hand side of the IDE and use the Upload button in order to have it work correctly.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/connecting-to-the-badge/",
 	"title": "Connecting to the Badge",
 	"tags": [],
 	"description": "",
 	"content": " Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:\nMake your badge connectable  Enter the Konami code, if you haven\u0026rsquo;t already: Up, Up, Down, Down, Left, Right, Left, Right, B, A. Select \u0026ldquo;Make badge connectable\u0026rdquo; in the menu Note the Badge ID  Mac Web Bluetooth on Chrome should just work if your Chrome is up to date. So simply go to the Web IDE here. Then:\n Click the connect icon in the top left corner Select the Web Bluetooth option If more than one badge is listed, select your badge ID Click Pair A few seconds later you\u0026rsquo;ll have a REPL running and you can run JS directly on your badge over Bluetooth!  Windows The easiest option is to install the standalone Electron-based Espruino IDE. Download it from here\n If your\u0026rsquo;re using Windows 8.1, or 10 you\u0026rsquo;ll need to pair your Badge using the Windows Bluetooth menu before it\u0026rsquo;ll appear in the Web IDE. (Any time you remove the badge battery, you\u0026rsquo;ll have to remove the Badge from the list of paired devices in Windows and re-pair) Run the IDE Click the connect icon in the top left corner Select the Web Bluetooth option If more than one badge is listed, select your badge ID Click Pair A few seconds later you\u0026rsquo;ll have a REPL running and you can run JS directly on your badge over Bluetooth!  Linux / iOS / Android  See instructions here  More setup (and general) information is available on the Puck.js site if you get stuck. Most, but not all, of the information applies to the badge.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/play-music-with-buzzer/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/play-music-with-buzzer/",
 	"title": "Play Music with Buzzer",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 5 We have lots of buzzers at the Hacking Station. You just have to solder the red wire to one of the D0-D6 holes on the edge of the badge and the black wire to one of the Ground (-) holes.\nThen impress everyone with your groovy tunes using the APIs here.\nNote: Gordon is working on a variation of this that uses two digital pins and doubles the output volume.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/making-a-game/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/making-a-game/",
 	"title": "Making a Game",
 	"tags": [],
 	"description": "",
 	"content": " Ok, now we\u0026rsquo;ll need to make two functions:\n A function to output a pattern A function to check the player\u0026rsquo;s input against a pattern.  These will take a simple array of numbers, which is the pattern to output.\nLeft -\u0026gt; Right We\u0026rsquo;ve got enough code that we probably want to start using the right-hand side of the IDE as a proper editor. No changes will take effect until you press the Upload button, but when you upload it\u0026rsquo;ll blow away any previous changes you made on the left-hand side.\nOutputting a pattern We\u0026rsquo;ve already got the plotBadge function from the Graphics section, as well as beepForCorner from the Sound section. All we need to do is call them at the right times. Copy plotBadge and the beep stuff onto the right-hand side, as well as this - and then click the Upload button in the middle of the screen.\n// Show the given pattern function showPattern(pattern, callback) { // Nothing left - finish if (!pattern.length) return callback(); // Shift off the first element - don't use shift as // that'd alter the initial array var corner = pattern[0]; pattern = pattern.slice(1); // Display a corner and beep plotBadge([corner==1, corner==2, corner==3, corner==4, corner==5, corner==6]); beepForCorner(corner, 1000); // clear screen after a timeout setTimeout(function() { g.clear(); g.flip(); // go to next setTimeout(function() { showPattern(pattern, callback); }, 200); }, 1000); } showPattern([1,2,3,4], ()=\u0026gt;console.log(\u0026quot;Done!\u0026quot;));  Detecting the pattern So now you need the following to detect the pattern sequence - it\u0026rsquo;s a bit big, but there are comments below:\n/* Wait for either a corner to be pressed (pressState=true) or released (pressState=false), and report back what was pressed in the callback */ function waitForPress(pressState, callback) { var intr = setInterval(function() { // Detect pressed corners var pressed = [1,2,3,4,5,6].map(c=\u0026gt;Badge.capSense(c)\u0026gt;20000); // Create a string of only the pressed corners pressed = pressed.map((x,i)=\u0026gt;x?i+1:\u0026quot;\u0026quot;).join(\u0026quot;\u0026quot;); // Call the callback when something is either pressed or released if ((pressed!=\u0026quot;\u0026quot;) == pressState) { clearInterval(intr); callback(pressed); } },20); } // Draw big fullscreen, centered text function plotText(txt) { g.clear(); var size = 32; g.setFontVector(size); while (g.stringWidth(txt)\u0026gt;120) { g.setFontVector(--size); } g.drawString(txt,(128-g.stringWidth(txt))/2,(64-size)/2); g.setFontBitmap(); g.flip(); } // Repeatedly test for the correct pattern function testPattern(pattern, callback) { // Nothing left - finish - I guess we passed if (!pattern.length) return callback(true); // Shift off the first element - don't use shift as // that'd alter the initial array var corner = pattern[0]; pattern = pattern.slice(1); // Wait for a press plotText(\u0026quot;?\u0026quot;); waitForPress(true, function(pressedCorner) { // check our corner if (pressedCorner == corner) { plotText(corner); beepForCorner(corner, 1000); // Great! Next corner, after a delay and // the button is released setTimeout(function() { waitForPress(false, function() { testPattern(pattern, callback); }); }, 1000); } else { // Game over plotText(\u0026quot;NO!\u0026quot;); beep(200, 1000); // low beep setTimeout(function() { callback(false); }, 1000); } }); } // Test this out testPattern([1,2,3,4], x=\u0026gt;console.log(\u0026quot;Done!\u0026quot;,x));  Sticking it together So now it\u0026rsquo;s reasonably easy to stick showing the pattern and testing for the pattern together:\nvar pattern = [5,3,4]; showPattern(pattern, ()=\u0026gt;{ testPattern(pattern, x=\u0026gt;console.log(\u0026quot;Done!\u0026quot;,x)); });  And finally, you can wrap the whole thing up so that after each successful pattern it adds one more item to the end:\nfunction randomCorner() { return 0|Math.min(1+Math.random()*6, 6); } function game(pattern) { // add a new corner pattern.push(randomCorner()); // Show and test console.log(\u0026quot;Trying \u0026quot;,pattern); showPattern(pattern, ()=\u0026gt;{ testPattern(pattern, success=\u0026gt;{ if (success) { plotText(\u0026quot;:)\u0026quot;); setTimeout(()=\u0026gt;game(pattern), 1000); } else { plotText(\u0026quot;Game Over\u0026quot;); // restart when A pressed setWatch(function() { console.log(\u0026quot;Restarting\u0026quot;); game([]); }, BTNA, {repeat:0, debounce:20, edge:\u0026quot;rising\u0026quot;}); } }); }); } game([])  Finally! And that\u0026rsquo;s it! The finished game should look like this:\nfunction plotBadge(presses) { g.clear(); // function to work out each corner's coordinates function corner(c,r) { var a = (c-2)*Math.PI/3; return [64+Math.sin(a)*40*r, 32-Math.cos(a)*30*r]; } // draw a hexagon - a line to each corner in turn g.moveTo.apply(g,corner(6,1)); [1,2,3,4,5,6].forEach(c=\u0026gt;g.lineTo.apply(g,corner(c,1))); // Draw a circle where pressed presses.forEach((hit,c) =\u0026gt; { if (!hit) return; var coords = corner(c+1,0.8); g.fillCircle(coords[0],coords[1],5); }); g.flip(); } function beep(freq, time, callback) { var ll = require(\u0026quot;NRF52LL\u0026quot;); // set up D0 and D1 as outputs digitalWrite(D0,0); digitalWrite(D1,0); // create two 'toggle' tasks, one for each pin var t0 = ll.gpiote(6, {type:\u0026quot;task\u0026quot;,pin:D0,lo2hi:1,hi2lo:1,initialState:0}); var t1 = ll.gpiote(7, {type:\u0026quot;task\u0026quot;,pin:D1,lo2hi:1,hi2lo:1,initialState:1}); // create a timer that counts up to a value depending on the frequency var tmr = ll.timer(3,{cc:[500000/freq],cc0clear:1}); // use two PPI to trigger toggle events ll.ppiEnable(6, tmr.eCompare[0], t0.tOut); ll.ppiEnable(7, tmr.eCompare[0], t1.tOut); // Manually trigger a task to start the timer poke32(tmr.tClear,1); poke32(tmr.tStart,1); setTimeout(function() { poke32(tmr.tStop,1); ll.ppiDisable(6); ll.ppiDisable(7); if (callback) callback(); }, time); } function beepForCorner(corner, time) { var pitches = [\u0026quot;no_corner_0\u0026quot;, 500, 600, 700, 800, 900, 1000 ]; beep(pitches[corner], time); } // Show the given pattern function showPattern(pattern, callback) { // Nothing left - finish if (!pattern.length) return callback(); // Shift off the first element - don't use shift as // that'd alter the initial array var corner = pattern[0]; pattern = pattern.slice(1); // Display a corner and beep plotBadge([corner==1, corner==2, corner==3, corner==4, corner==5, corner==6]); beepForCorner(corner, 1000); // clear screen after a timeout setTimeout(function() { g.clear(); g.flip(); // go to next setTimeout(function() { showPattern(pattern, callback); }, 200); }, 1000); } /* Wait for either a corner to be pressed (pressState=true) or released (pressState=false), and report back what was pressed in the callback */ function waitForPress(pressState, callback) { var intr = setInterval(function() { // Detect pressed corners var pressed = [1,2,3,4,5,6].map(c=\u0026gt;Badge.capSense(c)\u0026gt;20000); // Create a string of only the pressed corners pressed = pressed.map((x,i)=\u0026gt;x?i+1:\u0026quot;\u0026quot;).join(\u0026quot;\u0026quot;); // Call the callback when something is either pressed or released if ((pressed!=\u0026quot;\u0026quot;) == pressState) { clearInterval(intr); callback(pressed); } },20); } // Draw big fullscreen, centered text function plotText(txt) { g.clear(); var size = 32; g.setFontVector(size); while (g.stringWidth(txt)\u0026gt;120) { g.setFontVector(--size); } g.drawString(txt,(128-g.stringWidth(txt))/2,(64-size)/2); g.setFontBitmap(); g.flip(); } // Repeatedly test for the correct pattern function testPattern(pattern, callback) { // Nothing left - finish - I guess we passed if (!pattern.length) return callback(true); // Shift off the first element - don't use shift as // that'd alter the initial array var corner = pattern[0]; pattern = pattern.slice(1); // Wait for a press plotText(\u0026quot;?\u0026quot;); waitForPress(true, function(pressedCorner) { // check our corner if (pressedCorner == corner) { plotText(corner); beepForCorner(corner, 1000); // Great! Next corner, after a delay and // the button is released setTimeout(function() { waitForPress(false, function() { testPattern(pattern, callback); }); }, 1000); } else { // Game over plotText(\u0026quot;NO!\u0026quot;); beep(200, 1000); // low beep setTimeout(function() { callback(false); }, 1000); } }); } function randomCorner() { return 0|Math.min(1+Math.random()*6, 6); } function game(pattern) { // add a new corner pattern.push(randomCorner()); // Show and test console.log(\u0026quot;Trying \u0026quot;,pattern); showPattern(pattern, ()=\u0026gt;{ testPattern(pattern, success=\u0026gt;{ if (success) { plotText(\u0026quot;:)\u0026quot;); setTimeout(()=\u0026gt;game(pattern), 1000); } else { plotText(\u0026quot;Game Over\u0026quot;); // restart when A pressed setWatch(function() { console.log(\u0026quot;Restarting\u0026quot;); game([]); }, BTNA, {repeat:0, debounce:20, edge:\u0026quot;rising\u0026quot;}); } }); }); } game([])  "
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/hello-world-console/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/hello-world-console/",
 	"title": "Hello World on the Console",
 	"tags": [],
 	"description": "",
 	"content": "Of course we start with Hello World. Follow the connection instructions, then click on the left hand side of the IDE and type:\nconsole.log(\u0026quot;Hello World\u0026quot;);  Now stop and think for a minute about what just happened there in terms of communications flow.\nYou should try out other aspects of the Web IDE. It has full auto-complete in the REPL window including Button/LED names and functions.\nYou could also try the built-in Blockly graphical editor which is very similar to Scratch.\nAny Espruino code you find here or elsewhere online can be pasted into the editor on the right-hand-side of the IDE and then sent to the badge over Bluetooth for execution. The editor has basic parsing and can flag common errors.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/on-screen-menu/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/on-screen-menu/",
 	"title": "On-Screen Menu",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 6 If you implement an on-screen menu with up-down-left-right-select then you could have lots of your challenges on the badge at the same time and demo them to people. Have a look at the github repo for the sample code.\nAdd to the existing menu You can also try the following:\n Turn off \u0026lsquo;Reset Before Send\u0026rsquo; in the Web IDE options Write your code a bit like this:  Badge.apps[\u0026quot;My Foobar\u0026quot;] = function() { Badge.reset(); // my stuff // when done, call Badge.menu // eg. setWatch(Badge.menu, BTNB, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); };   Upload or copy/paste that code It will appear in the apps list on the badge\u0026rsquo;s menu You can\u0026rsquo;t save, but it\u0026rsquo;ll persist until you reset the badge  "
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/other-code-samples/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/other-code-samples/",
 	"title": "Other Code Samples",
 	"tags": [],
 	"description": "",
 	"content": " There are three places you can find code to learn from and use:\n The Badge repo The main Espruino site The Puck.js area of the Espruino site  Badge Repo Code The pre-installed main.js code is a treasure trove of useful snippets. Note however that it\u0026rsquo;s too big to be uploaded in its entirety via the Web IDE.\n Pre-installed badge code  Games Relive your original Gameboy, Nokia and video arcade days with the following games :-)\n Flappy Bird Snake Simple Mario Asteroids Click speed counter T-Rex  Web Bluetooth  Retrieve all images stored on a badge (try it) Take a picture with getUserMedia and put it on the badge (try it) Upload an image to the badge badge (try it)  Misc  Check out the world\u0026rsquo;s most awkward REPL\n Learn how to display a Menu\n Dazzle everyone with your artistic skills on an Etch-a-sketch\n  "
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/broadcast-nfc-url/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/broadcast-nfc-url/",
 	"title": "Broadcast NFC URL",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 7 This is an easy one. Change the NFC URL that your badge transmits. Find someone with a Samsung Galaxy or similar phone to test it.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/accessing-hardware-features/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/accessing-hardware-features/",
 	"title": "Accessing Hardware Features",
 	"tags": [],
 	"description": "",
 	"content": " This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.\nThe badge uses the same core module as the Puck.js and can run most of the same software.\nHardware Features include:\n nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacitive touch sensors on all 6 corners Digital I/O on all 6 corners Analogue-in on 3 corners Prototyping area with 8 CPU pins accessible Digital I/O on all 8 pins Analogue-in on 4 pins Holes for LEDs on all 6 corners NFC antenna SWD programming pins  Proto holes and corner holes You write or read a digital high/low to/from a hole with:\ndigitalWrite(hole, value); digitalRead(hole);  where hole is one of D0, D1, D2, D3, D4, D5, D6, D7, D8 (D0 at top), CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6 and value is 0 or 1.\nYou read an analogue value from a hole with:\nanalogRead(hole);  where hole is one of D2, D3, D4, D5, CORNER4, CORNER5, CORNER6.\nButtons You can use a generic call like\ndigitalRead(button);  where button is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR\nor with a Button-specific call\nBTNx.read();  where BTNx is one of BTNA, BTNB, BTNU, BTND, BTNL, BTNR\nLEDs If you add LEDs to the corner holes, you can turn them on/off with a generic call\ndigitalWrite(led, value);  where led is one of LED1, LED2, LED3, LED4, LED5, LED6.\nor with an LED-specific call\nLEDx.write(value);  where LEDx is one of LED1, LED2, LED3, LED4, LED5, LED6 and value is 0 or 1.\nGraphics In many Espruino examples on the main site, you\u0026rsquo;ll find setup code for different types of screens. That has already been taken care of for you on the badge and you can just access the graphics functions directly. e.g.\ng.clear(); g.drawString(\u0026quot;Hello World\u0026quot;,0,0); g.flip();  Capacitive Sense You can read the capacitance (and hence touch) from the 6 corners using\nBadge.capSense(corner);  where corner is one of CORNER1, CORNER2, CORNER3, CORNER4, CORNER5, CORNER6. See note here about issue of using sense and LEDs together.\nBattery Percentage You can get an estimate of the battery level by calling\nBadge.getBatteryPercentage();  It returns an approximate battery percentage remaining based on a normal CR2032 battery (2.8 - 2.2v).\nSet Screen Contrast You can set the screen contrast with\nBadge.setContrast(c)  where c is a float from 0 to 1\nNFC You can set the URL that the NFC antenna broadcasts to NFC-capable phones by calling\nNRF.nfcURL(\u0026quot;url\u0026quot;)  where URL is something like https://www.nearform.com\nAdvanced Only: Flashing updated firmware If you need to flash new firmware to the badge, you must first put it in DFU mode by holding BTNA as you insert the battery and quickly letting go of BTNA. Download the Distribution Packet Zip file containing the new firmware to your phone and use nRF Toolbox on either Android or iOS to send it to the badge.\nPlease only do this if you are sure you need it. By using a stock badge build from the Espruino site, you\u0026rsquo;ll lose the built-in NodeConf EU main.js code and will just have a REPL over Bluetooth on your badge.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/broadcast-beacons/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/broadcast-beacons/",
 	"title": "Broadcast Beacons",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 8 Broadcast a URL over Bluetooth LE using Eddystone and/or iBeacon and pick it up on your phone (Android for Eddystone, iPhone for iBeacon).\nYou\u0026rsquo;ll get lots of guidance on the Puck.js site here for Eddystone and here for iBeacon.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/what-next/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/what-next/",
 	"title": "What next?",
 	"tags": [],
 	"description": "",
 	"content": " What about:\n Putting LEDs around the corners and using those to show the correct patterns. However, due to the way the capacitive sense and LEDs are shared, you\u0026rsquo;ll only be able to use White and Blue LEDs, not any of the coloured ones! Getting rid of all the callbacks. I\u0026rsquo;ve been super lazy - you could probably tidy things up a lot more using Promises. Make a much better game. Use the Bluetooth to connect to another Badge and control it Interface with a Web Bluetooth Website Make a multiplayer game!  Other info There\u0026rsquo;s loads of info to help online.. Check out:\n http://nodeconfeubadge.org/challenges/ The Puck.js tutorials - the badge is basically a Puck.js: http://www.espruino.com/Puck.js#tutorials The search box on the Espruino site: http://www.espruino.com/Search The Espruino function reference: http://www.espruino.com/Reference All the rest of Espruino\u0026rsquo;s tutorials - http://www.espruino.com/Tutorials The forum! http://forum.espruino.com/ (it\u0026rsquo;s also sometimes worth Googling site:forum.espruino.com your_search_term as the forum\u0026rsquo;s search isn\u0026rsquo;t the best).  Bluetooth We didn\u0026rsquo;t cover Bluetooth at all here! There\u0026rsquo;s a super-quick intro to BLE on Espruino here: http://www.espruino.com/About+Bluetooth+LE\nAnd there\u0026rsquo;s a tutorial on how to get up and running with Web Bluetooth and Espruino here: http://www.espruino.com/Puck.js+Web+Bluetooth\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/using-prototyping-area/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/using-prototyping-area/",
 	"title": "Using the prototyping area and corners",
 	"tags": [],
 	"description": "",
 	"content": " You can add whatever hardware you like to the prototyping area. It\u0026rsquo;s where you\u0026rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board\u0026rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes in that grid are unconnected and can be used to attach your components together.\nAs always, the Espruino web-site has lots more info and examples.\nHole behaviour The edge holes and the corner holes each have slightly different capabilities.\nPrototype holes  0 - Digital I/O Only 1 - Digital I/O Only 2 - Digital I/O and Analogue-in (ADC) 3 - Digital I/O and Analogue-in (ADC) 4 - Digital I/O and Analogue-in (ADC) 5 - Digital I/O and Analogue-in (ADC) 6 - Digital I/O Only 7 - Digital I/O and Serial TX 8 - Digital I/O and Serial RX  Corner holes  1 - Digital I/O Only 2 - Digital I/O Only 3 - Digital I/O Only 4 - Digital I/O and Analogue-in (ADC) 5 - Digital I/O and Analogue-in (ADC) 6 - Digital I/O and Analogue-in (ADC)  Important note re LEDs and touch sensing As LEDn == CORNERn, adding most LEDs to a corner will prevent capacitive sense functioning on that corner. White and blue LEDs will probably work but not other colours.\nBoard layout This shows the basic board layout:\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/use-noble-on-laptop/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/use-noble-on-laptop/",
 	"title": "Use Noble on Laptop",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 9 Use the Node.js Bluetooth library Noble on your laptop to read the beacon data that you are transmitting from the earlier challenge.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/getting-started/faq/",
+	"uri": "http://nodeconfeubadge.org/2017badge/getting-started/faq/",
 	"title": "FAQ",
 	"tags": [],
 	"description": "",
 	"content": " What follows are a few answers to common questions we\u0026rsquo;ve been asked at the conference:\nFixing your badge After uploading code, your badge might not work any more or might show the \u0026lsquo;Espruino\u0026rsquo; logo.\nTo fix it, just disconnect and reconnect the battery. You can do that by pulling the edge of the battery away from the PCB using a finger nail.\nIf that doesn\u0026rsquo;t fix the badge, you might need to go to the hacking bench and use the flashing tool there to rewrite the badge\u0026rsquo;s JS firmware.\nYou can also disconect/reconnect the battery while holding BTNA until the Espruino logo appears to make the badge start up without loading any new code. It\u0026rsquo;ll be connectable, but will be completely blank.\nSaving your code Espruino can save code in 2 ways - as raw JavaScript, or as a compressed \u0026lsquo;RAM image\u0026rsquo; which is a bit like \u0026lsquo;hibernate\u0026rsquo; - that\u0026rsquo;s the default if you type save() (normally any code you upload goes straight into RAM).\nYour main badge firmware is stored as raw JS, and there\u0026rsquo;s not enough room to store that as well as saving anything else.\nThe easiest solution is to just turn on Save On Send on in the IDE\u0026rsquo;s options - this switches to saving raw JS to the device\u0026rsquo;s flash whenever you upload - the next upload will remove the badge\u0026rsquo;s existing JavaScript.\nIf you want to use save() - the hibernate style of saving - just remove your badge\u0026rsquo;s built-in JS firmware with E.setBootCode(). save() will then work great.\nFixing your badge after the conference We crammed as much JS code into the badge as we could, but that means that the original main.js file can\u0026rsquo;t be written using the normal IDE.\nYou have two options:\n Strip some code out of main.js, and write it with Save on Send set in the IDE\u0026rsquo;s settings Use flash_as_js.sh to turn the badge firmware into a large JavaScript file that writes directly into flash memory. This is super nasty and slow - but it will restore your badge to default  Graphics You can draw to the display with g.drawString/etc, but it won\u0026rsquo;t update immediately - you need to call g.flip() to send the contents of the offscreen buffer to the screen whenever you want an update.\nImages The badge display is 128x64, 1 bit per pixel. All the images for the Badge slideshow are stored in a Badge.badgeImages variable which you can change.\nThere\u0026rsquo;s a page here: https://nodeconfeubadge.org/web_bluetooth/badge_upload.html\nWhich you can use to add your own images to the badge (or just get the source code for a specific image).\nAdding to existing badge firmware The original firmware is here: main.js\nMost functionality is stored in a Badge variable - you can overwrite/modify any part of it.\nIn the IDE, make sure Settings → Communications → Reset Before Send (and Save on Send) is UNCHECKED. You can then upload code from the right-hand side of the IDE without removing any of the badge\u0026rsquo;s existing firmware.\nFor instance you can replace the \u0026lsquo;Badge mode\u0026rsquo; by copying Badge.badge out of main.js and modifying it so that you no longer need to enter the Konami code (just the B) to get to the menu:\nBadge.badge = () =\u0026gt; { Badge.reset(); var counter = 0; var timeout; function draw(n) { counter += n ? n : 0; if (counter \u0026lt; 0) counter = Badge.badgeImages.length - 1; if (counter \u0026gt;= Badge.badgeImages.length) counter = 0; g.clear(); g.drawImage(Badge.badgeImages[counter]); g.flip(); var delay = (counter==0) ? 20000 : 2500; if (timeout) clearTimeout(timeout); timeout = setTimeout(e =\u0026gt; { timeout = undefined; draw(1) }, delay); } draw(0); setWatch(e =\u0026gt; Badge.menu(), BTNB, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); setWatch(e =\u0026gt; { draw(-1); k(\u0026quot;U\u0026quot;) }, BTNU, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); setWatch(e =\u0026gt; { draw(1); k(\u0026quot;D\u0026quot;) }, BTND, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); }  Using Time The badge has a Real-time clock, so it can keep track of the current time. You just need to set it.\n You can turn on Settings → Communications → Set Current Time in the IDE, and the next upload will set the clock. If you\u0026rsquo;re using the Puck.js Web Bluetooth library you can also use Puck.setTime(). You can do this by going to any of the example pages, entering the developer console, and typing Puck.setTime()  Once that\u0026rsquo;s done, new Date() will give you a Date object that you can use to get the current time.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/workshop/adding-to-the-menu/",
+	"uri": "http://nodeconfeubadge.org/2017badge/workshop/adding-to-the-menu/",
 	"title": "Adding to your Badge&#39;s menu",
 	"tags": [],
 	"description": "",
 	"content": "Next we\u0026rsquo;re going to add the game we just made as a menu item inside the existing badge software.\nWrap everything you\u0026rsquo;ve done into the following function on the right-hand side of the IDE.\nBadge.apps[\u0026quot;Simon Game\u0026quot;] = function() { Badge.reset(); setWatch(Badge.menu, BTNB, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); // Your code };  Now we need to get the badge back doing badgey stuff. disconnect the IDE from your badge, and pull the battery gently away from the PCB with a fingernail. When the display flickers off, let go and your badge will restart with the old code on it.\nNow do the Konami code again - UUDDLRLRBA, go to Make Connectable, and connect with the Web IDE. Simply Copy \u0026amp; Paste your code from the right-hand side over to the left, don\u0026rsquo;t Upload. If you upload, it\u0026rsquo;ll reset the device and upload your code as it did before.\nThis way, your code will now be loaded into RAM alongside the Badge\u0026rsquo;s code.\nDisconnect the IDE and press the A button on the badge to exit the Connectable state. You\u0026rsquo;ll now have a new menu item at the end of the list called Simon Game, and when you choose it it\u0026rsquo;ll run your game!\nNote: We\u0026rsquo;ve totally filled up the flash memory with all the Badge stuff, so you won\u0026rsquo;t be able to save your game like this and if you reset your badge by removing the battery it\u0026rsquo;ll disappear.\nInstead, you\u0026rsquo;d have to upload and save just the game as was done in the last step.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/use-badge-for-hid/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/use-badge-for-hid/",
 	"title": "Use the Badge as a HID Button",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 10 HID means Human Interface Device and it\u0026rsquo;s a standard for connecting Bluetooth input devices like keyboards and mice to computers. Your badge can act as a HID button for your laptop including multimedia keys. You could even use it as a clicker for your talk at NodeConf!\nCheck out the instructions here and try it out for yourself.\nNote: Bluetooth HID can\u0026rsquo;t be enabled on an active connection. To make it work you need to upload the code, disconnect, and then reconnect with your Operating System\u0026rsquo;s Bluetooth pairing functionality.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/display-an-image/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/display-an-image/",
 	"title": "Display an Image",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 11 You can see that we took all of your names and turned them into images that were included as part of the software of each badge. A different image for every badge. Your challenge is to do something similar. Find an image somewhere, convert it into the correct format and display it on the badge. You\u0026rsquo;ll have lots of fun with Imagemagick outputting blank images or inverted ones :-)\nTo get started, have a look at the end of this page or at the nasty hacky code we created to generate all the badge images.\nRemember the badge display is 128x64 monochrome.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/create-web-bluetooth-page/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/create-web-bluetooth-page/",
 	"title": "Create a Web Bluetooth Page",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 12 Implement a webpage that uses Web Bluetooth with the Puck.js library. Start simple and turn on/off an LED on your badge.\nEventually make it retrieve your last tweet from the Twitter API and then display it on the badge screen.\nLots of information about web Bluetooth and Espruino here.\nAdd a menu via Web Bluetooth You can really see the power of Web Bluetooth and Espruino by trying something like this:\nPuck.write(` Badge.apps[\u0026quot;My Foobar\u0026quot;] = function() { Badge.reset(); // my stuff // when done, call Badge.menu // eg. setWatch(Badge.menu, BTNB, { repeat: 1, debounce: 50, edge: \u0026quot;rising\u0026quot; }); }; `);  Create code based on the above in a webpage and host it on GitHub Pages. Write it so that anyone can go to the page, click a button and add the app to their badge.\nNote however that if you use any of Espruino\u0026rsquo;s modules, you\u0026rsquo;ll have to run it through the CLI first to output a JS file that also contains the modules.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/detect-person-with-pir-sensor/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/detect-person-with-pir-sensor/",
 	"title": "Detect movement with a PIR Sensor",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 13 We have a small number of PIR sensors at the Hacking Table. You can easily wire one of them up to your badge so it can detect motion. Now think of ways you could use that at an event.\nYou can get started with the code here.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/connect-to-ble-lightbulb/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/connect-to-ble-lightbulb/",
 	"title": "Connect to BLE Lightbulb",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 14 See if you can connect the Badge to the BLE Lightbulb on the table in the hacking lounge and change its colours.\nThis is an advanced task and may involve installing the lightbulb\u0026rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the lightbulb.\nYou can get guidance here and here but they may not contain a solution specific to this lightbulb.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/connect-to-ble-led-strip/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/connect-to-ble-led-strip/",
 	"title": "Connect to BLE LED Strip",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 15 See if you can connect the Badge to the BLE LED Strip on the table in the hacking lounge and change its colours.\nThis is a very advanced task and may involve installing the LED strip\u0026rsquo;s mobile app and using the Nordic Semiconductor mobile apps to read changes in the parameters on the strip.\nYou can get guidance here and here but they do not contain a solution specific to this strip.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-another-badge/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/communicate-with-another-badge/",
 	"title": "Communicate with another Badge",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 16 This is another advanced challenge. We recommend starting with the instructions here and then decide if you want to continue.\nAlso consider the new BLE mesh networking standard which is currently not supported on Espruino but would make for an impressive community contribution.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/communicate-with-other-ble-device/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/communicate-with-other-ble-device/",
 	"title": "Communicate with another Device",
 	"tags": [],
 	"description": "",
 	"content": " Challenge 17 If you can get your hands on some other BLE device like a Garmin, Fitbit or Milestone, see if you can figure out the protocol.\nIf you figure it out, write a blogpost about it!\nSome of these devices may require registering on the relevant developer sites. However we may have some other Bluetooth devices on the Hacking Table which are easier to communicate with.\n"
 },
 {
-	"uri": "http://nodeconfeubadge.org/challenges/implement-dat-protocol/",
+	"uri": "http://nodeconfeubadge.org/2017badge/challenges/implement-dat-protocol/",
 	"title": "Implement Dat Protocol",
 	"tags": [],
 	"description": "",
@@ -263,7 +263,14 @@
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": " NodeConf EU 2017 Badge Welcome!\nWe hope you are as excited as we are about the badge. We\u0026rsquo;ve spent the past few months designing and preparing it for the event.\nThe Badge The open source hardware badge contains a small but powerful Bluetooth LE module running Espruino software, which is a JavaScript interpreter optimised for low-power devices. On this site, we\u0026rsquo;ll explain the basics of using and programming the badge and even how to add hardware to it.\nGetting Started In the Getting Started area we give you all the details of:\n Unlocking the badge The built-in software features Connecting to the badge Hello World on the console Other code samples to learn from The hardware features Board prototype area (including the pin-out)  Your Challenges We have a set of challenges for you to get maximum use out of the badge and learn lots in the process.\nThe Grand Challenge For a chance to win a ticket to next year’s NodeConf EU 2018, we have a grand challenge. Any attendee can enter. There are no limits on what you can do but it must make use of the Badge. It can be software, hardware or a mix of both. It can involve Bluetooth but doesn’t have to.\nAnyone who wishes to enter must demo their completed entry to the judges between 4.30pm and 5pm on Wednesday Nov 8th in the Hacking Lounge.\nThe winner will be announced at the Closing Party dinner on Wednesday night. They and the runners-up will demo what they have created to the crowd.\n"
+	"content": " NodeConf EU 2018 Badge Welcome!\nWe hope you are as excited as we are about the badge. We\u0026rsquo;ve spent the past few months designing and preparing it for the event.\nThe Badge The open source hardware badge contains a small but powerful Bluetooth LE module running Espruino software, which is a JavaScript interpreter optimised for low-power devices. On this site, we\u0026rsquo;ll explain the basics of using and programming the badge and even how to add hardware to it.\nGetting Started We\u0026rsquo;ll have more info here, including on how to re-flash the firmware on your badge, soon.\n2017 Badge The old docs for the 2017 badge can be found in Getting Started and challenges.\n"
+},
+{
+	"uri": "http://nodeconfeubadge.org/2017badge/",
+	"title": "2017badges",
+	"tags": [],
+	"description": "",
+	"content": ""
 },
 {
 	"uri": "http://nodeconfeubadge.org/categories/",

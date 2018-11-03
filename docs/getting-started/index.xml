@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Getting Started on NodeConf EU Badge</title>
+    <link>http://nodeconfeubadge.org/getting-started/</link>
+    <description>Recent content in Getting Started on NodeConf EU Badge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Oct 2017 15:29:15 +0100</lastBuildDate>
+    
+	<atom:link href="http://nodeconfeubadge.org/getting-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Unlocking Your Badge</title>
+      <link>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</link>
+      <pubDate>Tue, 24 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/unlocking-your-badge/</guid>
+      <description>There&amp;rsquo;s a lot more to your badge&amp;rsquo;s software than you realise. Try this:
+ Up Up Down Down Left Right Left Right B A  (Yup the Konami code!)</description>
+    </item>
+    
+    <item>
+      <title>Built-in Software</title>
+      <link>http://nodeconfeubadge.org/getting-started/built-in-software/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/built-in-software/</guid>
+      <description>Now that you&amp;rsquo;ve unlocked the badge (you&amp;rsquo;ll have to do this any time you remove the battery), you can explore the built in sample apps. Out of the box, your badge has the following:
+ Your name pre-flashed into the firmware Image display cycling Selectable menus T-Rex who has escaped the Chrome browser Flappy Bird The world&amp;rsquo;s most awkward on-board REPL Etch-a-sketch  Source code for all of these is of course in the Github Repo.</description>
+    </item>
+    
+    <item>
+      <title>Connecting to the Badge</title>
+      <link>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/connecting-to-the-badge/</guid>
+      <description>Any modern computer with Bluetooth 4+ should be able to connect to the badge as follows:
+Make your badge connectable  Enter the Konami code, if you haven&amp;rsquo;t already: Up, Up, Down, Down, Left, Right, Left, Right, B, A. Select &amp;ldquo;Make badge connectable&amp;rdquo; in the menu Note the Badge ID  Mac Web Bluetooth on Chrome should just work if your Chrome is up to date. So simply go to the Web IDE here.</description>
+    </item>
+    
+    <item>
+      <title>Hello World on the Console</title>
+      <link>http://nodeconfeubadge.org/getting-started/hello-world-console/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/hello-world-console/</guid>
+      <description>Of course we start with Hello World. Follow the connection instructions, then click on the left hand side of the IDE and type:
+console.log(&amp;quot;Hello World&amp;quot;);  Now stop and think for a minute about what just happened there in terms of communications flow.
+You should try out other aspects of the Web IDE. It has full auto-complete in the REPL window including Button/LED names and functions.
+You could also try the built-in Blockly graphical editor which is very similar to Scratch.</description>
+    </item>
+    
+    <item>
+      <title>Other Code Samples</title>
+      <link>http://nodeconfeubadge.org/getting-started/other-code-samples/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/other-code-samples/</guid>
+      <description>There are three places you can find code to learn from and use:
+ The Badge repo The main Espruino site The Puck.js area of the Espruino site  Badge Repo Code The pre-installed main.js code is a treasure trove of useful snippets. Note however that it&amp;rsquo;s too big to be uploaded in its entirety via the Web IDE.
+ Pre-installed badge code  Games Relive your original Gameboy, Nokia and video arcade days with the following games :-)</description>
+    </item>
+    
+    <item>
+      <title>Accessing Hardware Features</title>
+      <link>http://nodeconfeubadge.org/getting-started/accessing-hardware-features/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/accessing-hardware-features/</guid>
+      <description>This is an Open Source Hardware project. Schematics and board design files are available in the /hardware directory of the repo.
+The badge uses the same core module as the Puck.js and can run most of the same software.
+Hardware Features include:
+ nRF52832 SoC - 64MHz ARM Cortex M4, 64kB RAM, 512kB Flash, running the Espruino stack Bluetooth Low Energy Powered by a CR2032 battery which can last up to a week depending on what code you are running Daylight-readable LCD screen 6 input buttons Capacitive touch sensors on all 6 corners Digital I/O on all 6 corners Analogue-in on 3 corners Prototyping area with 8 CPU pins accessible Digital I/O on all 8 pins Analogue-in on 4 pins Holes for LEDs on all 6 corners NFC antenna SWD programming pins  Proto holes and corner holes You write or read a digital high/low to/from a hole with:</description>
+    </item>
+    
+    <item>
+      <title>Using the prototyping area and corners</title>
+      <link>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</link>
+      <pubDate>Sat, 28 Oct 2017 15:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/using-prototyping-area/</guid>
+      <description>You can add whatever hardware you like to the prototyping area. It&amp;rsquo;s where you&amp;rsquo;ll be connecting extra LEDs, buzzers etc. The column of holes along the board&amp;rsquo;s left edge are connected to pins D0 to D8, Ground and Power. However all of the other holes in that grid are unconnected and can be used to attach your components together.
+As always, the Espruino web-site has lots more info and examples.</description>
+    </item>
+    
+    <item>
+      <title>FAQ</title>
+      <link>http://nodeconfeubadge.org/getting-started/faq/</link>
+      <pubDate>Tue, 07 Nov 2017 11:30:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/getting-started/faq/</guid>
+      <description>What follows are a few answers to common questions we&amp;rsquo;ve been asked at the conference:
+Fixing your badge After uploading code, your badge might not work any more or might show the &amp;lsquo;Espruino&amp;rsquo; logo.
+To fix it, just disconnect and reconnect the battery. You can do that by pulling the edge of the battery away from the PCB using a finger nail.
+If that doesn&amp;rsquo;t fix the badge, you might need to go to the hacking bench and use the flashing tool there to rewrite the badge&amp;rsquo;s JS firmware.</description>
+    </item>
+    
+  </channel>
+</rss>

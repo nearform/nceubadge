@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop on NodeConf EU Badge</title>
+    <link>http://nodeconfeubadge.org/2017/workshop/</link>
+    <description>Recent content in Workshop on NodeConf EU Badge</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 02 Nov 2017 10:29:15 +0100</lastBuildDate>
+    
+	<atom:link href="http://nodeconfeubadge.org/2017/workshop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Connected</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/get-connected/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/get-connected/</guid>
+      <description>The first step is going to be getting set up and connected to your badge. If you haven&amp;rsquo;t already, check out http://nodeconfeubadge.org/getting-started/ as a getting started guide.
+If you&amp;rsquo;re not on a Mac, you might want to check out Puck.js&amp;rsquo;s guide for setting up the Web IDE: http://www.espruino.com/Puck.js+Quick+Start#using-the-espruino-ide
+You should now have a REPL that you can type stuff at!</description>
+    </item>
+    
+    <item>
+      <title>Clean Slate</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/clean-slate/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/clean-slate/</guid>
+      <description>Clear everything out of the right-hand side of the IDE window, and click the &amp;lsquo;Upload&amp;rsquo; button in the middle of the screen (a picture of a chip and an up-arrow).
+The Badge should now just display the &amp;lsquo;Espruino&amp;rsquo; logo - this is what gets displayed when no code has been loaded.
+Don&amp;rsquo;t worry though - this hasn&amp;rsquo;t overwritten what was on the badge before. That code is in Flash memory, and uploading an empty file has left the contents of RAM empty, while the Flash memory has stayed the same.</description>
+    </item>
+    
+    <item>
+      <title>Capacitive Sense</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/capacitive-sense/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/capacitive-sense/</guid>
+      <description>To detect a press, we want to use the capacitive sense functionality on the badge. Type Badge.capSense(1) on the left-hand side of the IDE. You can use tab-complete to help you. You should get a number displayed in the region of about 10,000 - this value depends on the capacitance on that corner of the badge.
+Press your finger on the corner marked 1 and try again (up arrow, then enter) - you should see a much higher value - probably over 100,000.</description>
+    </item>
+    
+    <item>
+      <title>Graphics</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/graphics/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/graphics/</guid>
+      <description>The badge exposes the LCD via a built-in variable called g. This has a bunch of methods such as drawLine or drawString that can be accessed (http://www.espruino.com/Graphics) however each command acts on an internal memory buffer. To update the display itself you need to call g.flip().
+Try entering the following code on the left-hand side:
+g.clear(); g.drawString(&amp;quot;Hello World!&amp;quot;); g.flip();  The badge should now display the obvious &amp;lsquo;Hello World&amp;rsquo;!
+But what if we want to display our capacitance data?</description>
+    </item>
+    
+    <item>
+      <title>Sound</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/sound/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/sound/</guid>
+      <description>It&amp;rsquo;d be nice if our game made some sounds. There&amp;rsquo;s no speaker built into the badge, so we&amp;rsquo;re going to add one.
+Get one of the gold coloured discs from the hacking bench - these are piezo speakers of the type you&amp;rsquo;d find in digital watches.
+Use the wire strippers and try and strip around 2cm of insulation off each of the two wires. By careful - maybe try stripping 1cm first, then another cm, as the wire is really delicate.</description>
+    </item>
+    
+    <item>
+      <title>Making a Game</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/making-a-game/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/making-a-game/</guid>
+      <description>Ok, now we&amp;rsquo;ll need to make two functions:
+ A function to output a pattern A function to check the player&amp;rsquo;s input against a pattern.  These will take a simple array of numbers, which is the pattern to output.
+Left -&amp;gt; Right We&amp;rsquo;ve got enough code that we probably want to start using the right-hand side of the IDE as a proper editor. No changes will take effect until you press the Upload button, but when you upload it&amp;rsquo;ll blow away any previous changes you made on the left-hand side.</description>
+    </item>
+    
+    <item>
+      <title>What next?</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/what-next/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/what-next/</guid>
+      <description>What about:
+ Putting LEDs around the corners and using those to show the correct patterns. However, due to the way the capacitive sense and LEDs are shared, you&amp;rsquo;ll only be able to use White and Blue LEDs, not any of the coloured ones! Getting rid of all the callbacks. I&amp;rsquo;ve been super lazy - you could probably tidy things up a lot more using Promises. Make a much better game.</description>
+    </item>
+    
+    <item>
+      <title>Adding to your Badge&#39;s menu</title>
+      <link>http://nodeconfeubadge.org/2017/workshop/adding-to-the-menu/</link>
+      <pubDate>Fri, 03 Nov 2017 09:45:33 +0100</pubDate>
+      
+      <guid>http://nodeconfeubadge.org/2017/workshop/adding-to-the-menu/</guid>
+      <description>Next we&amp;rsquo;re going to add the game we just made as a menu item inside the existing badge software.
+Wrap everything you&amp;rsquo;ve done into the following function on the right-hand side of the IDE.
+Badge.apps[&amp;quot;Simon Game&amp;quot;] = function() { Badge.reset(); setWatch(Badge.menu, BTNB, { repeat: 1, debounce: 50, edge: &amp;quot;rising&amp;quot; }); // Your code };  Now we need to get the badge back doing badgey stuff. disconnect the IDE from your badge, and pull the battery gently away from the PCB with a fingernail.</description>
+    </item>
+    
+  </channel>
+</rss>

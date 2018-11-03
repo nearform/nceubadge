@@ -1,0 +1,1983 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="generator" content="Hugo 0.42.1" />
+    <meta name="description" content="All about the NodeConf EU Badge">
+<meta name="author" content="NearForm">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+<link rel="icon" href="/images/favicon.png" type="image/x-icon" />
+
+    <title>Making a Game :: NodeConf EU Badge</title>
+    
+    
+    <link href="/css/nucleus.css?1539940909" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1539940909" rel="stylesheet">
+    <link href="/css/hybrid.css?1539940909" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1539940909" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1539940909" rel="stylesheet">
+    <link href="/css/auto-complete.css?1539940909" rel="stylesheet">
+    <link href="/css/theme.css?1539940909" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1539940909" rel="stylesheet">
+    
+
+    <script src="/js/jquery-2.x.min.js?1539940909"></script>
+    
+    <style type="text/css">
+      :root #header + #content > #left > #rlblock_left{ 
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/2017/workshop/making-a-game/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/"><img src="/images/logo.png" /></a>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fa fa-search"></i></label>
+    <input data-search-input id="search-by" type="text" placeholder="Search...">
+    <span data-search-clear=""><i class="fa fa-close"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1539940909"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1539940909"></script>
+<script type="text/javascript">
+    
+        var baseurl = "http:\/\/nodeconfeubadge.org";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1539940909"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/2017/" title="2017s" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2017/">
+          2017s
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/2017/getting-started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2017/getting-started/">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/unlocking-your-badge/" title="Unlocking Your Badge" class="dd-item ">
+        <a href="/2017/getting-started/unlocking-your-badge/">
+        Unlocking Your Badge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/built-in-software/" title="Built-in Software" class="dd-item ">
+        <a href="/2017/getting-started/built-in-software/">
+        Built-in Software
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/connecting-to-the-badge/" title="Connecting to the Badge" class="dd-item ">
+        <a href="/2017/getting-started/connecting-to-the-badge/">
+        Connecting to the Badge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/hello-world-console/" title="Hello World on the Console" class="dd-item ">
+        <a href="/2017/getting-started/hello-world-console/">
+        Hello World on the Console
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/other-code-samples/" title="Other Code Samples" class="dd-item ">
+        <a href="/2017/getting-started/other-code-samples/">
+        Other Code Samples
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/accessing-hardware-features/" title="Accessing Hardware Features" class="dd-item ">
+        <a href="/2017/getting-started/accessing-hardware-features/">
+        Accessing Hardware Features
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/using-prototyping-area/" title="Using the prototyping area and corners" class="dd-item ">
+        <a href="/2017/getting-started/using-prototyping-area/">
+        Using the prototyping area and corners
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/getting-started/faq/" title="FAQ" class="dd-item ">
+        <a href="/2017/getting-started/faq/">
+        FAQ
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/2017/challenges/" title="Challenges" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/2017/challenges/">
+          Challenges
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/hello-world-screen/" title="Hello World on screen" class="dd-item ">
+        <a href="/2017/challenges/hello-world-screen/">
+        Hello World on screen
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/detect-button-press/" title="Detect Button Press" class="dd-item ">
+        <a href="/2017/challenges/detect-button-press/">
+        Detect Button Press
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/detect-capacitive-touch/" title="Detect Capacitive Touch" class="dd-item ">
+        <a href="/2017/challenges/detect-capacitive-touch/">
+        Detect Capacitive Touch
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/flash-leds/" title="Flash LEDs" class="dd-item ">
+        <a href="/2017/challenges/flash-leds/">
+        Flash LEDs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/play-music-with-buzzer/" title="Play Music with Buzzer" class="dd-item ">
+        <a href="/2017/challenges/play-music-with-buzzer/">
+        Play Music with Buzzer
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/on-screen-menu/" title="On-Screen Menu" class="dd-item ">
+        <a href="/2017/challenges/on-screen-menu/">
+        On-Screen Menu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/broadcast-nfc-url/" title="Broadcast NFC URL" class="dd-item ">
+        <a href="/2017/challenges/broadcast-nfc-url/">
+        Broadcast NFC URL
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/broadcast-beacons/" title="Broadcast Beacons" class="dd-item ">
+        <a href="/2017/challenges/broadcast-beacons/">
+        Broadcast Beacons
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/use-noble-on-laptop/" title="Use Noble on Laptop" class="dd-item ">
+        <a href="/2017/challenges/use-noble-on-laptop/">
+        Use Noble on Laptop
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/use-badge-for-hid/" title="Use the Badge as a HID Button" class="dd-item ">
+        <a href="/2017/challenges/use-badge-for-hid/">
+        Use the Badge as a HID Button
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/display-an-image/" title="Display an Image" class="dd-item ">
+        <a href="/2017/challenges/display-an-image/">
+        Display an Image
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/create-web-bluetooth-page/" title="Create a Web Bluetooth Page" class="dd-item ">
+        <a href="/2017/challenges/create-web-bluetooth-page/">
+        Create a Web Bluetooth Page
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/detect-person-with-pir-sensor/" title="Detect movement with a PIR Sensor" class="dd-item ">
+        <a href="/2017/challenges/detect-person-with-pir-sensor/">
+        Detect movement with a PIR Sensor
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/connect-to-ble-lightbulb/" title="Connect to BLE Lightbulb" class="dd-item ">
+        <a href="/2017/challenges/connect-to-ble-lightbulb/">
+        Connect to BLE Lightbulb
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/connect-to-ble-led-strip/" title="Connect to BLE LED Strip" class="dd-item ">
+        <a href="/2017/challenges/connect-to-ble-led-strip/">
+        Connect to BLE LED Strip
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/communicate-with-another-badge/" title="Communicate with another Badge" class="dd-item ">
+        <a href="/2017/challenges/communicate-with-another-badge/">
+        Communicate with another Badge
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/communicate-with-other-ble-device/" title="Communicate with another Device" class="dd-item ">
+        <a href="/2017/challenges/communicate-with-other-ble-device/">
+        Communicate with another Device
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/challenges/implement-dat-protocol/" title="Implement Dat Protocol" class="dd-item ">
+        <a href="/2017/challenges/implement-dat-protocol/">
+        Implement Dat Protocol
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+    <li data-nav-id="/2017/workshop/" title="Workshop" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/2017/workshop/">
+          Workshop
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/get-connected/" title="Get Connected" class="dd-item ">
+        <a href="/2017/workshop/get-connected/">
+        Get Connected
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/clean-slate/" title="Clean Slate" class="dd-item ">
+        <a href="/2017/workshop/clean-slate/">
+        Clean Slate
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/capacitive-sense/" title="Capacitive Sense" class="dd-item ">
+        <a href="/2017/workshop/capacitive-sense/">
+        Capacitive Sense
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/graphics/" title="Graphics" class="dd-item ">
+        <a href="/2017/workshop/graphics/">
+        Graphics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/sound/" title="Sound" class="dd-item ">
+        <a href="/2017/workshop/sound/">
+        Sound
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/making-a-game/" title="Making a Game" class="dd-item active">
+        <a href="/2017/workshop/making-a-game/">
+        Making a Game
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/what-next/" title="What next?" class="dd-item ">
+        <a href="/2017/workshop/what-next/">
+        What next?
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/2017/workshop/adding-to-the-menu/" title="Adding to your Badge&#39;s menu" class="dd-item ">
+        <a href="/2017/workshop/adding-to-the-menu/">
+        Adding to your Badge&#39;s menu
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+
+    
+    <section id="footer">
+      <p>Built using the
+    <a href="https://github.com/matcornic/hugo-theme-learn">Learn</a> theme on
+    <a href="http://gohugo.io/">Hugo</a> ported from
+    <a href="http://getgrav.org">Grav</a>.
+</p>
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable sticky-parent">
+              
+              <div class="sticky-spacer">
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fa fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/2017/'>2017s</a> > <a href='/2017/workshop/'>Workshop</a> > Making a Game
+          
+         
+          
+         
+          
+         
+          
+           
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#left-right">Left -&gt; Right</a></li>
+<li><a href="#outputting-a-pattern">Outputting a pattern</a></li>
+<li><a href="#detecting-the-pattern">Detecting the pattern</a></li>
+<li><a href="#sticking-it-together">Sticking it together</a></li>
+<li><a href="#finally">Finally!</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+
+        
+        <div id="body-inner">
+          
+            <h1>Making a Game</h1>
+          
+
+        
+
+
+
+
+<p>Ok, now we&rsquo;ll need to make two functions:</p>
+
+<ul>
+<li>A function to output a pattern</li>
+<li>A function to check the player&rsquo;s input against a pattern.</li>
+</ul>
+
+<p>These will take a simple array of numbers, which is the pattern
+to output.</p>
+
+<h2 id="left-right">Left -&gt; Right</h2>
+
+<p>We&rsquo;ve got enough code that we probably want to start using the
+right-hand side of the IDE as a proper editor. No changes will take
+effect until you press the <code>Upload</code> button, but when you upload it&rsquo;ll
+blow away any previous changes you made on the left-hand side.</p>
+
+<h2 id="outputting-a-pattern">Outputting a pattern</h2>
+
+<p>We&rsquo;ve already got the <code>plotBadge</code> function from the Graphics section,
+as well as <code>beepForCorner</code> from the Sound section. All we need to do
+is call them at the right times. Copy <code>plotBadge</code> and the <code>beep</code> stuff onto
+the right-hand side, as well as this - and then click the <code>Upload</code> button in
+the middle of the screen.</p>
+
+<pre><code>// Show the given pattern
+function showPattern(pattern, callback) {
+  // Nothing left - finish
+  if (!pattern.length) return callback();  
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Display a corner and beep
+  plotBadge([corner==1, corner==2, corner==3, corner==4, corner==5, corner==6]);
+  beepForCorner(corner, 1000);
+  // clear screen after a timeout
+  setTimeout(function() {    
+    g.clear();
+    g.flip();
+    // go to next
+    setTimeout(function() {
+      showPattern(pattern, callback);
+    }, 200);
+  }, 1000);
+}
+
+showPattern([1,2,3,4], ()=&gt;console.log(&quot;Done!&quot;));
+</code></pre>
+
+<h2 id="detecting-the-pattern">Detecting the pattern</h2>
+
+<p>So now you need the following to detect the pattern sequence - it&rsquo;s a
+bit big, but there are comments below:</p>
+
+<pre><code>/* Wait for either a corner to be pressed (pressState=true)
+or released (pressState=false), and report back what was
+pressed in the callback */
+function waitForPress(pressState, callback) {
+  var intr = setInterval(function() {
+    // Detect pressed corners
+    var pressed = [1,2,3,4,5,6].map(c=&gt;Badge.capSense(c)&gt;20000);
+    // Create a string of only the pressed corners
+    pressed = pressed.map((x,i)=&gt;x?i+1:&quot;&quot;).join(&quot;&quot;);
+    // Call the callback when something is either pressed or released
+    if ((pressed!=&quot;&quot;) == pressState) {
+      clearInterval(intr);
+      callback(pressed);
+    }
+  },20);
+}
+
+// Draw big fullscreen, centered text
+function plotText(txt) {
+  g.clear();
+  var size = 32;
+  g.setFontVector(size);
+  while (g.stringWidth(txt)&gt;120) {
+    g.setFontVector(--size);
+  }
+  g.drawString(txt,(128-g.stringWidth(txt))/2,(64-size)/2);
+  g.setFontBitmap();
+  g.flip();
+}
+
+// Repeatedly test for the correct pattern
+function testPattern(pattern, callback) {
+  // Nothing left - finish - I guess we passed
+  if (!pattern.length) return callback(true);
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Wait for a press
+  plotText(&quot;?&quot;);  
+  waitForPress(true, function(pressedCorner) {
+    // check our corner
+    if (pressedCorner == corner) {
+      plotText(corner);
+      beepForCorner(corner, 1000);
+      // Great! Next corner, after a delay and
+      // the button is released
+      setTimeout(function() {
+        waitForPress(false, function() {        
+          testPattern(pattern, callback);
+        });
+      }, 1000);
+    } else {
+      // Game over
+      plotText(&quot;NO!&quot;);
+      beep(200, 1000); // low beep
+      setTimeout(function() {
+        callback(false);
+      }, 1000);
+    }
+  });
+}
+
+
+// Test this out
+testPattern([1,2,3,4], x=&gt;console.log(&quot;Done!&quot;,x));
+</code></pre>
+
+<h2 id="sticking-it-together">Sticking it together</h2>
+
+<p>So now it&rsquo;s reasonably easy to stick showing the pattern and testing
+for the pattern together:</p>
+
+<pre><code>var pattern = [5,3,4];
+showPattern(pattern, ()=&gt;{
+  testPattern(pattern, x=&gt;console.log(&quot;Done!&quot;,x));
+});
+</code></pre>
+
+<p>And finally, you can wrap the whole thing up so that after each successful
+pattern it adds one more item to the end:</p>
+
+<pre><code>function randomCorner() {
+  return 0|Math.min(1+Math.random()*6, 6);
+}
+
+function game(pattern) {
+  // add a new corner
+  pattern.push(randomCorner());
+  // Show and test
+  console.log(&quot;Trying &quot;,pattern);
+  showPattern(pattern, ()=&gt;{
+    testPattern(pattern, success=&gt;{
+      if (success) {
+        plotText(&quot;:)&quot;);
+        setTimeout(()=&gt;game(pattern), 1000);
+      } else {
+        plotText(&quot;Game Over&quot;);
+        // restart when A pressed
+        setWatch(function() {
+          console.log(&quot;Restarting&quot;);
+          game([]);
+        }, BTNA, {repeat:0, debounce:20, edge:&quot;rising&quot;});
+      }
+    });
+  });
+}
+
+game([])
+</code></pre>
+
+<p><img src="/images/workshop_end.jpg" alt="Game over" /></p>
+
+<h2 id="finally">Finally!</h2>
+
+<p>And that&rsquo;s it! The finished game should look like this:</p>
+
+<pre><code>function plotBadge(presses) {
+  g.clear();    
+  // function to work out each corner's coordinates
+  function corner(c,r) {
+    var a = (c-2)*Math.PI/3;
+    return [64+Math.sin(a)*40*r, 32-Math.cos(a)*30*r];
+  }
+  // draw a hexagon - a line to each corner in turn
+  g.moveTo.apply(g,corner(6,1));
+  [1,2,3,4,5,6].forEach(c=&gt;g.lineTo.apply(g,corner(c,1)));
+  // Draw a circle where pressed
+  presses.forEach((hit,c) =&gt; {
+    if (!hit) return;
+    var coords = corner(c+1,0.8);
+    g.fillCircle(coords[0],coords[1],5);
+  });
+  g.flip();
+}
+
+function beep(freq, time, callback) {
+  var ll = require(&quot;NRF52LL&quot;);
+  // set up D0 and D1 as outputs
+  digitalWrite(D0,0);
+  digitalWrite(D1,0);
+  // create two 'toggle' tasks, one for each pin
+  var t0 = ll.gpiote(6, {type:&quot;task&quot;,pin:D0,lo2hi:1,hi2lo:1,initialState:0});
+  var t1 = ll.gpiote(7, {type:&quot;task&quot;,pin:D1,lo2hi:1,hi2lo:1,initialState:1});
+  // create a timer that counts up to a value depending on the frequency
+  var tmr = ll.timer(3,{cc:[500000/freq],cc0clear:1});
+  // use two PPI to trigger toggle events
+  ll.ppiEnable(6, tmr.eCompare[0], t0.tOut);
+  ll.ppiEnable(7, tmr.eCompare[0], t1.tOut);
+  // Manually trigger a task to start the timer
+  poke32(tmr.tClear,1);
+  poke32(tmr.tStart,1);
+  setTimeout(function() {
+    poke32(tmr.tStop,1);
+    ll.ppiDisable(6);
+    ll.ppiDisable(7);
+    if (callback) callback();
+  }, time);
+}
+
+function beepForCorner(corner, time) {
+  var pitches = [&quot;no_corner_0&quot;,
+    500,
+    600,
+    700,
+    800,
+    900,
+    1000
+  ];
+  beep(pitches[corner], time);
+}
+
+// Show the given pattern
+function showPattern(pattern, callback) {
+  // Nothing left - finish
+  if (!pattern.length) return callback();  
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Display a corner and beep
+  plotBadge([corner==1, corner==2, corner==3, corner==4, corner==5, corner==6]);
+  beepForCorner(corner, 1000);
+  // clear screen after a timeout
+  setTimeout(function() {    
+    g.clear();
+    g.flip();
+    // go to next
+    setTimeout(function() {
+      showPattern(pattern, callback);
+    }, 200);
+  }, 1000);
+}
+
+/* Wait for either a corner to be pressed (pressState=true)
+or released (pressState=false), and report back what was
+pressed in the callback */
+function waitForPress(pressState, callback) {
+  var intr = setInterval(function() {
+    // Detect pressed corners
+    var pressed = [1,2,3,4,5,6].map(c=&gt;Badge.capSense(c)&gt;20000);
+    // Create a string of only the pressed corners
+    pressed = pressed.map((x,i)=&gt;x?i+1:&quot;&quot;).join(&quot;&quot;);
+    // Call the callback when something is either pressed or released
+    if ((pressed!=&quot;&quot;) == pressState) {
+      clearInterval(intr);
+      callback(pressed);
+    }
+  },20);
+}
+
+// Draw big fullscreen, centered text
+function plotText(txt) {
+  g.clear();
+  var size = 32;
+  g.setFontVector(size);
+  while (g.stringWidth(txt)&gt;120) {
+    g.setFontVector(--size);
+  }
+  g.drawString(txt,(128-g.stringWidth(txt))/2,(64-size)/2);
+  g.setFontBitmap();
+  g.flip();
+}
+
+// Repeatedly test for the correct pattern
+function testPattern(pattern, callback) {
+  // Nothing left - finish - I guess we passed
+  if (!pattern.length) return callback(true);
+  // Shift off the first element - don't use shift as
+  // that'd alter the initial array  
+  var corner = pattern[0];
+  pattern = pattern.slice(1);
+  // Wait for a press
+  plotText(&quot;?&quot;);  
+  waitForPress(true, function(pressedCorner) {
+    // check our corner
+    if (pressedCorner == corner) {
+      plotText(corner);
+      beepForCorner(corner, 1000);
+      // Great! Next corner, after a delay and
+      // the button is released
+      setTimeout(function() {
+        waitForPress(false, function() {        
+          testPattern(pattern, callback);
+        });
+      }, 1000);
+    } else {
+      // Game over
+      plotText(&quot;NO!&quot;);
+      beep(200, 1000); // low beep
+      setTimeout(function() {
+        callback(false);
+      }, 1000);
+    }
+  });
+}
+
+function randomCorner() {
+  return 0|Math.min(1+Math.random()*6, 6);
+}
+
+function game(pattern) {
+  // add a new corner
+  pattern.push(randomCorner());
+  // Show and test
+  console.log(&quot;Trying &quot;,pattern);
+  showPattern(pattern, ()=&gt;{
+    testPattern(pattern, success=&gt;{
+      if (success) {
+        plotText(&quot;:)&quot;);
+        setTimeout(()=&gt;game(pattern), 1000);
+      } else {
+        plotText(&quot;Game Over&quot;);
+        // restart when A pressed
+        setWatch(function() {
+          console.log(&quot;Restarting&quot;);
+          game([]);
+        }, BTNA, {repeat:0, debounce:20, edge:&quot;rising&quot;});
+      }
+    });
+  });
+}
+
+game([])
+</code></pre>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+        
+            <a class="nav nav-prev" href="/2017/workshop/sound/" title="Sound"> <i class="fa fa-chevron-left"></i></a>
+        
+        
+            <a class="nav nav-next" href="/2017/workshop/what-next/" title="What next?" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+        
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1539940909"></script>
+    <script src="/js/perfect-scrollbar.min.js?1539940909"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1539940909"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1539940909"></script>
+    <script src="/js/featherlight.min.js?1539940909"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1539940909"></script>
+    <script src="/js/highlight.pack.js?1539940909"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom.71422.js?1539940909"></script>
+    <script src="/js/learn.js?1539940909"></script>
+    <script src="/js/hugo-learn.js?1539940909"></script>
+
+    <link href="/mermaid/mermaid.css?1539940909" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1539940909"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+

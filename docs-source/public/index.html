@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.42.1" />
+    <meta name="generator" content="Hugo 0.49" />
     <meta name="description" content="All about the NodeConf EU Badge">
 <meta name="author" content="NearForm">
 
@@ -13,17 +13,17 @@
     <title> :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1541251145" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1541251145" rel="stylesheet">
-    <link href="/css/hybrid.css?1541251145" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1541251145" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1541251145" rel="stylesheet">
-    <link href="/css/auto-complete.css?1541251145" rel="stylesheet">
-    <link href="/css/theme.css?1541251145" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1541251145" rel="stylesheet">
+    <link href="/css/nucleus.css?1541366134" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1541366134" rel="stylesheet">
+    <link href="/css/hybrid.css?1541366134" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1541366134" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1541366134" rel="stylesheet">
+    <link href="/css/auto-complete.css?1541366134" rel="stylesheet">
+    <link href="/css/theme.css?1541366134" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1541366134" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1541251145"></script>
+    <script src="/js/jquery-2.x.min.js?1541366134"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1541251145"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1541251145"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1541366134"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1541366134"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1541251145"></script>
+<script type="text/javascript" src="/js/search.js?1541366134"></script>
 
     
   </div>
@@ -899,7 +899,19 @@
 
 <p>Note that all of the software and hardware for this year&rsquo;s badge will be Open Sourced shortly after NodeConf EU 2018 is over.</p>
 
-<h1 id="getting-started-notes-for-the-nodeconf-badge">Getting Started notes for the Nodeconf Badge</h1>
+<h1 id="the-nodeconf-2018-badge">The Nodeconf 2018 Badge</h1>
+
+<h2 id="quick-links">Quick Links</h2>
+
+<ul>
+<li><a href="http://www.espruino.com/Quick+Start+BLE#pixljs">Espruino Bluetooth Getting Started</a></li>
+<li><a href="http://www.espruino.com/Pixl.js">Espruino Pixl.js info</a></li>
+<li><a href="https://gfwilliams.github.io/workshop-nodeconfeu2018/">Monday&rsquo;s Bluetooth Workshop</a></li>
+<li><a href="#returning-to-standard">Returning your badge to normal</a></li>
+<li><a href="js/badge.js">The Badge&rsquo;s default firmare</a></li>
+</ul>
+
+<h2 id="getting-started">Getting Started</h2>
 
 <p>The badge is based on a <a href="http://www.espruino.com/Pixl.js">Pixl.js</a>, so a
 lot of the tutorials and information there still apply.</p>
@@ -917,8 +929,15 @@ BTN4 |___________________________| BTN3
                   ::::
 </code></pre>
 
-<p>There is an on/off slider switch on the rear of the badge just by the USB connector
+<p>There is an on/off slider switch on th rear of the badge just by the USB connector
 (which is used for charging only).</p>
+
+<h2 id="bugs">Bugs!</h2>
+
+<p>On some of the badges, the vibration caused by the vibration motors during startup can
+cause the LED controller to stop working. If when you power your badge on it <em>doesn&rsquo;t</em> go
+through all the colours of the rainbow, power it on with your thumbs over the vibration motors
+at the bottom left and right of the screen.</p>
 
 <h2 id="connecting">Connecting</h2>
 
@@ -945,17 +964,19 @@ characters of the MAC address shown on the Badge&rsquo;s screen.</p>
 <code>Communications</code> part of the Web IDE&rsquo;s settings is set to <code>To RAM</code> otherwise
 you&rsquo;ll overwrite the badge firmware.**</p>
 
+<p>Check out the notes for Monday&rsquo;s <a href="https://gfwilliams.github.io/workshop-nodeconfeu2018/">Bluetooth Workshop</a>
+for more information.</p>
+
 <h2 id="returning-to-standard">Returning to Standard</h2>
 
 <ul>
-<li><a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/NC.js">Click this link</a> in Chrome</li>
-<li>Connect to your badge</li>
-<li>Copy and paste the code from the right-hand side of the IDE into the left-hand side - this will load the &lsquo;NC&rsquo; module directly into the Badge&rsquo;s flash memory</li>
 <li><a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/badge.js">Click this link</a> in Chrome</li>
-<li>Connect to your badge</li>
+<li>Change <code>Badge.NAME = ...</code> to <code>[&quot;Your&quot;, &quot;Name&quot;]</code> - each array element is a new line</li>
+<li>Connect to your badge (see above)</li>
+<li>Optional: Type <code>require(&quot;Storage&quot;).eraseAll()</code> in the left hand side of the IDE. This will remove all data from nonvolatile storage.</li>
 <li>Turn the <code>Save on Send</code> option in the <code>Communications</code> part of the Web IDE&rsquo;s settings to <code>Direct To Flash</code></li>
 <li>Upload the code</li>
-<li>Return the <code>Save on Send</code> option in the <code>Communications</code> part of the Web IDE&rsquo;s settings to <code>To RAM</code></li>
+<li>Return the <code>Save on Send</code> option in the <code>Communications</code> part of the Web IDE&rsquo;s settings to <code>To RAM</code> so you don&rsquo;t accidentally overwrite the code in the future.</li>
 </ul>
 
 <p>You&rsquo;re sorted!</p>
@@ -964,7 +985,7 @@ you&rsquo;ll overwrite the badge firmware.**</p>
 
 <p>On the badge, you have a bunch of stuff you can use. Most of it is available via <code>NC</code>
 in a global variable created by the badge software. If you&rsquo;re trying to
-do things on your own without the badge software, use <code>var NC = require(&quot;NC&quot;);</code>
+do things on your own without the badge software, use <code>var NC = require(&quot;nodeconfeu2018&quot;);</code>
 first.</p>
 
 <h3 id="bluetooth">Bluetooth</h3>
@@ -1858,20 +1879,20 @@ for more info.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1541251145"></script>
-    <script src="/js/perfect-scrollbar.min.js?1541251145"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1541251145"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1541251145"></script>
-    <script src="/js/featherlight.min.js?1541251145"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1541251145"></script>
-    <script src="/js/highlight.pack.js?1541251145"></script>
+    <script src="/js/clipboard.min.js?1541366134"></script>
+    <script src="/js/perfect-scrollbar.min.js?1541366134"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1541366134"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1541366134"></script>
+    <script src="/js/featherlight.min.js?1541366134"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1541366134"></script>
+    <script src="/js/highlight.pack.js?1541366134"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1541251145"></script>
-    <script src="/js/learn.js?1541251145"></script>
-    <script src="/js/hugo-learn.js?1541251145"></script>
+    <script src="/js/modernizr.custom.71422.js?1541366134"></script>
+    <script src="/js/learn.js?1541366134"></script>
+    <script src="/js/hugo-learn.js?1541366134"></script>
 
-    <link href="/mermaid/mermaid.css?1541251145" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1541251145"></script>
+    <link href="/mermaid/mermaid.css?1541366134" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1541366134"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

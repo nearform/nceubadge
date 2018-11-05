@@ -4,6 +4,8 @@ Welcome!
 
 We hope you are as excited as we are about the badge. We've spent the past few months designing and preparing it for the event.
 
+The blog post announcing the badge is [here](https://www.nearform.com/blog/the-nodeconf-eu-2018-digital-badge-is-here-and-its-fabulous/).
+
 ## The Badge
 
 The badge contains a small but powerful Bluetooth LE module running [Espruino](https://www.espruino.com) software, which is a JavaScript interpreter optimised for low-power devices. On this site, we'll explain the basics of using and programming the badge and even how to add hardware to it.
@@ -12,12 +14,12 @@ Note that all of the software and hardware for this year's badge will be Open So
 
 Quick Links
 -----------
-
+* [GitHub Repo](https://github.com/nearform/nceubadge2018)
 * [Espruino Bluetooth Getting Started](http://www.espruino.com/Quick+Start+BLE#pixljs)
 * [Espruino Pixl.js info](http://www.espruino.com/Pixl.js)
 * [Monday's Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
 * [Returning your badge to normal](#returning-to-standard)
-* [The Badge's default firmare](js/badge.js)
+* [The Badge's default firmare](https://github.com/nearform/nceubadge2018/blob/master/js/badge.js)
 
 
 Getting Started

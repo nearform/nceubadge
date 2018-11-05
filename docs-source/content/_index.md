@@ -14,6 +14,7 @@ Note that all of the software and hardware for this year's badge will be Open So
 
 Quick Links
 -----------
+
 * [GitHub Repo](https://github.com/nearform/nceubadge2018)
 * [Espruino Bluetooth Getting Started](http://www.espruino.com/Quick+Start+BLE#pixljs)
 * [Espruino Pixl.js info](http://www.espruino.com/Pixl.js)
@@ -48,10 +49,16 @@ There is an on/off slider switch on th rear of the badge just by the USB connect
 Bugs!
 -----
 
-On some of the badges, the vibration caused by the vibration motors during startup can
+* On some of the badges, the vibration caused by the vibration motors during startup can
 cause the LED controller to stop working. If when you power your badge on it *doesn't* go
 through all the colours of the rainbow, power it on with your thumbs over the vibration motors
 at the bottom left and right of the screen.
+* If your badge stops animating while in badge mode, try just pressing a button
+and it should spring back to life (updating the actual Espruino firmware can fix
+  this, but if it's not happening often we wouldn't advise updating).
+* When you charge the badge via USB, the on/off switch on the back needs to be
+set to ON (with the sticky-out part nearest the USB connector) or the battery
+won't charge.
 
 Connecting
 ----------
@@ -208,7 +215,7 @@ Just do something like:
 ```
 // LED patterns - each is [callback, period_in_ms]
 Badge.patterns.blue=()=>{ var n=0;return [()=>{
-  var c = [0,0,127];
+  var c = [127,0,0];
   NC.ledTop(c);
   NC.ledBottom(c);
   NC.backlight(c.concat(c,c,c));
@@ -283,6 +290,15 @@ Badge.apps["My App"] = ()=>{
 `);
 ```
 
+You can also do things like overwrite the built-in name,
+without having to overwrite the basic badge firmware.
+
+```
+require("Storage").write(".boot1",`
+Badge=global.Badge||{};
+Badge.NAME=["Hello","World"];
+`);
+```
 
 
 Soldering Stuff

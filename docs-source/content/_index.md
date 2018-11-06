@@ -20,7 +20,15 @@ Quick Links
 * [Espruino Pixl.js info](http://www.espruino.com/Pixl.js)
 * [Monday's Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
 * [Returning your badge to normal](#returning-to-standard)
-* [The Badge's default firmware](https://github.com/nearform/nceubadge2018/blob/master/js/badge.js)
+* [The Badge's default firmare](js/badge.js)
+
+Please submit PRs for any apps or backlight patterns you created in:
+
+* [Apps](https://github.com/nearform/nceubadge2018/tree/master/apps)
+* [Patterns](https://github.com/nearform/nceubadge2018/tree/master/patterns)
+
+To add them to your badge, connect with the IDE then copy and paste
+them into the left-hand side of the IDE.
 
 
 Getting Started
@@ -46,6 +54,7 @@ BTN4 |___________________________| BTN3
 There is an on/off slider switch on th rear of the badge just by the USB connector
 (which is used for charging only).
 
+
 Bugs!
 -----
 
@@ -59,6 +68,7 @@ and it should spring back to life (updating the actual Espruino firmware can fix
 * When you charge the badge via USB, the on/off switch on the back needs to be
 set to ON (with the sticky-out part nearest the USB connector) or the battery
 won't charge.
+
 
 Connecting
 ----------
@@ -94,6 +104,7 @@ Returning to Standard
 * [Click this link](https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/badge.js) in Chrome
 * Change `Badge.NAME = ...` to `["Your", "Name"]` - each array element is a new line
 * Connect to your badge (see above)
+* If you're having trouble connecting, power your badge on with `BTN1` held down for ~10 seconds (until a message about code being erased is shown) - this will remove all code from the badge and make it connectable - ready for you to re-upload the badge code.
 * Optional: Type `require("Storage").eraseAll()` in the left hand side of the IDE. This will remove all data from nonvolatile storage.
 * Turn the `Save on Send` option in the `Communications` part of the Web IDE's settings to `Direct To Flash`
 * Upload the code

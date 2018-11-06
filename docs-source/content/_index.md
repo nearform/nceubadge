@@ -280,7 +280,9 @@ And you can test by running `Badge.apps["My App"]()`
 To return to normal badge functionality just call `Badge.badge()` or `Badge.menu()`
 to return to the menu.
 
-## Saving...
+
+Saving...
+---------
 
 When you upload code as described above, your function will be loaded
 into RAM and will be lost when the badge is reset.
@@ -315,6 +317,15 @@ Badge=global.Badge||{};
 Badge.NAME=["Hello","World"];
 `);
 ```
+
+Common Pitfalls
+----------------
+
+* If you get `Badge not found` errors while trying to upload an app from the right hand side, it'll be because you're uploading with the `Reset before send` option turned on in the IDE settings (it should be turned off)
+* `reset()` (or 'reset before send) removes all JS code from the badge's RAM (including the `Badge` object) - it can be handy if you want to have full control of everything on the badge. To get back, see the next point...
+* If you want to get your badge firmware back out of flash memory *without* power cycling your badge, just type `load()` in the left-hand side of the IDE
+* Calling `Badge.menu()` will bring the Badge's menu back up - `Badge.badge()` goes back to displaying the badge. If you want a button in the app to bring you back to the menu, you can just call: `setWatch(Badge.menu, BTN1);`
+* `Badge.reset()` attempts to reset the badge's state (removing watches and intervals) - it's an idea to stick this as the first line in your app to make sure you start from a known state each time.
 
 
 Soldering Stuff

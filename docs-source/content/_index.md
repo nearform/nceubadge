@@ -70,7 +70,7 @@ set to ON (with the sticky-out part nearest the USB connector) or the battery
 won't charge.
 * If you're writing bits of code using `require("Storage").write('.boot...')`
 you may eventually get errors about not being able to write (the same can happen
-when trying to change settings). You can solve this by following the 
+when trying to change settings). You can solve this by following the
 [Returning your badge to normal](#returning-to-standard) instructions -
 but [Updating Espruino](#updating-espruino) can stop it happening again as well.
 
@@ -101,6 +101,39 @@ you'll overwrite the badge firmware.**
 
 Check out the notes for Monday's [Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
 for more information.
+
+### Using your own Editor
+
+You can use the Espruino CLI:
+
+```
+npm install -g espruino
+
+# abcd = last 4 digits displayed on your badge
+espruino -d abcd --config RESET_BEFORE_SEND=false -w filename.js
+```
+
+The `-w filename,js` option watches that file for changes, so the connection
+to the badge (and REPL) will be maintained and every time you save the file
+in your editor it'll automatically upload.
+
+In this case the CLI tool will upload to RAM without resetting the device,
+so writing an app like this will allow you to quickly test your code:
+
+```
+Badge.apps["My App"] = ()=>{
+ // Reset everything on the badge to a known state
+ Badge.reset();
+ // Display a menu
+ Pixl.menu({ "": { "title": "-- A Test --" },
+   "LED1 on" : ()=>LED1.write(1),
+   "LED1 off" : ()=>LED1.write(0),
+   "Back to Badge":Badge.badge
+  });
+};
+// automatically run app for testing
+Badge.apps["My App"]();
+```
 
 
 Returning to Standard

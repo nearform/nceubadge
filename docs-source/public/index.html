@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="generator" content="Hugo 0.49" />
+    <meta name="generator" content="Hugo 0.42.1" />
     <meta name="description" content="All about the NodeConf EU Badge">
 <meta name="author" content="NearForm">
 
@@ -13,17 +13,17 @@
     <title> :: NodeConf EU Badge</title>
     
     
-    <link href="/css/nucleus.css?1541406304" rel="stylesheet">
-    <link href="/css/font-awesome.min.css?1541406304" rel="stylesheet">
-    <link href="/css/hybrid.css?1541406304" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1541406304" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1541406304" rel="stylesheet">
-    <link href="/css/auto-complete.css?1541406304" rel="stylesheet">
-    <link href="/css/theme.css?1541406304" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1541406304" rel="stylesheet">
+    <link href="/css/nucleus.css?1541954405" rel="stylesheet">
+    <link href="/css/font-awesome.min.css?1541954405" rel="stylesheet">
+    <link href="/css/hybrid.css?1541954405" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1541954405" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1541954405" rel="stylesheet">
+    <link href="/css/auto-complete.css?1541954405" rel="stylesheet">
+    <link href="/css/theme.css?1541954405" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1541954405" rel="stylesheet">
     
 
-    <script src="/js/jquery-2.x.min.js?1541406304"></script>
+    <script src="/js/jquery-2.x.min.js?1541954405"></script>
     
     <style type="text/css">
       :root #header + #content > #left > #rlblock_left{ 
@@ -49,14 +49,14 @@
     <span data-search-clear=""><i class="fa fa-close"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1541406304"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1541406304"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1541954405"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1541954405"></script>
 <script type="text/javascript">
     
         var baseurl = "http:\/\/nodeconfeubadge.org";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1541406304"></script>
+<script type="text/javascript" src="/js/search.js?1541954405"></script>
 
     
   </div>
@@ -901,6 +901,10 @@
 
 <p>Note that all of the software and hardware for this year&rsquo;s badge will be Open Sourced shortly after NodeConf EU 2018 is over.</p>
 
+<h2 id="changing-your-name-on-the-badge">Changing your name on the badge</h2>
+
+<p>This was the top request during NodeConf EU so we&rsquo;ve made it as easy as possible. Just <a href="https://nearform.github.io/nceubadge2018/namechanger.html">go here</a> and follow the simple instructions.</p>
+
 <h2 id="quick-links">Quick Links</h2>
 
 <ul>
@@ -911,6 +915,16 @@
 <li><a href="#returning-to-standard">Returning your badge to normal</a></li>
 <li><a href="https://github.com/nearform/nceubadge2018/blob/master/js/badge.js">The Badge&rsquo;s default firmare</a></li>
 </ul>
+
+<p>Please submit PRs for any apps or backlight patterns you created in:</p>
+
+<ul>
+<li><a href="https://github.com/nearform/nceubadge2018/tree/master/apps">Apps</a></li>
+<li><a href="https://github.com/nearform/nceubadge2018/tree/master/patterns">Patterns</a></li>
+</ul>
+
+<p>To add them to your badge, connect with the IDE then copy and paste
+them into the left-hand side of the IDE.</p>
 
 <h2 id="getting-started">Getting Started</h2>
 
@@ -935,10 +949,23 @@ BTN4 |___________________________| BTN3
 
 <h2 id="bugs">Bugs!</h2>
 
-<p>On some of the badges, the vibration caused by the vibration motors during startup can
+<ul>
+<li>On some of the badges, the vibration caused by the vibration motors during startup can
 cause the LED controller to stop working. If when you power your badge on it <em>doesn&rsquo;t</em> go
 through all the colours of the rainbow, power it on with your thumbs over the vibration motors
-at the bottom left and right of the screen.</p>
+at the bottom left and right of the screen.</li>
+<li>If your badge stops animating while in badge mode, try just pressing a button
+and it should spring back to life (updating the actual Espruino firmware can fix
+this - see <a href="#updating-espruino">Updating Espruino</a> below).</li>
+<li>When you charge the badge via USB, the on/off switch on the back needs to be
+set to ON (with the sticky-out part nearest the USB connector) or the battery
+won&rsquo;t charge.</li>
+<li>If you&rsquo;re writing bits of code using <code>require(&quot;Storage&quot;).write('.boot...')</code>
+you may eventually get errors about not being able to write (the same can happen
+when trying to change settings). You can solve this by following the
+<a href="#returning-to-standard">Returning your badge to normal</a> instructions -
+but <a href="#updating-espruino">Updating Espruino</a> can stop it happening again as well.</li>
+</ul>
 
 <h2 id="connecting">Connecting</h2>
 
@@ -957,7 +984,7 @@ will start your badge without loading any of the badge code.</li>
 </ul>
 
 <p>You can then use the Chrome web Browser on any Windows 10 or Mac OS device
-and go to <a href="https://www.espruino.com/ide">espruino.com/ide</a> and you can connect.
+and go to <a href="https://www.espruino.com/ide" target="_blank">espruino.com/ide</a> and you can connect.
 You&rsquo;re looking for a device called <code>Pixl abcd</code> where <code>abcd</code> are the last 4
 characters of the MAC address shown on the Badge&rsquo;s screen.</p>
 
@@ -968,12 +995,44 @@ you&rsquo;ll overwrite the badge firmware.**</p>
 <p>Check out the notes for Monday&rsquo;s <a href="https://gfwilliams.github.io/workshop-nodeconfeu2018/">Bluetooth Workshop</a>
 for more information.</p>
 
+<h3 id="using-your-own-editor">Using your own Editor</h3>
+
+<p>You can use the Espruino CLI:</p>
+
+<pre><code>npm install -g espruino
+
+# abcd = last 4 digits displayed on your badge
+espruino -d abcd --config RESET_BEFORE_SEND=false -w filename.js
+</code></pre>
+
+<p>The <code>-w filename,js</code> option watches that file for changes, so the connection
+to the badge (and REPL) will be maintained and every time you save the file
+in your editor it&rsquo;ll automatically upload.</p>
+
+<p>In this case the CLI tool will upload to RAM without resetting the device,
+so writing an app like this will allow you to quickly test your code:</p>
+
+<pre><code>Badge.apps[&quot;My App&quot;] = ()=&gt;{
+ // Reset everything on the badge to a known state
+ Badge.reset();
+ // Display a menu
+ Pixl.menu({ &quot;&quot;: { &quot;title&quot;: &quot;-- A Test --&quot; },
+   &quot;LED1 on&quot; : ()=&gt;LED1.write(1),
+   &quot;LED1 off&quot; : ()=&gt;LED1.write(0),
+   &quot;Back to Badge&quot;:Badge.badge
+  });
+};
+// automatically run app for testing
+Badge.apps[&quot;My App&quot;]();
+</code></pre>
+
 <h2 id="returning-to-standard">Returning to Standard</h2>
 
 <ul>
-<li><a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/badge.js">Click this link</a> in Chrome</li>
+<li><a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/badge.js" target="_blank">Click this link</a> in Chrome</li>
 <li>Change <code>Badge.NAME = ...</code> to <code>[&quot;Your&quot;, &quot;Name&quot;]</code> - each array element is a new line</li>
 <li>Connect to your badge (see above)</li>
+<li>If you&rsquo;re having trouble connecting, power your badge on with <code>BTN1</code> held down for ~10 seconds (until a message about code being erased is shown) - this will remove all code from the badge and make it connectable - ready for you to re-upload the badge code.</li>
 <li>Optional: Type <code>require(&quot;Storage&quot;).eraseAll()</code> in the left hand side of the IDE. This will remove all data from nonvolatile storage.</li>
 <li>Turn the <code>Save on Send</code> option in the <code>Communications</code> part of the Web IDE&rsquo;s settings to <code>Direct To Flash</code></li>
 <li>Upload the code</li>
@@ -1004,10 +1063,10 @@ first.</p>
 <ul>
 <li><strong>LEDs facing up</strong> - Change these with <code>NC.ledTop([R,G,B])</code> or <code>NC.ledTop([])</code> to turn them off</li>
 <li><strong>LEDs facing down</strong> - Change these with <code>NC.ledBottom([R,G,B])</code> or <code>NC.ledBottom([])</code> to turn them off</li>
-<li><strong>LCD backlight with 4 zones</strong> - Change this with <code>NC.backlight([R,G,B,R,G,B,R,G,B,R,G,B])</code> or <code>NC.backlight([])</code> to turn them off</li>
+<li><strong>LCD backlight with 4 zones</strong> - Change this with <code>NC.backlight([B,G,R,B,G,R,B,G,R,B,G,R])</code> or <code>NC.backlight([])</code> to turn them off</li>
 </ul>
 
-<p>In the above code, <code>R/G/B</code> are numbers between 0 and 255</p>
+<p>In the above code, <code>B/G/R</code> are numbers between 0 and 255 and represent Blue, Green and Red.</p>
 
 <h3 id="light-sensor">Light sensor</h3>
 
@@ -1088,7 +1147,7 @@ of the Web IDE&rsquo;s settings.</p>
 
 <pre><code>// LED patterns - each is [callback, period_in_ms]
 Badge.patterns.blue=()=&gt;{ var n=0;return [()=&gt;{
-  var c = [0,0,127];
+  var c = [127,0,0];
   NC.ledTop(c);
   NC.ledBottom(c);
   NC.backlight(c.concat(c,c,c));
@@ -1160,6 +1219,25 @@ Badge.apps[&quot;My App&quot;] = ()=&gt;{
 `);
 </code></pre>
 
+<p>You can also do things like overwrite the built-in name,
+without having to overwrite the basic badge firmware.</p>
+
+<pre><code>require(&quot;Storage&quot;).write(&quot;.boot1&quot;,`
+Badge=global.Badge||{};
+Badge.NAME=[&quot;Hello&quot;,&quot;World&quot;];
+`);
+</code></pre>
+
+<h2 id="common-pitfalls">Common Pitfalls</h2>
+
+<ul>
+<li>If you get <code>Badge not found</code> errors while trying to upload an app from the right hand side, it&rsquo;ll be because you&rsquo;re uploading with the <code>Reset before send</code> option turned on in the IDE settings (it should be turned off)</li>
+<li><code>reset()</code> (or &lsquo;reset before send) removes all JS code from the badge&rsquo;s RAM (including the <code>Badge</code> object) - it can be handy if you want to have full control of everything on the badge. To get back, see the next point&hellip;</li>
+<li>If you want to get your badge firmware back out of flash memory <em>without</em> power cycling your badge, just type <code>load()</code> in the left-hand side of the IDE</li>
+<li>Calling <code>Badge.menu()</code> will bring the Badge&rsquo;s menu back up - <code>Badge.badge()</code> goes back to displaying the badge. If you want a button in the app to bring you back to the menu, you can just call: <code>setWatch(Badge.menu, BTN1);</code></li>
+<li><code>Badge.reset()</code> attempts to reset the badge&rsquo;s state (removing watches and intervals) - it&rsquo;s an idea to stick this as the first line in your app to make sure you start from a known state each time.</li>
+</ul>
+
 <h2 id="soldering-stuff">Soldering Stuff</h2>
 
 <p>There are some special GPIO connectors on the badge. These can be accessed with
@@ -1220,6 +1298,37 @@ var wifi = require(&quot;ESP8266WiFi_0v25&quot;).connect(Serial1, function(err) 
 
 <p>Check out <a href="Espruino's page on Internet stuff">http://www.espruino.com/Internet</a>
 for more info.</p>
+
+<h2 id="updating-espruino">Updating Espruino</h2>
+
+<p>The badges came with Espruino v2.00, but there have <a href="https://github.com/espruino/Espruino/blob/master/ChangeLog">been a few changes</a>
+to Espruino since then that have fixed:</p>
+
+<ul>
+<li>The badge pausing issue (caused by high Bluetooth LE traffic when scanning)</li>
+<li>Filesystem issues when repeatedly calling <code>require(&quot;Storage&quot;).write</code></li>
+<li>Other issues</li>
+</ul>
+
+<p>To update Espruino, just <a href="http://www.espruino.com/Pixl.js#firmware-updates">follow the Pixl.js instructions here</a>
+with the &lsquo;Cutting edge&rsquo; build linked from <a href="http://www.espruino.com/Download#pixljs">the firmware download page</a>.</p>
+
+<p>This&rsquo;ll take a few minutes, and you then need to follow the steps for <a href="#returning-to-standard">Returning your badge to normal</a> - so if you&rsquo;re fine with everything as it is, we&rsquo;d recommend that you keep version 2.00 for now.</p>
+
+<h2 id="changing-your-name-on-the-badge-in-the-web-ide">Changing your name on the badge in the Web IDE</h2>
+
+<p>This was the top request during NodeConf EU so we&rsquo;ve made it as easy as possible. To update the name displayed by the badge, do the following:</p>
+
+<ul>
+<li>On the badge, press the top left button, then select &ldquo;Make Connectable&rdquo; from the menu and note the last four hex digits of the address of the badge</li>
+<li><a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/namechange.js" target="_blank">Click this link</a> in Chrome to open the Online IDE with the correct code</li>
+<li>In that code, edit the two fields &ldquo;Bob&rdquo; and &ldquo;Loblaw&rdquo; to whatever you need.</li>
+<li>Click the yellow Connect button in the top left corner of the IDE</li>
+<li>Click &ldquo;Web Bluetooth&rdquo; in the pop-up</li>
+<li>Click your device name</li>
+<li>Once connected, click the &ldquo;Send to Espruino&rdquo; button in the middle of the IDE</li>
+<li>Reboot your badge and you&rsquo;ll see the new name</li>
+</ul>
 
 <h2 id="2017-badge">2017 Badge</h2>
 
@@ -1880,20 +1989,20 @@ for more info.</p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1541406304"></script>
-    <script src="/js/perfect-scrollbar.min.js?1541406304"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1541406304"></script>
-    <script src="/js/jquery.sticky-kit.min.js?1541406304"></script>
-    <script src="/js/featherlight.min.js?1541406304"></script>
-    <script src="/js/html5shiv-printshiv.min.js?1541406304"></script>
-    <script src="/js/highlight.pack.js?1541406304"></script>
+    <script src="/js/clipboard.min.js?1541954405"></script>
+    <script src="/js/perfect-scrollbar.min.js?1541954405"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1541954405"></script>
+    <script src="/js/jquery.sticky-kit.min.js?1541954405"></script>
+    <script src="/js/featherlight.min.js?1541954405"></script>
+    <script src="/js/html5shiv-printshiv.min.js?1541954405"></script>
+    <script src="/js/highlight.pack.js?1541954405"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom.71422.js?1541406304"></script>
-    <script src="/js/learn.js?1541406304"></script>
-    <script src="/js/hugo-learn.js?1541406304"></script>
+    <script src="/js/modernizr.custom.71422.js?1541954405"></script>
+    <script src="/js/learn.js?1541954405"></script>
+    <script src="/js/hugo-learn.js?1541954405"></script>
 
-    <link href="/mermaid/mermaid.css?1541406304" type="text/css" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1541406304"></script>
+    <link href="/mermaid/mermaid.css?1541954405" type="text/css" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1541954405"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

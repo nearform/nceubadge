@@ -12,27 +12,28 @@ The badge contains a small but powerful Bluetooth LE module running [Espruino](h
 
 Note that all of the software and hardware for this year's badge will be Open Sourced shortly after NodeConf EU 2018 is over.
 
-Quick Links
------------
+## Changing your name on the badge
 
-* [GitHub Repo](https://github.com/nearform/nceubadge2018)
-* [Espruino Bluetooth Getting Started](http://www.espruino.com/Quick+Start+BLE#pixljs)
-* [Espruino Pixl.js info](http://www.espruino.com/Pixl.js)
-* [Monday's Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
-* [Returning your badge to normal](#returning-to-standard)
-* [The Badge's default firmare](js/badge.js)
+This was the top request during NodeConf EU so we've made it as easy as possible. Just [go here](https://nearform.github.io/nceubadge2018/namechanger.html) and follow the simple instructions.
+
+## Quick Links
+
+- [GitHub Repo](https://github.com/nearform/nceubadge2018)
+- [Espruino Bluetooth Getting Started](http://www.espruino.com/Quick+Start+BLE#pixljs)
+- [Espruino Pixl.js info](http://www.espruino.com/Pixl.js)
+- [Monday's Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
+- [Returning your badge to normal](#returning-to-standard)
+- [The Badge's default firmare](https://github.com/nearform/nceubadge2018/blob/master/js/badge.js)
 
 Please submit PRs for any apps or backlight patterns you created in:
 
-* [Apps](https://github.com/nearform/nceubadge2018/tree/master/apps)
-* [Patterns](https://github.com/nearform/nceubadge2018/tree/master/patterns)
+- [Apps](https://github.com/nearform/nceubadge2018/tree/master/apps)
+- [Patterns](https://github.com/nearform/nceubadge2018/tree/master/patterns)
 
 To add them to your badge, connect with the IDE then copy and paste
 them into the left-hand side of the IDE.
 
-
-Getting Started
----------------
+## Getting Started
 
 The badge is based on a [Pixl.js](http://www.espruino.com/Pixl.js), so a
 lot of the tutorials and information there still apply.
@@ -54,50 +55,46 @@ BTN4 |___________________________| BTN3
 There is an on/off slider switch on th rear of the badge just by the USB connector
 (which is used for charging only).
 
+## Bugs!
 
-Bugs!
------
-
-* On some of the badges, the vibration caused by the vibration motors during startup can
-cause the LED controller to stop working. If when you power your badge on it *doesn't* go
-through all the colours of the rainbow, power it on with your thumbs over the vibration motors
-at the bottom left and right of the screen.
-* If your badge stops animating while in badge mode, try just pressing a button
-and it should spring back to life (updating the actual Espruino firmware can fix
+- On some of the badges, the vibration caused by the vibration motors during startup can
+  cause the LED controller to stop working. If when you power your badge on it _doesn't_ go
+  through all the colours of the rainbow, power it on with your thumbs over the vibration motors
+  at the bottom left and right of the screen.
+- If your badge stops animating while in badge mode, try just pressing a button
+  and it should spring back to life (updating the actual Espruino firmware can fix
   this - see [Updating Espruino](#updating-espruino) below).
-* When you charge the badge via USB, the on/off switch on the back needs to be
-set to ON (with the sticky-out part nearest the USB connector) or the battery
-won't charge.
-* If you're writing bits of code using `require("Storage").write('.boot...')`
-you may eventually get errors about not being able to write (the same can happen
-when trying to change settings). You can solve this by following the
-[Returning your badge to normal](#returning-to-standard) instructions -
-but [Updating Espruino](#updating-espruino) can stop it happening again as well.
+- When you charge the badge via USB, the on/off switch on the back needs to be
+  set to ON (with the sticky-out part nearest the USB connector) or the battery
+  won't charge.
+- If you're writing bits of code using `require("Storage").write('.boot...')`
+  you may eventually get errors about not being able to write (the same can happen
+  when trying to change settings). You can solve this by following the
+  [Returning your badge to normal](#returning-to-standard) instructions -
+  but [Updating Espruino](#updating-espruino) can stop it happening again as well.
 
-
-Connecting
-----------
+## Connecting
 
 To avoid a complete free-for-all, when the badges start with the Nodeconf badge software
 they disable the ability to connect to them. To connect, you must do one of:
 
-* Go to the `Make Connectable` menu item
-* Power the badge off, and power it on with `BTN2` or `BTN3` held down. The badge
-firmware will be loaded, but your badge will be connectable.
-* (Not recommended) Power the badge off, and power it on with `BTN1` held down while the bootloader
-percent bar goes to the end, **then release when told. Do not keep holding the button
-down or all saved badge code will be erased.**. This initialises a self
-test, which will fail (because the board isn't quite a standard Pixl.js). This
-will start your badge without loading any of the badge code.
+- Go to the `Make Connectable` menu item
+- Power the badge off, and power it on with `BTN2` or `BTN3` held down. The badge
+  firmware will be loaded, but your badge will be connectable.
+- (Not recommended) Power the badge off, and power it on with `BTN1` held down while the bootloader
+  percent bar goes to the end, **then release when told. Do not keep holding the button
+  down or all saved badge code will be erased.**. This initialises a self
+  test, which will fail (because the board isn't quite a standard Pixl.js). This
+  will start your badge without loading any of the badge code.
 
 You can then use the Chrome web Browser on any Windows 10 or Mac OS device
-and go to [espruino.com/ide](https://www.espruino.com/ide) and you can connect.
+and go to <a href="https://www.espruino.com/ide" target="_blank">espruino.com/ide</a> and you can connect.
 You're looking for a device called `Pixl abcd` where `abcd` are the last 4
 characters of the MAC address shown on the Badge's screen.
 
-*If you used Espruino before, ensure that the `Save on Send` option in the
+\*If you used Espruino before, ensure that the `Save on Send` option in the
 `Communications` part of the Web IDE's settings is set to `To RAM` otherwise
-you'll overwrite the badge firmware.**
+you'll overwrite the badge firmware.\*\*
 
 Check out the notes for Monday's [Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
 for more information.
@@ -135,24 +132,20 @@ Badge.apps["My App"] = ()=>{
 Badge.apps["My App"]();
 ```
 
+## Returning to Standard
 
-Returning to Standard
----------------------
-
-* [Click this link](https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/badge.js) in Chrome
-* Change `Badge.NAME = ...` to `["Your", "Name"]` - each array element is a new line
-* Connect to your badge (see above)
-* If you're having trouble connecting, power your badge on with `BTN1` held down for ~10 seconds (until a message about code being erased is shown) - this will remove all code from the badge and make it connectable - ready for you to re-upload the badge code.
-* Optional: Type `require("Storage").eraseAll()` in the left hand side of the IDE. This will remove all data from nonvolatile storage.
-* Turn the `Save on Send` option in the `Communications` part of the Web IDE's settings to `Direct To Flash`
-* Upload the code
-* Return the `Save on Send` option in the `Communications` part of the Web IDE's settings to `To RAM` so you don't accidentally overwrite the code in the future.
+- <a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/badge.js" target="_blank">Click this link</a> in Chrome
+- Change `Badge.NAME = ...` to `["Your", "Name"]` - each array element is a new line
+- Connect to your badge (see above)
+- If you're having trouble connecting, power your badge on with `BTN1` held down for ~10 seconds (until a message about code being erased is shown) - this will remove all code from the badge and make it connectable - ready for you to re-upload the badge code.
+- Optional: Type `require("Storage").eraseAll()` in the left hand side of the IDE. This will remove all data from nonvolatile storage.
+- Turn the `Save on Send` option in the `Communications` part of the Web IDE's settings to `Direct To Flash`
+- Upload the code
+- Return the `Save on Send` option in the `Communications` part of the Web IDE's settings to `To RAM` so you don't accidentally overwrite the code in the future.
 
 You're sorted!
 
-
-Stuff to do
------------
+## Stuff to do
 
 On the badge, you have a bunch of stuff you can use. Most of it is available via `NC`
 in a global variable created by the badge software. If you're trying to
@@ -171,18 +164,18 @@ You can turn the LEDs on and off with `digitalWrite(LED1,1)` or `LED1.write(1)`.
 
 The badge has fancy RGB lighting. There's:
 
-* **LEDs facing up** - Change these with `NC.ledTop([R,G,B])` or `NC.ledTop([])` to turn them off
-* **LEDs facing down** - Change these with `NC.ledBottom([R,G,B])` or `NC.ledBottom([])` to turn them off
-* **LCD backlight with 4 zones** - Change this with `NC.backlight([R,G,B,R,G,B,R,G,B,R,G,B])` or `NC.backlight([])` to turn them off
+- **LEDs facing up** - Change these with `NC.ledTop([R,G,B])` or `NC.ledTop([])` to turn them off
+- **LEDs facing down** - Change these with `NC.ledBottom([R,G,B])` or `NC.ledBottom([])` to turn them off
+- **LCD backlight with 4 zones** - Change this with `NC.backlight([B,G,R,B,G,R,B,G,R,B,G,R])` or `NC.backlight([])` to turn them off
 
-In the above code, `R/G/B` are numbers between 0 and 255
+In the above code, `B/G/R` are numbers between 0 and 255 and represent Blue, Green and Red.
 
 ### Light sensor
 
 LED2 can be used as an ambient light sensor - just use `NC.light()` to get
 a reading between 0 and 1.
 
-It will *definitely* be thrown off by any light from any of the other on-badge LEDs.
+It will _definitely_ be thrown off by any light from any of the other on-badge LEDs.
 
 ### Vibration
 
@@ -244,9 +237,7 @@ NC.getBatteryState()
 // { charging:bool, standby:bool}
 ```
 
-
-Extending the badge
--------------------
+## Extending the badge
 
 You can add your own 'Apps' or LED patterns that will display in the Badge's
 memory just by adding them to the `Badge.patterns` or `Badge.apps` arrays.
@@ -313,9 +304,7 @@ And you can test by running `Badge.apps["My App"]()`
 To return to normal badge functionality just call `Badge.badge()` or `Badge.menu()`
 to return to the menu.
 
-
-Saving...
----------
+## Saving...
 
 When you upload code as described above, your function will be loaded
 into RAM and will be lost when the badge is reset.
@@ -351,26 +340,23 @@ Badge.NAME=["Hello","World"];
 `);
 ```
 
-Common Pitfalls
-----------------
+## Common Pitfalls
 
-* If you get `Badge not found` errors while trying to upload an app from the right hand side, it'll be because you're uploading with the `Reset before send` option turned on in the IDE settings (it should be turned off)
-* `reset()` (or 'reset before send) removes all JS code from the badge's RAM (including the `Badge` object) - it can be handy if you want to have full control of everything on the badge. To get back, see the next point...
-* If you want to get your badge firmware back out of flash memory *without* power cycling your badge, just type `load()` in the left-hand side of the IDE
-* Calling `Badge.menu()` will bring the Badge's menu back up - `Badge.badge()` goes back to displaying the badge. If you want a button in the app to bring you back to the menu, you can just call: `setWatch(Badge.menu, BTN1);`
-* `Badge.reset()` attempts to reset the badge's state (removing watches and intervals) - it's an idea to stick this as the first line in your app to make sure you start from a known state each time.
+- If you get `Badge not found` errors while trying to upload an app from the right hand side, it'll be because you're uploading with the `Reset before send` option turned on in the IDE settings (it should be turned off)
+- `reset()` (or 'reset before send) removes all JS code from the badge's RAM (including the `Badge` object) - it can be handy if you want to have full control of everything on the badge. To get back, see the next point...
+- If you want to get your badge firmware back out of flash memory _without_ power cycling your badge, just type `load()` in the left-hand side of the IDE
+- Calling `Badge.menu()` will bring the Badge's menu back up - `Badge.badge()` goes back to displaying the badge. If you want a button in the app to bring you back to the menu, you can just call: `setWatch(Badge.menu, BTN1);`
+- `Badge.reset()` attempts to reset the badge's state (removing watches and intervals) - it's an idea to stick this as the first line in your app to make sure you start from a known state each time.
 
-
-Soldering Stuff
---------------------
+## Soldering Stuff
 
 There are some special GPIO connectors on the badge. These can be accessed with
 commands like `digitalWrite(D10,1)` or `analogRead(A0)`.
 
-* `J2` (Top Left) contains (left to right) `GND`,`D10`,`D11`,`D12`,`D13` and `3.3v`
-* `J1` (Top Right) contains (left to right) `GND`,`A0`,`A1`,`A2`,`A3` and `3.3v`
-* `J3` (Bottom center) contains the pinout for an ESP8266 ESP01 module. This can
-also be used for wired serial comms with the badge:
+- `J2` (Top Left) contains (left to right) `GND`,`D10`,`D11`,`D12`,`D13` and `3.3v`
+- `J1` (Top Right) contains (left to right) `GND`,`A0`,`A1`,`A2`,`A3` and `3.3v`
+- `J3` (Bottom center) contains the pinout for an ESP8266 ESP01 module. This can
+  also be used for wired serial comms with the badge:
 
 ```
 GND            NC    NC        D1(Badge TX)
@@ -378,7 +364,6 @@ D0(Badge RX)   D9    NC        3.3v
 ```
 
 ### ESP8266 Wiring
-
 
 Due to a slight mirroring accident, a normal ESP8266 module has to be attached
 to the FRONT of the badge, slightly covering the display:
@@ -425,23 +410,32 @@ var wifi = require("ESP8266WiFi_0v25").connect(Serial1, function(err) {
 Check out [http://www.espruino.com/Internet](Espruino's page on Internet stuff)
 for more info.
 
-
-Updating Espruino
------------------
+## Updating Espruino
 
 The badges came with Espruino v2.00, but there have [been a few changes](https://github.com/espruino/Espruino/blob/master/ChangeLog)
 to Espruino since then that have fixed:
 
-* The badge pausing issue (caused by high Bluetooth LE traffic when scanning)
-* Filesystem issues when repeatedly calling `require("Storage").write`
-* Other issues
+- The badge pausing issue (caused by high Bluetooth LE traffic when scanning)
+- Filesystem issues when repeatedly calling `require("Storage").write`
+- Other issues
 
 To update Espruino, just [follow the Pixl.js instructions here](http://www.espruino.com/Pixl.js#firmware-updates)
 with the 'Cutting edge' build linked from [the firmware download page](http://www.espruino.com/Download#pixljs).
 
 This'll take a few minutes, and you then need to follow the steps for [Returning your badge to normal](#returning-to-standard) - so if you're fine with everything as it is, we'd recommend that you keep version 2.00 for now.
 
+## Changing your name on the badge in the Web IDE
 
+This was the top request during NodeConf EU so we've made it as easy as possible. To update the name displayed by the badge, do the following:
+
+- On the badge, press the top left button, then select "Make Connectable" from the menu and note the last four hex digits of the address of the badge
+- <a href="https://www.espruino.com/ide/?codeurl=https://raw.githubusercontent.com/nearform/nceubadge2018/master/js/namechange.js" target="_blank">Click this link</a> in Chrome to open the Online IDE with the correct code
+- In that code, edit the two fields "Bob" and "Loblaw" to whatever you need.
+- Click the yellow Connect button in the top left corner of the IDE
+- Click "Web Bluetooth" in the pop-up
+- Click your device name
+- Once connected, click the "Send to Espruino" button in the middle of the IDE
+- Reboot your badge and you'll see the new name
 
 ## 2017 Badge
 

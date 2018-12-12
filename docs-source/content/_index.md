@@ -23,7 +23,7 @@ This was the top request during NodeConf EU so we've made it as easy as possible
 - [Espruino Pixl.js info](http://www.espruino.com/Pixl.js)
 - [Monday's Bluetooth Workshop](https://gfwilliams.github.io/workshop-nodeconfeu2018/)
 - [Returning your badge to normal](#returning-to-standard)
-- [The Badge's default firmare](https://github.com/nearform/nceubadge2018/blob/master/js/badge.js)
+- [The Badge's default firmware](https://github.com/nearform/nceubadge2018/blob/master/js/badge.js)
 
 Please submit PRs for any apps or backlight patterns you created in:
 
